@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/dataset_preparation/data 
 
 # testing
 /coverage
