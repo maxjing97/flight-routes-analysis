@@ -1,0 +1,2 @@
+current wiki name: Shanghai_Pudong_International_Airport
+data found for missing rows: {'city': 'Shanghai', 'country': 'China', 'latitude': '31.143333333333334', 'longitude': '121.80527777777777'}, at index:8

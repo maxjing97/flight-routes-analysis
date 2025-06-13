@@ -1,0 +1,214 @@
+current wiki name: Gladstone_Airport
+data found for missing rows at index:705
+current wiki name: Ballina_Byron_Gateway_Airport
+data found for missing rows at index:706
+current wiki name: Kars_Harakani_Airport
+data found for missing rows at index:710
+current wiki name: Phu_Cat_Airport
+data found for missing rows at index:712
+current wiki name: David_the_Builder_Kutaisi_International_Airport
+data found for missing rows at index:714
+current wiki name: Nan_Nakhon_Airport
+data found for missing rows at index:722
+current wiki name: Beslan_Airport
+data found for missing rows at index:724
+current wiki name: Shonai_Airport
+data found for missing rows at index:727
+current wiki name: Nevşehir_Kapadokya_Airport
+data found for missing rows at index:729
+current wiki name: Jodhpur_Airport
+data found for missing rows at index:733
+current wiki name: Muş_Airport
+data found for missing rows at index:737
+current wiki name: Roi_Et_Airport
+data found for missing rows at index:739
+current wiki name: Muan_International_Airport
+data found for missing rows at index:744
+current wiki name: Francisco_B._Reyes_Airport
+data found for missing rows at index:745
+current wiki name: Izhevsk_Airport
+data found for missing rows at index:748
+current wiki name: Ayers_Rock_Airport
+data found for missing rows at index:749
+current wiki name: Dibrugarh_Airport
+data found for missing rows at index:750
+current wiki name: Dibrugarh_Airport
+data found for missing rows at index:751
+current wiki name: Pleiku_Airport
+data found for missing rows at index:755
+current wiki name: Salekhard_Airport
+data found for missing rows at index:760
+current wiki name: Labo_Airport
+data found for missing rows at index:765
+current wiki name: Roxas_Airport
+data found for missing rows at index:781
+current wiki name: Nangan_Airport
+data found for missing rows at index:786
+current wiki name: Fukushima_Airport
+data found for missing rows at index:788
+current wiki name: Cheboksary_International_Airport
+data found for missing rows at index:790
+current wiki name: Dipolog_Airport
+data found for missing rows at index:793
+current wiki name: Isparta_Süleyman_Demirel_Airport
+data found for missing rows at index:797
+current wiki name: Nalchik_Airport
+data found for missing rows at index:799
+current wiki name: Emerald_Airport
+data found for missing rows at index:802
+current wiki name: Emerald_Airport
+data found for missing rows at index:803
+current wiki name: Kahramanmaraş_Airport
+data found for missing rows at index:804
+current wiki name: Port_Macquarie_Airport
+data found for missing rows at index:806
+current wiki name: Cherepovets_Airport
+data found for missing rows at index:808
+current wiki name: Igarka_Airport
+data found for missing rows at index:810
+current wiki name: Mildura_Airport
+data found for missing rows at index:811
+current wiki name: Ağrı_Airport
+data found for missing rows at index:813
+current wiki name: Yaoundé_Nsimalen_International_Airport
+data found for missing rows at index:815
+current wiki name: Magas_Airport
+data found for missing rows at index:818
+current wiki name: Naryan-Mar_Airport
+data found for missing rows at index:819
+current wiki name: Laoag_International_Airport
+data found for missing rows at index:820
+current wiki name: Noyabrsk_Airport
+data found for missing rows at index:822
+current wiki name: Roma_Airport
+data found for missing rows at index:824
+current wiki name: Buriram_Airport
+data found for missing rows at index:825
+current wiki name: Port_Lincoln_Airport
+data found for missing rows at index:827
+current wiki name: Adiyaman_Airport
+data found for missing rows at index:828
+current wiki name: Pagadian_Airport
+data found for missing rows at index:830
+current wiki name: Con_Dao_Airport
+data found for missing rows at index:833
+current wiki name: Yenişehir_Airport
+data found for missing rows at index:835
+current wiki name: Tuguegarao_Airport
+data found for missing rows at index:836
+current wiki name: Mae_Sot_Airport
+data found for missing rows at index:841
+current wiki name: Nadym_Airport
+data found for missing rows at index:842
+current wiki name: Çanakkale_Airport
+data found for missing rows at index:843
+current wiki name: Las_Termas_Airport
+data found for missing rows at index:844
+current wiki name: Usinsk_Airport
+data found for missing rows at index:847
+current wiki name: Hervey_Bay_Airport
+data found for missing rows at index:849
+current wiki name: Rijeka_Airport
+data found for missing rows at index:850
+current wiki name: Rijeka_Airport
+data found for missing rows at index:851
+current wiki name: Bundaberg_Airport
+data found for missing rows at index:853
+current wiki name: Moranbah_Airport
+data found for missing rows at index:854
+current wiki name: Tekirdağ_Çorlu_Airport
+data found for missing rows at index:857
+current wiki name: Sacheon_Airport
+data found for missing rows at index:859
+current wiki name: Devonport_Airport
+data found for missing rows at index:861
+current wiki name: Naga_Airport
+data found for missing rows at index:864
+current wiki name: Panamá_Pacífico_International_Airport
+data found for missing rows at index:866
+current wiki name: Armidale_Airport
+data found for missing rows at index:868
+current wiki name: Armidale_Airport
+data found for missing rows at index:869
+current wiki name: Kogalym_International_Airport
+data found for missing rows at index:872
+current wiki name: Surigao_Airport
+data found for missing rows at index:880
+current wiki name: Ranong_Airport
+data found for missing rows at index:882
+current wiki name: Zafer_Airport
+data found for missing rows at index:885
+current wiki name: Chumphon_Airport
+data found for missing rows at index:887
+current wiki name: Chumphon_Airport
+data found for missing rows at index:888
+current wiki name: Trat_Airport
+data found for missing rows at index:891
+current wiki name: Yangyang_International_Airport
+data found for missing rows at index:892
+current wiki name: Horn_Island_Airport
+data found for missing rows at index:894
+current wiki name: Ithaca_Tompkins_International_Airport
+data found for missing rows at index:895
+current wiki name: Cauayan_Airport
+data found for missing rows at index:896
+current wiki name: Kastamonu_Airport
+data found for missing rows at index:897
+current wiki name: Basco_Airport
+data found for missing rows at index:898
+current wiki name: Wonju_Airport
+data found for missing rows at index:901
+current wiki name: Batna_Airport
+data found for missing rows at index:902
+current wiki name: Mount_Gambier_Airport
+data found for missing rows at index:904
+current wiki name: Olympic_Dam_Airport
+data found for missing rows at index:907
+current wiki name: Sukhothai_Airport
+data found for missing rows at index:908
+current wiki name: Tuy_Hoa_Airport
+data found for missing rows at index:912
+current wiki name: Mulu_Airport
+data found for missing rows at index:915
+current wiki name: Mae_Hong_Son_Airport
+data found for missing rows at index:920
+current wiki name: Virac_Airport
+data found for missing rows at index:921
+current wiki name: Worcester_Regional_Airport
+data found for missing rows at index:922
+current wiki name: Sayak_Airport
+data found for missing rows at index:924
+current wiki name: Hasan_Polatkan_Airport
+data found for missing rows at index:925
+current wiki name: Noumérat_–_Moufdi_Zakaria_Airport
+data found for missing rows at index:929
+current wiki name: Noumérat_–_Moufdi_Zakaria_Airport
+data found for missing rows at index:930
+current wiki name: Catarman_National_Airport
+data found for missing rows at index:931
+current wiki name: Saratov_Gagarin_Airport
+data found for missing rows at index:936
+current wiki name: Berlin_Brandenburg_Airport
+data found for missing rows at index:937
+current wiki name: Rajkot_International_Airport
+data found for missing rows at index:946
+current wiki name: Bohol–Panglao_International_Airport
+data found for missing rows at index:947
+current wiki name: Aji_Pangeran_Tumenggung_Pranoto_Airport
+data found for missing rows at index:948
+current wiki name: Dien_Bien_Phu_Airport
+data found for missing rows at index:949
+current wiki name: Gunsan_Airport
+data found for missing rows at index:951
+current wiki name: Khanty-Mansiysk_Airport
+data found for missing rows at index:952
+current wiki name: Grozny_Airport
+data found for missing rows at index:954
+current wiki name: Región_de_Murcia_International_Airport
+data found for missing rows at index:959
+current wiki name: Buon_Ma_Thuot_Airport
+data found for missing rows at index:969
+current wiki name: Novy_Urengoy_Airport
+data found for missing rows at index:977
+current wiki name: Palmas_Airport
+data found for missing rows at index:979
