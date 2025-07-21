@@ -5,7 +5,7 @@ import {Link, useNavigate} from "react-router-dom"
 export function Entry() { //entry function allowing more information to be found out
   return (
     <div className="about_main" style={styles.about_main}> 
-      <h1 className='stats-title'>Wikipedia Flight Data Explorer</h1>
+      <h1 className='stats-title'>Wikipedia Flights Data Explorer</h1>
       <h3>Explore wikipedia flight routes data and COVID-19 trends from wikipedia data</h3>
       <div className="essay">
         <p>
