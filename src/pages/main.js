@@ -5,13 +5,24 @@ import {Link, useNavigate} from "react-router-dom"
 export function Entry() { //entry function allowing more information to be found out
   return (
     <div className="about_main" style={styles.about_main}> 
-      <h1 className='stats-title'>Learning and Resources</h1>
-      <h3>Start becoming proficient in reading Mandarin!</h3>
-      <h2>More Learning Resources here!</h2>
-
-      <h2 className="list_link"><Link to="/charlist">Link to Characters List (Tested under Practice Characters)</Link></h2>  
-      <h2 className="list_link"><Link to="/wordlist">Link to Words List (Tested under Practice Words)</Link></h2>  
-      <h2 className="list_link"><Link to="/resources">More Resources: Wiktionary</Link></h2>  
+      <h1 className='stats-title'>Wikipedia Flight Data Explorer</h1>
+      <h3>Explore wikipedia flight routes data and COVID-19 trends from wikipedia data</h3>
+      <div className="essay">
+        <p>
+          Explore webscrapped route data (data current as of July 19th 2025) for the top 980 airports in the world. 
+        </p>
+        <p>
+        Also, compare trends in the number of routes per airport according to wikipedia data from airports. View changes in routes for these airports by three year ranges: <br></br> 
+        </p>
+          <ul>
+            <li>end of 2021 (pre2022) to current</li>
+            <li>end of 2019 (pre2020) to current</li>
+            <li>end of 2019 to end of 2021</li>
+          </ul>
+        <p>Note that since wikipedia relies on user contribution, much of the data on routes, especially at the smaller airports on the list, 
+        is likely to be not be too accurate, especially immediately after the start of the COVID-19 pandemic in 2020.</p>
+        <p>More information about how data was collected is found in flight trends </p>
+      </div>
     </div>
   );
 }

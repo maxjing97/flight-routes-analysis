@@ -1,9 +1,35 @@
 .about_main {
-    padding: 10px 200px;
+    padding: 10px 40px;
     font-size: 12pt;
-    font-family: 'Times New Roman', Times, serif;
     color: black;
     text-align: center;
+}
+.about_main h1 {
+    font-size: 20pt;
+    padding: 0;
+    margin: 2px;
+}
+.about_main h3 {
+    font-size: 13pt;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.about_main p{
+    text-indent: 30px;
+}
+.essay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 200px;
+}
+.essay p {
+    margin: 0;
+    padding: 0;
+}
+.essay li {
+    width: fit-content
 }
 .stats-title {
     margin: 10px 10px;
