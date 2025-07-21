@@ -7,8 +7,7 @@ const Navbar=()=>{
 
 
     return (    
-        <div className='navBar'>
-            <h1 id="title">Wikipedia Flight Data Explorer</h1>
+        <div id='navBar'>
             <div className="dropdown">
                 <h1 className="main-option"><Link to="/">Flight Trends</Link></h1>
                 <div className="dropdown-content">

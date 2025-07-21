@@ -9,6 +9,9 @@ const queryClient = new QueryClient() //log the query client to be used
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
+      <div id="header">
+        <h1 id="title">Wikipedia Flight Data Explorer</h1>
+      </div>
       <UserProvider>
         <Navbar/>
         <div>
