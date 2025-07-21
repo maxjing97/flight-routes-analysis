@@ -4,8 +4,6 @@ import "./App.css"
 
 
 const Navbar=()=>{
-
-
     return (    
         <div id='navBar'>
             <div className="dropdown">

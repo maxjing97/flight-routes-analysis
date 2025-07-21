@@ -1,8 +1,21 @@
 #header {
   background-color: #0e8ed2;
   margin: 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
+#header a {
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+#header a:hover {
+  text-decoration: none;
+  background-color: purple;
+}
+#icon {
+  width: 75px;
+}
 #title {
   font-size: 25pt;
   font-weight: bold;
