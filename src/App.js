@@ -13,7 +13,7 @@ function App() {
       <UserProvider>
       <div id="header">
         <img id="icon" src="./media/icon.png"/>
-        <Link to="/main">
+        <Link to="/">
           <h1 id="title">Wikipedia Flight Data Explorer</h1>
         </Link>
       </div>
@@ -21,7 +21,7 @@ function App() {
 
         <Navbar/>
           <Routes> 
-            <Route path="/entry"  element={<Entry/>} />{/*default page route */}
+            <Route path="/"  element={<Entry/>} />{/*default page route */}
             <Route path="/main"  element={<Main />}/>
             <Route path="/res"  element={<Resources />}/>
           </Routes>

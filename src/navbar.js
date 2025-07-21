@@ -10,7 +10,7 @@ const Navbar=()=>{
                 <h1 className="main-option"><Link to="/">Flight Trends</Link></h1>
                 <div className="dropdown-content">
                     <Link to="/main">Flight Trends</Link>
-                    <Link to="/res">References</Link>
+                    <Link to="/res">About the Data</Link>
                 </div>
             </div>
             <div className="dropdown">

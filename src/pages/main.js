@@ -42,20 +42,12 @@ export function Main() {
   );
 }
 
+//main page about how the data was collected
 export function Resources() {
-  const navigate = useNavigate();
-
   return (
     <div className="about_main" style={styles.about_main}> 
-      <button onClick={()=>navigate("/learn")}className="back_to_learn">⏴ Learning Menu</button>
-      <h1 className='stats-title'>More Resources</h1>
+      <h1 className='stats-title'>About</h1>
       <p>
-        <p>Additional recommended resources are here</p>
-         
-        <a href="https://en.wikipedia.org/wiki/Debate_on_traditional_and_simplified_Chinese_characters">Link</a> to wikipedia for differences between simplified and traditional characters
-        
-        <p id="wikidicttext">Access Wiktionary Below (good for understanding the origin of characters), great general dictionary for Chinese</p>
-        <iframe title="report" id="wikidict" src="https://en.wiktionary.org/wiki/%E4%B8%AD"></iframe>
 
 
       </p>
