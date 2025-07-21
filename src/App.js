@@ -14,7 +14,7 @@ function App() {
       <div id="header">
         <img id="icon" src="./media/icon.png"/>
         <Link to="/">
-          <h1 id="title">Wikipedia Flight Data Explorer</h1>
+          <h1 id="title">Wikipedia Flights Data Explorer</h1>
         </Link>
       </div>
 
