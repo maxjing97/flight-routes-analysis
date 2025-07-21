@@ -22,6 +22,8 @@ export function Entry() { //entry function allowing more information to be found
         <p>Note that since wikipedia relies on user contribution, much of the data on routes, especially at the smaller airports on the list, 
         is likely to be not be too accurate, especially immediately after the start of the COVID-19 pandemic in 2020.</p>
         <p>More information about how data was collected is found in flight trends </p>
+        <p>A powerBI file with detailed analysis is linked for download here: <a href="./routes.analysis.pbix" download="analysis.pbix">Download File</a>
+</p>
       </div>
     </div>
   );
