@@ -124,10 +124,10 @@ export function Trends() {
 
   return (
     <div className="about_main" style={styles.about_main}> 
-      <h1 className='stats-title'>Wikipedia Flights Tremd Explorer</h1>
+      <h1 className='stats-title'>Wikipedia Flights Trend Explorer and Analysis</h1>
       <h3>Explore COVID-19 trends from wikipedia airport data and see how routes changed</h3>
       <div id="time-options-box">
-        <p>Select a time period: </p>
+        <p id="time-select-text">Select a time period: </p>
         <select id="time-select" onChange={(e)=>setCurrTime(e.target.value)}> 
           <option value="current_vs_pre2020_routes">start of 2020 to now</option>
           <option value="pre2022_vs_pre2020_routes">start of 2020 to the start of 2022</option>
@@ -137,20 +137,6 @@ export function Trends() {
 
       {/*leaflet map */}
       <div id="map-box">
-      <MapContainer id="map" center={[0, 0]} zoom={1} scrollWheelZoom={true}>
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        {airport_changes.map((json, index) => (
-          <Marker icon={getIcon(json[currTime])} position={[json["current_source_airports_details.latitude"], json["current_source_airports_details.longitude"]]}>
-            <Popup id="preview-pin">
-              <h3>{json["iata_source"]} :</h3>  {json["current_source_airports_details.wiki_name"].replaceAll("_"," ")}
-              <h3>Route change : {json[currTime]}</h3>
-            </Popup>
-          </Marker>
-        ))}
-      </MapContainer>
         <div id="map-legend">
           <h2>Legend:</h2>
           <h3>Route change by airport</h3>
@@ -174,21 +160,35 @@ export function Trends() {
           </svg>{"no change"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
             <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#90a531ff" />
-          </svg>{"1 to 4"}</p>
+          </svg>{"+1 to +4"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
             <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#97fcb8ff" />
-          </svg>{"5 to 9"}</p>
+          </svg>{"+5 to +9"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
             <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#2dcf63ff" />
-          </svg>{"10 to 14"}</p>
+          </svg>{"+10 to +14"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
             <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#116c2bff" />
-          </svg>{"15 to 24"}</p>
+          </svg>{"+15 to +24"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
             <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#012c0dff" />
           </svg>{"> 25"}</p>
           <p>ranges are inclusive</p>
         </div>
+      <MapContainer id="map" center={[0, 0]} zoom={1} scrollWheelZoom={true}>
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        {airport_changes.map((json, index) => (
+          <Marker icon={getIcon(json[currTime])} position={[json["current_source_airports_details.latitude"], json["current_source_airports_details.longitude"]]}>
+            <Popup id="preview-pin">
+              <h3>{json["iata_source"]} :</h3>  {json["current_source_airports_details.wiki_name"].replaceAll("_"," ")}
+              <h3>Route change : {json[currTime]}</h3>
+            </Popup>
+          </Marker>
+        ))}
+      </MapContainer>
       </div>
         <h4 className="map-caption">Route trends from the {getCaption()}</h4>
       <div className="essay">

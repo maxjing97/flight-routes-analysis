@@ -4837,7 +4837,7 @@
         "current_source_airports_details.city":"London",
         "current_source_airports_details.country":"England",
         "current_source_airports_details.latitude":51.468,
-        "current_source_airports_details.longitude":0.0,
+        "current_source_airports_details.longitude":-0.4551,
         "current_vs_pre2020_routes":-2,
         "pre2022_vs_pre2020_routes":16,
         "current_vs_pre2022_routes":-18,
