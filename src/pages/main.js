@@ -1,6 +1,6 @@
 import "./main.css"
 import React from 'react';
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {Link, useNavigate} from "react-router-dom"
 import airline_changes from "./data/airline_changes.json"
 import airport_changes from "./data/airport_changes.json"
@@ -16,6 +16,43 @@ const defaultIcon = new L.DivIcon({
   iconSize: [15, 15],
   iconAnchor: [1, 1],
 });
+//function to get a colored icon based on the change amount
+const getIcon =(change) => {
+  let color = ""
+  if (change < -25) {
+    color = "#3c0001ff"
+  } else if (change >= -25 && change < -15){
+    color = "#850d0fff"
+  } else if (change >= -15 && change < -10){
+    color = "#ac2f31ff"
+  } else if (change >= -10 && change < -5){
+    color = "#e77678ff"
+  } else if (change >= -5 && change <0) {
+    color = "#905b0bff"
+  } else if (change === 0) {
+    color = "#ffffff"
+  } else if (change > 0 && change <5) {
+    color = "#90a531ff"
+  } else if (change >= 5 && change <10) {
+    color = "#97fcb8ff"
+  } else if (change >= 10 && change <15) {
+    color = "#2dcf63ff"
+  } else if (change >= 15 && change <25) {
+    color = "#116c2bff"
+  } else if (change >= 25) {
+    color = "#012c0dff"
+  } 
+
+  const defaultIcon = new L.DivIcon({
+    className: '', // Remove default styles
+    html: `<svg width="12" height="12" viewBox="0 0 24 24" fill="${color}" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="${color}" />
+    </svg>`,
+    iconSize: [12, 12],
+    iconAnchor: [1, 1],
+  });
+  return defaultIcon;
+}
 
 export function Entry() { //entry function allowing more information to be found out
   //display world map with leaflet
@@ -29,7 +66,7 @@ export function Entry() { //entry function allowing more information to be found
 
       {/*leaflet map */}
       <div id="map-box">
-      <MapContainer id="map" center={[51.505, -0.09]} zoom={1} scrollWheelZoom={true}>
+      <MapContainer id="map" center={[0, 0]} zoom={1} scrollWheelZoom={true}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -42,15 +79,15 @@ export function Entry() { //entry function allowing more information to be found
           </Marker>
         ))}
       </MapContainer>
-      <h4 className="map-caption">Map of all 979 airports in the trend data and their IATA codes</h4>
+      
       </div>
-
+      <h4 className="map-caption">Map of all 978 airports in the trend data and their IATA codes</h4>
       <div className="essay">
         <p>
           Explore webscrapped route data (data current as of July 19th 2025) for the top 959 airports in the world. 
         </p>
         <p>
-        Also, compare trends in the number of routes per airport according to wikipedia data from the top 979 airports. View changes in routes for these airports by three year ranges: <br></br> 
+        Also, compare trends in the number of routes per airport according to wikipedia data from the top 978 airports. View changes in routes for these airports by three year ranges: <br></br> 
         </p>
           <ul>
             <li>end of 2021 (pre2022) to current</li>
@@ -67,30 +104,93 @@ export function Entry() { //entry function allowing more information to be found
   );
 }
 
+//main component to show flight trends 
 export function Trends() {
+  const [currTime, setCurrTime] = useState("current_vs_pre2020_routes")//find the current selected value of time range (default)
+  
+  //function to get text to show 
+  const getCaption = () => {
+    switch (currTime) {
+      case "current_vs_pre2020_routes": 
+        return "start of 2020 to now"
+      case "pre2022_vs_pre2020_routes": 
+        return "start of 2020 to the start of 2022"
+      case "current_vs_pre2022_routes":
+        return "start of 2022 to now"
+      default:
+        return ""
+    }
+  }
+
   return (
     <div className="about_main" style={styles.about_main}> 
-      <h1 className='stats-title'>Wikipedia Flights Data Explorer</h1>
-      <h3>Explore wikipedia flight routes data and COVID-19 trends from wikipedia data</h3>
+      <h1 className='stats-title'>Wikipedia Flights Tremd Explorer</h1>
+      <h3>Explore COVID-19 trends from wikipedia airport data and see how routes changed</h3>
+      <div id="time-options-box">
+        <p>Select a time period: </p>
+        <select id="time-select" onChange={(e)=>setCurrTime(e.target.value)}> 
+          <option value="current_vs_pre2020_routes">start of 2020 to now</option>
+          <option value="pre2022_vs_pre2020_routes">start of 2020 to the start of 2022</option>
+          <option value="current_vs_pre2022_routes">start of 2022 to now</option>
+        </select>
+      </div>
 
       {/*leaflet map */}
       <div id="map-box">
-      <MapContainer id="map" center={[51.505, -0.09]} zoom={1} scrollWheelZoom={true}>
+      <MapContainer id="map" center={[0, 0]} zoom={1} scrollWheelZoom={true}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         {airport_changes.map((json, index) => (
-          <Marker icon={defaultIcon} position={[json["current_source_airports_details.latitude"], json["current_source_airports_details.longitude"]]}>
+          <Marker icon={getIcon(json[currTime])} position={[json["current_source_airports_details.latitude"], json["current_source_airports_details.longitude"]]}>
             <Popup id="preview-pin">
               <h3>{json["iata_source"]} :</h3>  {json["current_source_airports_details.wiki_name"].replaceAll("_"," ")}
+              <h3>Route change : {json[currTime]}</h3>
             </Popup>
           </Marker>
         ))}
       </MapContainer>
-      <h4 className="map-caption">Map of all 979 airports in the trend data and their IATA codes</h4>
+        <div id="map-legend">
+          <h2>Legend:</h2>
+          <h3>Route change by airport</h3>
+          <p><svg width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#3c0001ff" />
+          </svg>{"< -25"}</p>
+          <p><svg width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#850d0fff" />
+          </svg>{"-25 to -16"}</p>
+          <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#ac2f31ff" />
+          </svg>{"-15 to -11"}</p>
+          <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#e77678ff" />
+          </svg>{"-10 to -4"}</p>
+          <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#905b0bff" />
+          </svg>{"-5 to -1"}</p>
+          <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#ffffff" />
+          </svg>{"no change"}</p>
+          <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#90a531ff" />
+          </svg>{"1 to 4"}</p>
+          <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#97fcb8ff" />
+          </svg>{"5 to 9"}</p>
+          <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#2dcf63ff" />
+          </svg>{"10 to 14"}</p>
+          <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#116c2bff" />
+          </svg>{"15 to 24"}</p>
+          <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#012c0dff" />
+          </svg>{"> 25"}</p>
+          <p>ranges are inclusive</p>
+        </div>
       </div>
-
+        <h4 className="map-caption">Route trends from the {getCaption()}</h4>
       <div className="essay">
         <p>
           Explore webscrapped route data (data current as of July 19th 2025) for the top 959 airports in the world. 
