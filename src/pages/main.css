@@ -95,7 +95,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 10px;
+    margin-right: 10px;
     font-size: 11pt;
 }
 #map-legend p {
@@ -105,4 +105,14 @@
 #map-legend p svg {
     margin-left: 2px;
     margin-right: 10px;
+}
+#display-graphs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#display-graphs img {
+    margin: 0 10px;
+    height: 200px;
 }
