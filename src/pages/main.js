@@ -201,6 +201,9 @@ export function Trends() {
             <Popup id="preview-pin">
               <h3>{json["iata_source"]} :</h3>  {json["current_source_airports_details.wiki_name"].replaceAll("_"," ")}
               <h3>Route change : {json[currTime]}</h3>
+              <p className="pin_p">Routes now : {json["Route_count"]}</p>
+              <p className="pin_p">Routes at the start of 2022 : {json["pre_2022_route_count"]}</p>
+              <p className="pin_p">Routes at the start of 2020 : {json["pre_2020_route_count"]}</p>
             </Popup>
           </Marker>
         ))}
@@ -208,16 +211,39 @@ export function Trends() {
       </div>
         <h4 className="map-caption">Route trends from the {getCaption()}</h4>
         <div id="display-graphs">
-          <img src="./media/num_airport_routes.png"/>        
-          <img src="./media/mean_airport_routes.png"/>      
-          <img src="./media/sd_airport_routes.png"/>      
+          <img src="./media/route_changes_all_airports.png"/>         
+          <img src="./media/route_changes_top_airports.png"/>      
         </div>
         <div className="essay">
           <h3>Summary</h3>
           <p>
             COVID-19 had a massive impact on the aviation industry. Many routes stopped operating.
             Looking at this data allows use to see the the recovery progress of certain airports over time,
-            from now to before the start of the pandemic. 
+            from now (as of July 19th 2025) to before the start of the pandemic.
+          </p>
+          <p>
+            The data shows a relatively predictable pattern, with the average route change per airport being slighly negative
+            between the start of 2020 and the start of 2020. The average airport had a slight increase in the number of routes from 
+            the start of 2020 to now. The average increase was significantly larger between the start of 2022 and now. 
+            The number of routes between these top 978 airport increased slightly (+725) between now and 2020 while having had a slight decrease of around 
+            500 between the start of 2022 and the start of 2022. 
+          </p>
+          <p> 
+            However, when focusing on the top 150 airports by route count, which accounts for around 57.9% of all list routes,
+            we see that there is a significant increase in the average number of routes between the start of 2020 and now. This suggests that the recovery of the largest airports has been 
+            stronger than the recovery of the smaller airports. The datapoint showing a slight increase in the average number of routes for the top 150 airports 
+            between the start of 2020 and the start of 2022 is likely reflects the inconsistency of user-updated data. During the pandemic, updates in the number of routes for some airports 
+            might not have been done consistently due to the rapidly changing aviation landscape then, with constant route cancellations. Additionally, looking the standard deviation data, 
+            there now appears to be a higher variation between the largest airports and the smallest airports. 
+          </p>
+          <p>
+            From the maps it is clear that some regions have seen less recovery than others. It is clear that 
+            East Asia, Southeast Asia, Central Europe, and Russia (looking at the map showing route changes from the start of 2020 to now) have a large number of airports
+            with slight to strong declines in the number of routes.
+            Some outliers such as the large (-100 or more) decline of routes for 
+            PEK (Beijing Capital International Airport), all three major airports around Moscow and other majors airports in Russia, such as the main airport in Saint Petersburg are likely mostly due to other factors such as 
+            the opening of a new airport in the region (Beijing Daxing), and the sanctions following the Russian invasion of Ukraine, respectively. A notable outlier with a high increase in the number of routes is the new Berlin Airport 
+            (BER), which was barely operational in 2020 and is now the only major international airport of the Berlin area. 
           </p>
         </div>
     </div>
