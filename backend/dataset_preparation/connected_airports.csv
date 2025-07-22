@@ -1,0 +1,960 @@
+,IATA,wiki_name,city,country,latitude,longitude,redirects,pre2020_ids,pre2022_ids
+0,ATL,Hartsfield–Jackson_Atlanta_International_Airport,Atlanta,Usa,33.64,-84.427,,932935279,1063034925
+1,PEK,Beijing_Capital_International_Airport,Beijing,China,40.08,116.584,,933401146,1060865185
+2,DXB,Dubai_International_Airport,Dubai,United Arab Emirates,25.255,55.364,,933330707,1062601635
+3,LAX,Los_Angeles_International_Airport,Los Angeles,Usa,33.942,-118.408,,933323532,1062927006
+4,ORD,O'Hare_International_Airport,Chicago,Usa,41.979,-87.904,,933116518,1063000913
+5,LHR,Heathrow_Airport,London,England,51.468,0.0,,933330403,1062794355
+6,HND,Haneda_Airport,Tokyo,Japan,35.552,139.779,,931453019,1062904783
+7,HKG,Hong_Kong_International_Airport,Hong Kong,Hong Kong,22.309,113.914,,933341577,1062780904
+8,PVG,Shanghai_Pudong_International_Airport,Shanghai,China,31.14333333333333,121.80527777777776,,933171499,1062908018
+9,CDG,Charles_de_Gaulle_Airport,Paris,France,49.013,2.55,,932772001,1062426378
+10,AMS,Amsterdam_Airport_Schiphol,Amsterdam,Netherlands,52.309,4.764,,933154237,1062962000
+11,DFW,Dallas_Fort_Worth_International_Airport,Dallas-Fort Worth,Usa,32.896,-97.037,,932686609,1062981153
+12,CAN,Guangzhou_Baiyun_International_Airport,Guangzhou,China,23.184,113.266,,933379764,1062781578
+13,FRA,Frankfurt_Airport,Frankfurt,Germany,50.026,8.543,,933280379,1062832725
+14,DEL,Indira_Gandhi_International_Airport,Delhi,India,28.566,77.103,,933394506,1063003814
+15,CGK,Soekarno–Hatta_International_Airport,Jakarta,Indonesia,-6.126,106.656,,933181097,1062318496
+16,SIN,Changi_Airport,Singapore,Singapore,1.356,103.987,,932201185,1062802739
+17,ICN,Incheon_International_Airport,Seoul Metropolitan Area,South Korea,37.46333333333334,126.44,,932947096,1063001381
+18,DEN,Denver_International_Airport,Denver,Usa,39.858,-104.667,,933428534,1062528054
+19,BKK,Suvarnabhumi_Airport,Bangkok,Thailand,13.912,100.607,,932756985,1063052924
+20,JFK,John_F._Kennedy_International_Airport,New York,Usa,40.64,-73.779,,933044375,1062989654
+21,KUL,Kuala_Lumpur_International_Airport,Kuala Lumpur,Malaysia,2.746,101.71,,933401038,1062803916
+22,SFO,San_Francisco_International_Airport,San Francisco,Usa,37.619,-122.375,,933155826,1062785972
+23,MAD,Adolfo_Suárez_Madrid–Barajas_Airport,Madrid,Spain,40.472,-3.561,Madrid–Barajas_Airport,932665804,1061978926
+24,CTU,Chengdu_Shuangliu_International_Airport,Chengdu,China,30.578,103.947,,933010403,1059696278
+25,LAS,Harry_Reid_International_Airport,Las Vegas,Usa,36.08,-115.152,,933238150,1063035578
+26,BCN,Josep_Tarradellas_Barcelona–El_Prat_Airport,Barcelona,Spain,41.297,2.078,,933265347,1062781860
+27,BOM,Chhatrapati_Shivaji_Maharaj_International_Airport,Bombay,India,19.089,72.868,,933396725,1062779412
+28,YYZ,Toronto_Pearson_International_Airport,Toronto,Canada,43.677,-79.631,,933248027,1062997875
+29,SEA,Seattle–Tacoma_International_Airport,Seattle,Usa,47.449,-122.309,,933415103,1062168020
+30,CLT,Charlotte_Douglas_International_Airport,Charlotte,Usa,35.214,-80.943,,933270010,1062222079
+31,LGW,Gatwick_Airport,London,England,51.148,-0.19,,933351628,1062146686
+32,SZX,Shenzhen_Bao'an_International_Airport,Shenzhen,China,22.639,113.812,,933382640,1061478241
+33,TPE,Taoyuan_International_Airport,Taipei,Taiwan,25.08,121.232,,933199840,1061797642
+34,MEX,Mexico_City_International_Airport,Mexico City,Mexico,19.436,-99.072,,933170564,1062179704
+35,KMG,Kunming_Changshui_International_Airport,Kunming,China,24.992,102.743,,933213370,1062115634
+36,MUC,Munich_Airport,Munich,Germany,48.354,11.786,,933346604,1062959817
+37,MCO,Orlando_International_Airport,Orlando,Usa,28.429,-81.316,,933258114,1062675350
+38,MIA,Miami_International_Airport,Miami,Usa,25.793,-80.291,,933439879,1062962713
+39,PHX,Phoenix_Sky_Harbor_International_Airport,Phoenix,Usa,33.434,-112.008,,933288601,1062845395
+40,SYD,Sydney_Airport,Sydney,Australia,-33.946,151.177,,932965160,1062822243
+41,EWR,Newark_Liberty_International_Airport,Newark,Usa,40.692,-74.169,,933421142,1063052541
+42,MNL,Ninoy_Aquino_International_Airport,Manila,Philippines,14.509,121.019,,933330259,1062745800
+43,SHA,Shanghai_Hongqiao_International_Airport,Shanghai,China,31.198,121.336,,931313048,1059954724
+44,XIY,Xi'an_Xianyang_International_Airport,Xi'an,China,34.446,108.752,,933155464,1059207030
+45,FCO,Rome_Fiumicino_Airport,Rome,Italy,41.813,12.253,,933375711,1062400328
+46,IAH,George_Bush_Intercontinental_Airport,Houston,Usa,29.98,-95.34,,933429475,1061789557
+47,NRT,Narita_International_Airport,Tokyo,Japan,35.765,140.386,,933313121,1062546300
+48,SVO,Sheremetyevo_International_Airport,Moscow,Russia,55.972,37.415,,933424039,1062778795
+49,CKG,Chongqing_Jiangbei_International_Airport,Chongqing,China,29.719,106.641,,933235959,1061485395
+50,DMK,Don_Mueang_International_Airport,Bangkok Metropolitan Region,Thailand,13.9125,100.60666666666664,,932466949,1062468277
+51,MSP,Minneapolis–Saint_Paul_International_Airport,Minneapolis,Usa,44.88,-93.217,,932886244,1062980411
+52,GRU,São_Paulo/Guarulhos_International_Airport,Sao Paulo,Brazil,-23.432,-46.469,,933114760,1062971952
+53,BOS,Logan_International_Airport,Boston,Usa,42.364,-71.005,,933412493,1062657792
+54,SGN,Tan_Son_Nhat_International_Airport,Ho Chi Minh City,Viet Nam,10.82,106.662,,933215284,1062730622
+55,DOH,Hamad_International_Airport,Doha,Qatar,25.261,51.565,,931780283,1062766544
+56,HGH,Hangzhou_Xiaoshan_International_Airport,Hangzhou,China,30.228,120.432,,932939475,1061458229
+57,DTW,Detroit_Metropolitan_Airport,Detroit,Usa,42.212,-83.353,,932968008,1062980288
+58,JED,King_Abdulaziz_International_Airport,Jeddah,Saudi Arabia,21.679,39.156,,933434331,1062757115
+59,MEL,Melbourne_Airport,Melbourne,Australia,-37.673,144.843,,932487995,1062563241
+60,FLL,Fort_Lauderdale–Hollywood_International_Airport,Fort Lauderdale,Usa,26.072,-80.153,,933307156,1061941928
+61,SAW,Sabiha_Gökçen_International_Airport,Istanbul,Turkey,40.89833333333333,29.309166666666663,,932095595,1062317153
+62,BOG,El_Dorado_International_Airport,Bogota,Colombia,4.701,-74.147,,932936909,1062359320
+63,DME,Moscow_Domodedovo_Airport,Moscow Metropolitan Area,Russia,55.40861111111111,37.90611111111111,,932819251,1062584164
+64,CJU,Jeju_International_Airport,Cheju,Korea,33.511,126.493,,932980044,1062464437
+65,LGA,LaGuardia_Airport,New York,Usa,40.777,-73.872,,933390247,1062171157
+66,PHL,Philadelphia_International_Airport,Philadelphia,Usa,39.872,-75.241,,932210895,1061811721
+67,DUB,Dublin_Airport,Dublin,Ireland,53.421,-6.27,,933007233,1062817782
+68,ZRH,Zurich_Airport,Zurich,Switzerland,47.465,8.549,,932895705,1062266072
+69,CPH,Copenhagen_Airport,Copenhagen,Denmark,55.618,12.656,,932819727,1061569134
+70,KIX,Kansai_International_Airport,Osaka,Japan,34.4272,135.244,,933430954,1061144237
+71,PMI,Palma_de_Mallorca_Airport,Palma De Mallorca,Spain,39.55,2.733,,933394815,1062971037
+72,MAN,Manchester_Airport,Manchester,England,53.354,-2.275,,933413449,1062810454
+73,OSL,"Oslo_Airport,_Gardermoen",Oslo,Norway,60.194,11.1,,933223108,1062953579
+74,LIS,Humberto_Delgado_Airport,Lisbon,Portugal,38.781,-9.136,Lisbon_Airport,933256455,1062791180
+75,ARN,Stockholm_Arlanda_Airport,Stockholm,Sweden,59.652,17.919,,932310085,1062991270
+76,BWI,Baltimore/Washington_International_Airport,Baltimore,Usa,39.175,-76.668,,933439742,1062512651
+77,AYT,Antalya_Airport,Antalya,Turkey,36.901,30.792,,932898831,1062367406
+78,STN,London_Stansted_Airport,London,England,51.885,0.235,,933396916,1062805276
+79,NKG,Nanjing_Lukou_International_Airport,Nanjing,China,31.74,118.86,,932947543,1059205807
+80,GMP,Gimpo_International_Airport,Seoul,Korea,37.558,126.791,,931455449,1057050440
+81,BLR,Kempegowda_International_Airport,Bangalore,India,12.95,77.668,,933205092,1062949077
+82,RUH,King_Khalid_International_Airport,Riyadh,Saudi Arabia,24.957,46.699,,933352841,1061219545
+83,BRU,Brussels_Airport,Brussels,Belgium,50.902,4.499,,933331131,1062001514
+84,DUS,Düsseldorf_Airport,Duesseldorf,Germany,51.289,6.767,,932684789,1062873183
+85,XMN,Xiamen_Gaoqi_International_Airport,Xiamen,China,24.544,118.127,,933382136,1062584502
+86,VIE,Vienna_International_Airport,Vienna,Austria,48.11,16.57,,933329383,1062774380
+87,CGO,Zhengzhou_Xinzheng_International_Airport,Zhengzhou,China,34.519,113.841,,933010089,1062933987
+88,SLC,Salt_Lake_City_International_Airport,Salt Lake City,Usa,40.788,-111.978,,931192894,1062563536
+89,YVR,Vancouver_International_Airport,Vancouver,Canada,49.195,-123.182,,931680776,1062933833
+90,DCA,Ronald_Reagan_Washington_National_Airport,Washington,Usa,38.852,-77.037,,933205722,1061827870
+91,CSX,Changsha_Huanghua_International_Airport,Changsha,China,28.1967,113.2208,,932939066,1061436722
+92,AUH,Zayed_International_Airport,Abu Dhabi,United Arab Emirates,24.433,54.651,,932823255,1062781307
+93,CUN,Cancún_International_Airport,Cancun,Mexico,21.036,-86.877,,932688225,1062713801
+94,FUK,Fukuoka_Airport,Fukuoka,Japan,33.586,130.45,,930320162,1059144380
+95,BNE,Brisbane_Airport,Brisbane,Australia,-27.384,153.118,,932275026,1062878859
+96,WUH,Wuhan_Tianhe_International_Airport,Wuhan,China,30.784,114.208,,933384668,1061726434
+97,HAN,Noi_Bai_International_Airport,Hanoi,Viet Nam,21.222,105.806,,933380796,1060868797
+98,CTS,New_Chitose_Airport,Sapporo,Japan,42.775,141.692,,932549312,1055179559
+99,IAD,Dulles_International_Airport,Washington,Usa,38.944,-77.456,,933343361,1062911218
+100,DPS,Ngurah_Rai_International_Airport,Denpasar,Indonesia,-8.748,115.167,,933321187,1062774904
+101,HAK,Haikou_Meilan_International_Airport,Haikou,China,19.9385,110.4621,,933090866,1063020780
+102,MDW,Midway_International_Airport,Chicago,Usa,41.786,-87.752,,933271876,1062407743
+103,SCL,Arturo_Merino_Benítez_International_Airport,Santiago,Chile,-33.393,-70.786,,932771766,1062008332
+104,SAN,San_Diego_International_Airport,San Diego,Usa,32.733,-117.189,,932740509,1062563957
+105,MXP,Milan_Malpensa_Airport,Milano,Italy,45.631,8.728,,933364926,1062779866
+106,LIM,Jorge_Chávez_International_Airport,Lima,Peru,-12.022,-77.114,,933078114,1062954743
+107,SUB,Juanda_International_Airport,Surabaya,Indonesia,-7.38,112.787,,933341649,1062805717
+108,CGH,São_Paulo–Congonhas_Airport,Sao Paulo,Brazil,-23.627,-46.655,,931147392,1061555967
+109,ATH,Athens_International_Airport,Athens,Greece,37.936388888888885,23.947222222222223,,932805993,1062659938
+110,URC,Ürümqi_Diwopu_International_Airport,Urumqi,China,43.907,87.474,Ürümqi_Tianshan_International_Airport,928054663,1059244016
+111,JNB,O._R._Tambo_International_Airport,Johannesburg,South Africa,-26.139,28.246,,932115299,1061692440
+112,SYX,Sanya_Phoenix_International_Airport,Sanya,China,18.3037,109.4127,,932939365,1059205218
+113,TLV,Ben_Gurion_Airport,Tel-aviv,Israel,32.009,34.877,,933223053,1062366504
+114,TSN,Tianjin_Binhai_International_Airport,Tianjin,China,39.124,117.346,,933319858,1059662306
+115,OKA,Naha_Airport,Naha,Japan,26.196,127.646,,932875199,1060466648
+116,CCU,Netaji_Subhas_Chandra_Bose_International_Airport,Calcutta,India,22.655,88.447,,933377636,1061964135
+117,HNL,Daniel_K._Inouye_International_Airport,Honolulu,Usa,21.316,-157.927,,933151659,1062319563
+118,TPA,Tampa_International_Airport,Tampa,Usa,27.975,-82.533,,931738349,1061637308
+119,MAA,Chennai_International_Airport,Madras,India,12.994,80.18,,933385813,1062567942
+120,PDX,Portland_International_Airport,Portland,Usa,45.589,-122.597,,932950450,1062326229
+121,AKL,Auckland_Airport,Auckland,New Zealand,-37.008,174.792,,931503258,1062126333
+122,HEL,Helsinki_Airport,Helsinki,Finland,60.32,24.956,,932827671,1062688791
+123,AGP,Málaga_Airport,Malaga,Spain,36.674,-4.499,,932654722,1061257643
+124,YUL,Montréal–Trudeau_International_Airport,Montreal,Canada,45.468,-73.741,,933204694,1062706392
+125,VKO,Vnukovo_International_Airport,Moscow,Russia,55.591,37.261,,933319516,1062791572
+126,KWE,Guiyang_Longdongbao_International_Airport,Guiyang,China,26.5407,106.8002,,932939131,1062737649
+127,HAM,Hamburg_Airport,Hamburg,Germany,53.63,9.988,,932895326,1062766685
+128,DLC,Dalian_Zhoushuizi_International_Airport,Dalian,China,38.966,121.538,,926677126,1062007007
+129,THR,Mehrabad_International_Airport,Teheran,Iran,35.689,51.313,,931644410,1051314358
+130,GVA,Geneva_Airport,Geneva,Switzerland,46.238,6.109,,932405683,1062825980
+131,SHE,Shenyang_Taoxian_International_Airport,Shenyang,China,41.64,123.48361111111112,,932947631,1059206313
+132,HYD,Rajiv_Gandhi_International_Airport,Hyderabad,India,17.452,78.461,,933206450,1062273824
+133,BSB,Brasília_International_Airport,Brasilia,Brazil,-15.862,-47.913,,933392157,1060916360
+134,HKT,Phuket_International_Airport,Phuket,Thailand,8.113,98.317,,932371095,1061494366
+135,PUS,Gimhae_International_Airport,Kimhae,Korea,35.179,128.938,,933008196,1057426646
+136,YYC,Calgary_International_Airport,Calgary,Canada,51.114,-114.02,,932805685,1061829462
+137,GIG,Rio_de_Janeiro/Galeão_International_Airport,Rio De Janeiro,Brazil,-22.809,-43.244,,932941550,1062792370
+138,LED,Pulkovo_Airport,St. Petersburg,Russia,59.8,30.265,,933000933,1062434455
+139,ESB,Ankara_Esenboğa_Airport,Ankara,Turkey,40.128,32.995,,928828911,1060102240
+140,LTN,Luton_Airport,London,England,51.874,-0.368,,933013096,1062801449
+141,WAW,Warsaw_Chopin_Airport,Warsaw,Poland,52.166,20.967,,933190829,1062187741
+142,PTY,Tocumen_International_Airport,Panama City,Panama,9.071,-79.383,,932543051,1061064423
+143,DAL,Dallas_Love_Field,Dallas,Usa,32.847,-96.852,,932040442,1062706329
+144,PRG,Václav_Havel_Airport_Prague,Prague,Czech Republic,50.101,14.26,,933411751,1062735530
+145,STL,St._Louis_Lambert_International_Airport,St. Louis,Usa,38.748,-90.36,,933267477,1062872841
+146,ITM,Itami_Airport,Osaka,Japan,34.785,135.438,,929306656,1062567182
+147,TNA,Jinan_Yaoqiang_International_Airport,Jinan,China,36.857222,117.216111,,928915440,1059209738
+148,BNA,Nashville_International_Airport,Nashville,Usa,36.124,-86.678,,932440701,1062262602
+149,NNG,Nanning_Wuxu_International_Airport,Nanning,China,22.608,108.172,,930177213,1059205014
+150,AUS,Austin–Bergstrom_International_Airport,Austin,Usa,30.194,-97.67,,931633210,1062678593
+151,AEP,Aeroparque_Jorge_Newbery,Buenos Aires,Argentina,-34.559,-58.416,,932812104,1061241022
+152,PER,Perth_Airport,Perth,Australia,-31.94,115.967,,930298913,1062704650
+153,ALC,Alicante–Elche_Miguel_Hernández_Airport,Alicante,Spain,38.282,-0.558,,933110644,1062144297
+154,HOU,William_P._Hobby_Airport,Houston,Usa,29.645,-95.279,,933269274,1062979660
+155,EDI,Edinburgh_Airport,Edinburgh,Uk,55.95,-3.373,,933180781,1062729716
+156,NCE,Nice_Côte_d'Azur_Airport,Nice,France,43.661,7.218,,933384334,1062941266
+157,BUD,Budapest_Ferenc_Liszt_International_Airport,Budapest,Hungary,47.437,19.256,,933155775,1062963246
+158,LPA,Gran_Canaria_Airport,Gran Canaria,Canary Islands,27.932,-15.386,,930429454,1062761610
+159,OAK,Oakland_International_Airport,Oakland,Usa,37.721,-122.221,,933413203,1060894520
+160,BHX,Birmingham_Airport,Birmingham,England,52.454,-1.748,,933391740,1062118398
+161,TYN,Taiyuan_Wusu_International_Airport,Taiyuan,China,37.747,112.629,,932250596,1059209827
+162,ADB,İzmir_Adnan_Menderes_Airport,Izmir,Turkey,38.292,27.157,,932272959,1062369365
+163,LHW,Lanzhou_Zhongchuan_International_Airport,Wright,Usa,31.889,-81.562,,928203795,1058282087
+164,GDL,Guadalajara_International_Airport,Guadalajara,Mexico,20.522,-103.311,,931075356,1060543922
+165,OTP,Bucharest_Henri_Coandă_International_Airport,Bucharest,Romania,44.574,26.103,,932822107,1062836697
+166,SJC,San_Jose_International_Airport,San Jose,Usa,37.362,-121.929,,932863334,1063010631
+167,FOC,Fuzhou_Changle_International_Airport,Fuzhou,China,25.933,119.662,,932019382,1058282204
+168,CGN,Cologne_Bonn_Airport,Cologne,Germany,50.866,7.143,,931871869,1062578920
+169,BGY,Milan_Bergamo_Airport,Bergamo,Italy,45.674,9.704,,933364407,1062452081
+170,KNO,Kualanamu_International_Airport,Medan Metropolitan Area,Indonesia,3.6422222222222222,98.8852777777778,,933381453,1060346901
+171,MSY,Louis_Armstrong_New_Orleans_International_Airport,New Orleans,Usa,29.993,-90.258,,931353658,1062771970
+172,CGQ,Changchun_Longjia_International_Airport,Changchun,China,43.996111,125.685278,,932274507,1059206124
+173,UPG,Sultan_Hasanuddin_International_Airport,Ujung Pandang,Indonesia,-5.062,119.554,,933064628,1062912000
+174,RDU,Raleigh–Durham_International_Airport,Raleigh-durham,Usa,35.877,-78.787,,932752648,1063002561
+175,MCI,Kansas_City_International_Airport,Kansas City,Usa,39.297,-94.714,,932198089,1062505763
+176,SHJ,Sharjah_International_Airport,Sharjah,United Arab Emirates,25.328,55.517,,931887220,1061827288
+177,TFS,Tenerife_South_Airport,Tenerife,Canary Islands,28.044,-16.572,,932075132,1061534542
+178,KHN,Nanchang_Changbei_International_Airport,Nanchang,China,28.6,115.917,,932972123,1058280352
+179,CAI,Cairo_International_Airport,Cairo,Egypt,30.122,31.406,,933427971,1062074299
+180,HET,Hohhot_Baita_International_Airport,Hohhot,China,40.85142222222223,111.82410277777775,,921414146,1058281127
+181,STR,Stuttgart_Airport,Stuttgart,Germany,48.69,9.222,,930703148,1061593063
+182,SMF,Sacramento_International_Airport,Sacramento,Usa,38.695,-121.591,,933239197,1062858608
+183,DAD,Da_Nang_International_Airport,Danang,Viet Nam,16.044,108.199,,932478633,1062365684
+184,OPO,Porto_Airport,Porto,Acores,41.248,-8.681,,932654111,1062764815
+185,CPT,Cape_Town_International_Airport,City Of Cape Town,South Africa,-33.96944444444445,18.59722222222222,,931653839,1061384385
+187,SJW,Shijiazhuang_Zhengding_International_Airport,Shijiazhuang,China,38.28083333333333,114.69666666666669,,924690221,1061199083
+188,MHD,Mashhad_International_Airport,Mashhad,Iran,36.235,59.64083333333333,Mashhad_Shahid_Hasheminejad_International_Airport,933189797,1062738128
+189,SNA,John_Wayne_Airport,Santa Ana,Usa,33.676,-117.868,,928632537,1062998442
+190,VCE,Venice_Marco_Polo_Airport,Venice,Italy,45.505,12.352,,933364614,1062752077
+191,EZE,Ministro_Pistarini_International_Airport,Buenos Aires,Argentina,-34.822222,-58.535833,,930289005,1062848474
+192,LYS,Lyon–Saint-Exupéry_Airport,Lyon,France,45.726,5.091,,932567340,1062675623
+193,COK,Cochin_International_Airport,Cochin,India,10.153333,76.388164,,933420263,1062927176
+194,CNX,Chiang_Mai_International_Airport,Chiang Mai,Thailand,18.766666666666666,98.9625,,933118280,1060863528
+195,NGO,Chubu_Centrair_International_Airport,Nagoya,Japan,35.255,136.924,,933009930,1062362835
+196,CNF,Belo_Horizonte_International_Airport,Belo Horizonte,Brazil,-19.634,-43.969,,933226914,1061784574
+197,CEB,Mactan–Cebu_International_Airport,Cebu,Philippines,7.165,124.21,,932294091,1062641175
+198,GLA,Glasgow_Airport,Glasgow,Uk,55.872,-4.433,,933390817,1062772835
+199,MTY,Monterrey_International_Airport,Monterrey,Mexico,25.778,-100.107,,933164967,1060978328
+200,LIN,Linate_Airport,Milan,Italy,45.445,9.277,Milan_Linate_Airport,933363176,1062440272
+201,ZUH,Zhuhai_Jinwan_Airport,,,22.006944444444443,113.3761111111111,,918751069,1058281836
+202,NGB,Ningbo_Lishe_International_Airport,Ninbo,China,29.825,121.465,,927958956,1058281215
+203,CMN,Mohammed_V_International_Airport,Casablanca,Morocco,33.368,-7.588,,932798533,1061912387
+204,VCP,Viracopos_International_Airport,Campinas,Brazil,-23.008,-47.134,,931669175,1061891601
+205,WNZ,Wenzhou_Longwan_International_Airport,Wenzhou,China,27.911,120.8554,,933009755,1058281649
+206,TLS,Toulouse–Blagnac_Airport,Toulouse,France,43.629,1.364,,933385336,1060638312
+207,SDU,Santos_Dumont_Airport,Rio De Janeiro,Brazil,-22.91,-43.163,,933392595,1063013321
+208,CLE,Cleveland_Hopkins_International_Airport,Cleveland,Usa,41.412,-81.85,,933229694,1062592508
+209,CTA,Catania–Fontanarossa_Airport,Catania,Italy,37.467,15.066,,933364698,1062823359
+210,SAT,San_Antonio_International_Airport,San Antonio,Usa,29.534,-98.47,,932497153,1062505027
+211,MRS,Marseille_Provence_Airport,Marseille,France,43.436,5.214,,933115513,1062426326
+212,PIT,Pittsburgh_International_Airport,Pittsburgh (pennsylva),Usa,40.491,-80.233,,932662934,1062171699
+213,ADD,Addis_Ababa_Bole_International_Airport,Addis Ababa,Ethiopia,8.977,38.8,,932506595,1063027523
+214,IKA,Imam_Khomeini_International_Airport,Tehran|Tehran metropolitan area,,35.41611111111111,51.15222222222222,,932751655,1062486367
+215,RSW,Southwest_Florida_International_Airport,Fort Myers,Usa,26.536,-81.755,,933430127,1062206609
+216,IND,Indianapolis_International_Airport,Indianapolis,Usa,39.717,-86.294,,931679254,1062840005
+217,FAO,Gago_Coutinho_Airport,Faro,Acores,37.014,-7.966,Faro_Airport,933031248,1061811924
+218,KEF,Keflavík_International_Airport,Keflavik,Iceland,63.985,-22.606,,933220031,1061994927
+219,BLQ,Bologna_Guglielmo_Marconi_Airport,Bologna,Italy,44.534,11.29,,933367330,1061291749
+220,NAP,Naples_International_Airport,Naples,Italy,40.886,14.291,,933389614,1062438935
+221,BRS,Bristol_Airport,Bristol,England,51.383,-2.719,,933378233,1062349850
+222,ADL,Adelaide_Airport,Adelaide,Australia,-34.945,138.531,,932815771,1060622143
+223,POA,Salgado_Filho_Porto_Alegre_International_Airport,Porto Alegre,Brazil,-29.994,-51.171,,933189001,1061554991
+224,BKI,Kota_Kinabalu_International_Airport,Kota Kinabalu,Malaysia,5.937,116.051,,930675093,1059730137
+225,HLP,Halim_Perdanakusuma_International_Airport,Jakarta,Indonesia,-6.266,106.891,,933438072,1062783745
+226,IBZ,Ibiza_Airport,Ibiza,,38.87277777777778,1.3758333333333337,,930150690,1062975319
+228,KWL,Guilin_Liangjiang_International_Airport,Guilin,China,25.218,110.039,,932940143,1055172461
+229,CVG,Cincinnati/Northern_Kentucky_International_Airport,Cincinnati,Usa,39.046,-84.662,,932692733,1062979763
+230,PNQ,Pune_Airport,Pune,India,18.582,73.919,,932555400,1062807406
+231,YEG,Edmonton_International_Airport,Edmonton,Canada,53.31,-113.58,,931725663,1062698881
+232,REC,Recife/Guararapes–Gilberto_Freyre_International_Airport,Recife,Brazil,-8.126,-34.923,,933153677,1060956131
+233,SSA,Salvador_Bahia_Airport,Salvador,Brazil,-12.911,-38.331,,933153155,1060916551
+234,CRL,Brussels_South_Charleroi_Airport,Charleroi,Belgium,50.459,4.454,,931799140,1062460941
+235,BPN,Sultan_Aji_Muhammad_Sulaiman_International_Airport,Balikpapan,Indonesia,-1.268,116.894,Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport,931919083,1061950202
+236,ALG,Houari_Boumediene_Airport,Algier,Algeria,36.691,3.215,,933272731,1062799402
+237,CMH,John_Glenn_Columbus_International_Airport,Columbus,Usa,39.998,-82.892,,933221389,1062600063
+238,HER,Heraklion_International_Airport,Heraklion,Greece,35.339,25.18,"Heraklion_International_Airport_""Nikos_Kazantzakis""",932919380,1062991728
+239,AMD,Sardar_Vallabhbhai_Patel_International_Airport,Ahmedabad,India,23.075,72.632,Ahmedabad_Airport,932096841,1061355831
+240,ACE,Lanzarote_Airport,Lanzerote,Canary Islands,28.945,-13.605,,933364670,1061857203
+241,PEN,Penang_International_Airport,Penang,Malaysia,5.297,100.277,,933065583,1062581318
+242,LJG,Lijiang_Sanyi_International_Airport,Lijiang,People's Republic Of China,26.679166666666667,100.24583333333334,,932939290,1055172692
+243,TIJ,Tijuana_International_Airport,Tijuana,Mexico,32.541,-116.97,,933170900,1062619791
+244,NBO,Jomo_Kenyatta_International_Airport,Nairobi,Kenya,-1.318611,36.925833,,933425996,1060706373
+245,GOI,Dabolim_Airport,Goa,India,15.381,73.833,,933395044,1062762144
+246,GOT,Göteborg_Landvetter_Airport,Gothenborg,Sweden,57.663,12.28,,932819390,1059450597
+247,VLC,Valencia_Airport,Valencia,Spain,39.489,-0.481,,933414027,1062625146
+248,CWB,Afonso_Pena_International_Airport,Curitiba,Brazil,-25.528,-49.176,,932616443,1061995311
+249,WUX,Sunan_Shuofang_International_Airport,{{ubl|class=nowrap,,31.494444444444447,120.42944444444444,Wuxi_Shuofang_Airport,924315594,1059205894
+250,CHC,Christchurch_Airport,Christchurch,New Zealand,-43.489,172.532,,933345486,1060572402
+251,SOF,Sofia_Airport,Sofia,Bulgaria,42.695,23.406,Vasil_Levski_Sofia_Airport,933388821,1062967549
+252,KHH,Kaohsiung_International_Airport,Kaohsiung,Taiwan,22.575,120.351,,931424877,1059210374
+253,OOL,Gold_Coast_Airport,Coolangatta,Australia,-28.164,153.505,,933280937,1062679670
+254,BDL,Bradley_International_Airport,Windsor Locks,Usa,41.939,-72.683,,931112324,1062599987
+255,SKG,Thessaloniki_Airport,Thessaloniki,Greece,40.52,22.971,,932800162,1061697151
+256,LOS,Murtala_Muhammed_International_Airport,Lagos,Nigeria,6.577,3.321,,932539718,1060195063
+257,BTH,Hang_Nadim_International_Airport,Batam,Indonesia,1.121,104.119,,931961373,1061600018
+258,PBI,Palm_Beach_International_Airport,West Palm Beach,Usa,26.683,-80.096,,932849660,1062440492
+259,MED,Prince_Mohammad_bin_Abdulaziz_International_Airport,Madinah,Saudi Arabia,24.553,39.705,,932685633,1059136566
+260,BOD,Bordeaux–Mérignac_Airport,Bordeaux,France,44.828,-0.716,,933412600,1062406160
+261,TSA,Songshan_Airport,Taipei,Taiwan,25.069,121.552,,932250226,1059210412
+262,JJN,Quanzhou_Jinjiang_International_Airport,Quanzhou,People's Republic Of China,24.79888888888889,118.58944444444444,,931805356,1058282279
+263,BGO,"Bergen_Airport,_Flesland",Bergen,Norway,60.293,5.218,,930872392,1061264051
+264,RIX,Riga_International_Airport,Riga,Latvia,56.923611,23.971111,,932998470,1061532663
+265,FUE,Fuerteventura_Airport,Fuerteventura,Canary Islands,28.453,-13.864,,933383186,1062566856
+266,WLG,Wellington_Airport,Wellington,New Zealand,-41.327,174.805,,931502282,1060339957
+267,MLA,Malta_International_Airport,Malta,Malta,35.857,14.478,,933406928,1061729562
+268,FOR,Fortaleza_International_Airport,Fortaleza,Brazil,-3.776,-38.532,Fortaleza_Airport,931653800,1062532906
+269,RGN,Yangon_International_Airport,Yangon,Myanmar,16.907,96.133,,933380179,1058873379
+270,CIA,Rome_Ciampino_Airport,Rome,Italy,41.799,12.595,,933367982,1062531487
+271,HAJ,Hannover_Airport,Hannover,Germany,52.461,9.685,,931234740,1062986065
+272,BFS,Belfast_International_Airport,Belfast,North Ireland,54.657,-6.216,,932993410,1061928936
+273,KRK,Kraków_John_Paul_II_International_Airport,Krakow,Poland,50.078,19.785,,933265400,1062266972
+274,PMO,Falcone_Borsellino_Airport,Palermo,Italy,38.176,13.091,Palermo_Airport,933367703,1062578154
+275,HAV,José_Martí_International_Airport,Havana,Cuba,22.989,-82.409,,932771480,1062406179
+276,AER,Adler-Sochi_International_Airport,Sochi,Russia,43.446,39.947,Sochi_International_Airport,933391107,1062573115
+277,TUN,Tunis–Carthage_International_Airport,Tunis,Tunisia,36.851,10.227,,931549894,1061542152
+278,PLM,Sultan_Mahmud_Badaruddin_II_International_Airport,Palembang,Indonesia,-2.898,104.701,,931960163,1058438766
+279,EIN,Eindhoven_Airport,Eindhoven,Netherlands,51.45,5.374,,933393701,1062244649
+280,XNN,Xining_Caojiabao_International_Airport,Xining,China,36.5275,102.04277777777776,Xining_Caojiapu_International_Airport,923739679,1061066845
+282,JAX,Jacksonville_International_Airport,Jacksonville,Usa,30.494,-81.688,,930570905,1062506296
+283,DUR,King_Shaka_International_Airport,Durban,South Africa,-29.97,30.95,,928835683,1059550049
+284,NTE,Nantes_Atlantique_Airport,Nantes,France,47.153,-1.611,,933017021,1062433317
+285,SVX,Koltsovo_International_Airport,Sverdlovsk,Russia,56.741,60.804,,933001072,1061732928
+286,NCL,Newcastle_International_Airport,Newcastle,England,55.038,-1.692,,933397019,1062209219
+287,BEG,Belgrade_Nikola_Tesla_Airport,Beograd,Yugoslavia,44.818,20.309,,933018439,1062599942
+288,RHO,Rhodes_International_Airport,Rhodos,Greece,36.405,28.086,,933377979,1062991981
+289,PSA,Pisa_International_Airport,Pisa,Italy,43.684,10.393,,933367651,1061266958
+290,KOJ,Kagoshima_Airport,Kagoshima,Japan,31.803,130.719,,929080350,1060346025
+291,SIP,Simferopol_Airport,Simferopol,Russia,45.039,33.983,Simferopol_International_Airport,933390569,1059454238
+292,SVQ,Seville_Airport,Sevilla,Spain,37.418,-5.893,,932657385,1061999267
+293,KCH,Kuching_International_Airport,Kuching,Malaysia,1.485,110.346,,933172515,1062782854
+294,OVB,Tolmachevo_Airport,Novosibirsk,Russia,55.0125,82.650556,,933164919,1062317804
+295,BIO,Bilbao_Airport,Bilbao,Spain,43.301,-2.911,,933180899,1062099591
+296,ANC,Ted_Stevens_Anchorage_International_Airport,Anchorage,Usa,61.174,-149.996,,930518506,1062319513
+297,ABQ,Albuquerque_International_Sunport,Albuquerque,Usa,35.039333,-106.610778,,929143183,1062505191
+298,LPL,Liverpool_John_Lennon_Airport,Liverpool,England,53.334,-2.85,,933202381,1061227014
+299,CNS,Cairns_Airport,Cairns,Australia,-16.886,145.755,,932205898,1061369295
+300,EMA,East_Midlands_Airport,East Midlands,England,52.831,-1.328,,933397452,1062731363
+301,CXR,Cam_Ranh_International_Airport,Nha Trang,Vietnam,11.998055555555554,109.21944444444443,,933008055,1062009523
+302,SWA,Jieyang_Chaoshan_International_Airport,Shantou,China,23.4,116.683,,926566940,1059204781
+303,YOW,Ottawa_Macdonald–Cartier_International_Airport,Ottawa,Canada,45.323,-75.669,,932906934,1062171247
+304,BUF,Buffalo_Niagara_International_Airport,Buffalo,Usa,42.94,-78.732,,930538861,1061339631
+305,TFN,Tenerife_North–Ciudad_de_La_Laguna_Airport,Tenerife,Canary Islands,28.482,-16.341,,933331665,1062761640
+306,BRI,Bari_Karol_Wojtyła_Airport,Bari,Italy,41.138,16.761,,933363444,1062630591
+307,OMA,Eppley_Airfield,Omaha,Usa,41.302,-95.894,,929598653,1062504434
+308,GDN,Gdańsk_Lech_Wałęsa_Airport,Gdansk,Poland,54.377,18.466,,932940769,1062598120
+309,LCY,London_City_Airport,London,England,51.505,0.054,,932820768,1062751892
+310,PKU,Sultan_Syarif_Kasim_II_International_Airport,Pekanbaru,Indonesia,0.461,101.444,,933373783,1062318982
+311,TRD,"Trondheim_Airport,_Værnes",Trondheim,Norway,63.458,10.94,Trondheim_Airport,931148402,1061259498
+312,DLM,Dalaman_Airport,Dalaman,Turkey,36.713,28.793,,933389637,1060263060
+313,SJO,Juan_Santamaría_International_Airport,San Jose,Costa Rica,9.994,-84.209,,932966384,1061608756
+314,HDY,Hat_Yai_International_Airport,Songkhla,Thailand,6.933,100.393,,926740919,1059938452
+315,RAK,Marrakesh_Menara_Airport,Marrakech,Morocco,31.607,-8.036,,932915263,1061995819
+316,JAI,Jaipur_International_Airport,Jaipur,India,26.824,75.81,,932868085,1059943505
+317,YWG,Winnipeg_James_Armstrong_Richardson_International_Airport,Winnipeg,Canada,49.91,-97.234,,932654352,1062939487
+318,LKO,Chaudhary_Charan_Singh_Airport,Lucknow,India,26.761,80.886,Chaudhary_Charan_Singh_International_Airport,930099305,1062333969
+319,GAU,Lokpriya_Gopinath_Bordoloi_International_Airport,Guwahati,India,26.10611111111111,91.58583333333333,,930311280,1062451024
+320,SRG,Jenderal_Achmad_Yani_International_Airport,Semarang,Indonesia,-6.973,110.375,,933308844,1061407838
+321,ONT,Ontario_International_Airport,Ontario,Usa,34.056,-117.601,,932471386,1062996743
+322,NUE,Nuremberg_Airport,Nuernberg,Germany,49.499,11.078,,933329491,1061706757
+323,SVG,Stavanger_Airport,Stavanger (city)|Stavanger,,58.876666666666665,5.637777777777777,,928049452,1060400187
+325,CAG,Cagliari_Elmas_Airport,Cagliari,Italy,39.251,9.054,,933368079,1062437739
+326,MSQ,Minsk_National_Airport,Minsk 2,Russia,53.882,28.031,,931916301,1060738302
+327,YHZ,Halifax_Stanfield_International_Airport,Halifax,Canada,44.881,-63.509,,931351467,1062764753
+328,KBV,Krabi_International_Airport,Krabi,Thailand,8.100833333333332,98.98472222222222,,933066733,1060863460
+329,LBA,Leeds/Bradford_Airport,Leeds,England,53.866,-1.661,Leeds_Bradford_Airport,932520716,1062118265
+330,HRG,Hurghada_International_Airport,Hurghada,Egypt,27.184,33.798,,933397160,1062956998
+331,TRV,Thiruvananthapuram_International_Airport,Trivandrum,India,8.482,76.918,,932401624,1062733573
+332,JHG,Xishuangbanna_Gasa_Airport,Xishuangbanna Dai Autonomous Prefecture,China,21.973913888888887,100.75961111111113,Xishuangbanna_Gasa_International_Airport,923739724,1055173073
+333,PVD,Rhode_Island_T._F._Green_International_Airport,Providence,Usa,41.724,-71.428,,931489043,1062584567
+334,PDG,Minangkabau_International_Airport,Padang,Indonesia,-0.876,100.352,,928192889,1061600999
+335,KTW,Katowice_Airport,Katowice,Poland,50.474,19.08,,932972779,1062298261
+336,BJV,Milas–Bodrum_Airport,Milas,,37.25055555555556,27.664166666666667,,933347590,1061969863
+337,FLN,Hercílio_Luz_International_Airport,Florianopolis,Brazil,-27.672,-48.548,,932362186,1061061356
+338,MIR,Monastir_Habib_Bourguiba_International_Airport,Monastir,Tunisia,35.758,10.755,,931846485,1060664302
+339,LXA,Lhasa_Gonggar_Airport,Lhasa,China,29.2935,90.8987,Lhasa_Gonggar_International_Airport,932939530,1059209913
+340,BDO,Husein_Sastranegara_Airport,Bandung,Indonesia,-6.901,107.576,,928157924,1061599523
+341,LOP,Lombok_International_Airport,Lombok,,-8.758055555555556,116.27638888888887,,933063792,1059011992
+342,MDC,Sam_Ratulangi_International_Airport,Manado,Indonesia,1.549,124.926,,933163217,1062780160
+343,BDJ,Syamsudin_Noor_Airport,Banjarmasin,Indonesia,-3.442,114.761,,931962811,1062783392
+344,MRU,Sir_Seewoosagur_Ramgoolam_International_Airport,Plaisance,Mauritius,-20.43,57.683,,928695475,1059854117
+345,TAE,Daegu_International_Airport,Taegu,Korea,35.894,128.659,,933217674,1058279601
+346,DVO,Francisco_Bangoy_International_Airport,Davao,Philippines,7.1306,125.6455,,933292131,1062752898
+347,MIG,Mianyang_Nanjiao_Airport,Mianyang,People's Republic Of China,31.43,104.73972222222224,,923741119,1055179241
+348,KRR,Krasnodar_International_Airport,Krasnodar,Russia,45.035,39.172,,933342910,1060103029
+349,ABV,Nnamdi_Azikiwe_International_Airport,Abuja,Nigeria,9.007,7.263,,931937424,1059245654
+350,PNK,Supadio_Airport,Pontianak,Indonesia,-0.151,109.404,Supadio_International_Airport,931665408,1062318924
+351,MAH,Menorca_Airport,Menorca,Spain,39.863,4.219,,933394889,1061833441
+352,TZX,Trabzon_Airport,Trabzon,Turkey,40.995,39.79,,932442861,1059139664
+353,MKE,Milwaukee_Mitchell_International_Airport,Milwaukee,Usa,42.947,-87.896,,932934365,1062997697
+354,BEL,Belém/Val-de-Cans_International_Airport,Belem,Brazil,-1.379,-48.476,,932915396,1062790460
+355,KMJ,Kumamoto_Airport,Kumamoto,Japan,32.837,130.855,,926877723,1061591914
+356,CUZ,Alejandro_Velasco_Astete_International_Airport,Cuzco,Peru,-13.536,-71.939,,933439202,1061443649
+357,FNC,Cristiano_Ronaldo_International_Airport,Funchal,Madeira,32.694167,-16.778056,Madeira_Airport,930559359,1062341239
+358,TBS,Tbilisi_International_Airport,Tbilisi,Georgia,41.669,44.955,,932090271,1061844305
+359,SDJ,Sendai_Airport,Sendai,Japan,38.139,140.917,,933002394,1060466604
+360,JHB,Senai_International_Airport,Johor Bahru,Malaysia,1.641,103.669,,932284466,1062778245
+361,NGS,Nagasaki_Airport,Nagasaki,Japan,32.922,129.923,,925059531,1061560597
+362,ZAG,Zagreb_Airport,Zagreb,Croatia,45.743,16.069,,931502104,1062343612
+363,KOA,Kona_International_Airport,Kona,Usa,19.739,-156.046,,928570112,1061828036
+364,GYN,Goiânia_International_Airport,Goiania,Brazil,-16.631,-49.222,,927121080,1060768451
+365,VIX,Eurico_de_Aguiar_Salles_Airport,Vitoria,Brazil,-20.256,-40.289,,930348875,1060735407
+366,LUX,Luxembourg_Airport,Luxemburg,Luxemburg,49.626,6.211,,930912612,1059809685
+367,PQC,Phu_Quoc_International_Airport,Phú Quốc,Vie,10.171666666666669,103.99111111111112,,932654094,1058460520
+368,CBR,Canberra_Airport,Canberra,Australia,-35.308,149.194,,930299237,1062667924
+369,SAL,El_Salvador_International_Airport,San Salvador,El Salvador,13.441,-89.056,,932562355,1062602549
+370,KMI,Miyazaki_Airport,Miyazaki,Japan,31.877,131.448,,927267777,1061592074
+371,AWZ,Qasem_Soleimani_International_Airport,Ahwaz,Iran,31.337,48.762,,921627006,1061376765
+372,KIH,Kish_International_Airport,Kish Island,Iran,26.527,53.982,,931979771,1059138701
+373,BBI,Biju_Patnaik_Airport,Bhubaneswar,India,20.244,85.818,,932534616,1059245577
+374,CCJ,Calicut_International_Airport,Calicut,India,11.136,75.955,Kozhikode_International_Airport,932740240,1063004669
+375,CGB,Marechal_Rondon_International_Airport,Cuiaba,Brazil,-15.653,-56.117,,932103655,1060577577
+376,SZB,Sultan_Abdul_Aziz_Shah_Airport,Greater Kuala Lumpur,Malaysia,3.131111111111111,101.54805555555556,,932836608,1062149236
+377,MYJ,Matsuyama_Airport,Matsuyama,Japan,33.827,132.7,,925102439,1060466931
+378,LGB,Long_Beach_Airport,Long Beach,Usa,33.818,-118.151,,932564475,1062997212
+379,LIH,Lihue_Airport,Lihue,Usa,21.976,-159.339,,933115160,1061356254
+380,SPU,Split_Airport,Split,Croatia,43.539,16.298,,930574457,1062142834
+381,UFA,Ufa_International_Airport,Ufa,Russia,54.557,55.874,,933356945,1060092692
+382,ELP,El_Paso_International_Airport,El Paso,Usa,31.807,-106.378,,932482103,1062505289
+383,YTZ,Billy_Bishop_Toronto_City_Airport,Toronto,Canada,43.627,-79.396,,932293234,1062171507
+384,IFN,Isfahan_International_Airport,Isfahan,Iran,32.75083333333333,51.86111111111112,Isfahan_Shahid_Beheshti_International_Airport,923519593,1059151775
+385,PAT,Jay_Prakash_Narayan_Airport,Patina,India,25.591,85.088,,930074622,1060921389
+386,LGK,Langkawi_International_Airport,Langkawi,Malaysia,6.333333,99.733333,,924285832,1059549590
+387,COR,Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport,Cordoba,Argentina,-31.324,-64.208,,932847606,1060597380
+388,SFB,Orlando_Sanford_International_Airport,Sanford,Usa,28.777778,-81.2375,,928719145,1062815452
+389,CJJ,Cheongju_International_Airport,Daejeon,South Korea,36.71638888888889,127.49916666666668,,931373552,1061569779
+390,KLO,Kalibo_International_Airport,Kalibo,Philippines,11.681,122.378,,931467916,1059028957
+391,HIJ,Hiroshima_Airport,Hiroshima,Japan,34.435,132.922,,931469516,1033120406
+392,KUF,Kurumoch_International_Airport,Samara,Russia,53.501667,50.155,,933010677,1058915413
+393,MAO,Eduardo_Gomes_International_Airport,Manaus,Brazil,-3.039,-60.05,,932062816,1062791588
+394,SCQ,Santiago–Rosalía_de_Castro_Airport,Santiago,Spain,42.896,-8.415,,933274792,1062099630
+395,KZN,Kazan_International_Airport,Kazan,Russia,55.608,49.277,,933422587,1059137467
+396,GUA,La_Aurora_International_Airport,Guatemala City,Guatemala,14.583,-90.528,,932867796,1062818366
+397,ACC,Kotoka_International_Airport,Accra,Ghana,5.603,-0.168,,933435970,1060252660
+398,BRE,Bremen_Airport,Bremen,Germany,53.047,8.787,,933393843,1059906944
+399,DJJ,Dortheys_Hiyo_Eluay_International_Airport,Jayapura,Indonesia,-2.577,140.516,,931277013,1062783559
+400,CZX,Changzhou_Benniu_Airport,Changzhou,China,31.912778,119.782222,Changzhou_Benniu_International_Airport,915915312,1055170885
+401,SSH,Sharm_El_Sheikh_International_Airport,Sharm El Sheikh,Egy,27.97722222222222,34.39472222222222,,933263154,1062601567
+402,CEI,Chiang_Rai_International_Airport,{{ubl|class=nowrap,,19.952222222222225,99.88277777777778,,932946604,1061569823
+403,USM,Samui_Airport,Ko Samui,Tha,9.547777777777778,100.06222222222222,,933074369,1062251013
+404,DAR,Julius_Nyerere_International_Airport,Dar Es Salaam,Tanzania,-6.878,39.203,,932934298,1060249131
+405,GZT,Gaziantep_Oğuzeli_Airport,Gaziantep,Turkey,36.948,37.479,,926949878,1062370148
+406,HHN,Hahn_Airport,Hahn,Germany,49.95,7.264,,933392700,1062606299
+407,HBA,Hobart_Airport,Hobart,Australia,-42.836,147.51,,933036505,1062927033
+408,UKB,Kobe_Airport,Keihanshin,Japan,34.632777777777775,135.2238888888889,,932811659,1061560672
+409,LAD,Quatro_de_Fevereiro_Airport,Luanda,Angola,-8.858,13.231,,929357263,1059100017
+410,NAT,Greater_Natal_International_Airport,Natal,Brazil,-5.911,-35.248,,933227331,1060935658
+411,ECN,Ercan_International_Airport,Northern Cyprus,,35.15972222222222,33.5,,933215463,1059139283
+412,ALB,Albany_International_Airport,Albany,Usa,42.748,-73.803,,931549298,1062190570
+413,LEJ,Leipzig/Halle_Airport,Leipzig,Germany,51.424,12.236,,932080622,1062876118
+414,DBV,Dubrovnik_Airport,Dubrovnik,Croatia,42.561,18.268,,931502151,1062193705
+415,MZG,Penghu_Airport,Makung,Taiwan,23.569,119.628,,931833349,1061571836
+416,KJA,Krasnoyarsk_International_Airport,Krasnoyarsk,Russia,56.171667,92.493333,,933391404,1062002322
+417,RUN,Roland_Garros_Airport,St.-denis,Reunion Island,-20.887,55.51,,933249090,1062426844
+418,BUR,Hollywood_Burbank_Airport,Burbank,Usa,34.201,-118.359,,932536255,1062998270
+419,IDR,Devi_Ahilya_Bai_Holkar_Airport,Indore,India,22.722,75.801,,933044829,1062271583
+420,VTZ,Visakhapatnam_Airport,Vishakhapatnam,India,17.721111,83.224444,,930254737,1062867982
+421,SXR,Srinagar_Airport,Srinagar,India,33.987,74.774,,932986148,1061348298
+422,MYY,Miri_Airport,Miri,Malaysia,4.325,113.988,,932776097,1061448474
+423,MRV,Mineralnye_Vody_Airport,Mineralnye Vody,Russia,44.225,43.082,,933422611,1059142609
+424,VVO,Vladivostok_International_Airport,Vladivostok,,43.399166666666666,132.1513888888889,,933076929,1062842625
+426,IGU,Foz_do_Iguaçu_International_Airport,Foz Do Iguacu,Brazil,-25.596,-54.487,,931340264,1060935565
+427,CJB,Coimbatore_International_Airport,Coimbatore Metropolitan Area,,11.026666666666667,77.04166666666667,,932859468,1062561740
+429,ATQ,Sri_Guru_Ram_Das_Ji_International_Airport,Amritsar,India,31.707,74.799,,933194722,1062907264
+430,DIY,Diyarbakır_Airport,Diyabakir,Turkey,37.894,40.201,,930429082,1062199558
+431,ABJ,Félix_Houphouët_Boigny_International_Airport,Abidjan,Ivory Coast,5.26,-3.926,Félix-Houphouët-Boigny_International_Airport,932029019,1062406172
+432,MCZ,Zumbi_dos_Palmares_International_Airport,Maceio,Brazil,-9.51,-35.793,,928370976,1060936186
+433,DRW,Darwin_International_Airport,Darwin,Australia,-12.414722,130.876667,,933394341,1060570448
+434,IXE,Mangalore_International_Airport,Mangalore,India,12.96,74.893,,932477664,1062827981
+435,KHV,Khabarovsk_Novy_Airport,Khabarovsk,Russia,48.528,135.188,,933350682,1061559649
+436,IXB,Bagdogra_International_Airport,Baghdogra,India,26.681,88.328,Bagdogra_Airport,932949165,1061848526
+437,URT,Surat_Thani_International_Airport,Surat Thani,Tha,9.1325,99.13555555555556,,932377317,1061560960
+438,IKT,International_Airport_Irkutsk,Irkutsk,Russia,52.267,104.395,,933080478,1063050858
+439,DTM,Dortmund_Airport,Dortmund,Germany,51.518,7.612,,933346181,1062124719
+440,PSP,Palm_Springs_International_Airport,Palm Springs,Usa,33.829,-116.507,,929717618,1062193697
+441,KBR,Sultan_Ismail_Petra_Airport,Kota Bahru,Malaysia,6.166,102.294,,933102845,1059096938
+442,NAN,Nadi_International_Airport,Nandi,Fiji,-17.754,177.443,,933083888,1055019677
+443,ASR,Erkilet_International_Airport,Kayseri,Turkey,38.77,35.495,,932824529,1061543008
+444,NAG,Dr._Babasaheb_Ambedkar_International_Airport,Nagpur,India,21.092,79.047,,932279227,1060401537
+445,SYR,Syracuse_Hancock_International_Airport,Syracuse,Usa,43.111,-76.106,,931291481,1062811013
+446,GRO,Girona–Costa_Brava_Airport,Gerona,Spain,41.901,2.76,,933393189,1060934712
+447,ILO,Iloilo_International_Airport,Iloilo,Philippines,10.713,122.545,,931066650,1061707544
+448,TBZ,Tabriz_Shahid_Madani_International_Airport,Tabriz,Iran,38.133,46.235,,933358040,1062488723
+449,YYJ,Victoria_International_Airport,Victoria,Canada,48.647,-123.426,,933090646,1061263125
+450,VNS,Lal_Bahadur_Shastri_Airport,Varanasi,India,25.452,82.859,,933162918,1061035918
+451,PGK,Depati_Amir_Airport,Pangkal Pinang,Indonesia,-2.163,106.139,,927702955,1062785973
+452,YLW,Kelowna_International_Airport,Kelowna,Canada,49.956,-119.378,,931604101,1062583169
+453,ZQN,Queenstown_Airport,Queenstown International,New Zealand,-45.021,168.739,,930995236,1055020950
+454,NRN,Weeze_Airport,Kleve (district)|Kreis Kleve,,51.6025,6.142222222222222,,932087373,1058913975
+455,ORN,Oran_Es_Sénia_Airport,Oran,Algeria,35.624,-0.621,Ahmed_Ben_Bella_Airport,933386920,1056619185
+456,OIT,Oita_Airport,Oita,Japan,33.479,131.737,,929203631,1061571541
+457,PDL,João_Paulo_II_Airport,Ponta Delgada,Acores,37.741,-25.698,,932674372,1061127986
+458,KMQ,Komatsu_Airport,Kanazawa,Japan,36.394,136.408,,933389608,1061444455
+459,YTY,Yangzhou_Taizhou_International_Airport,Yangzhou,People's Republic Of China,32.56166666666666,119.715,,925456060,1059122435
+460,TJM,Roshchino_International_Airport,Tyumen,,57.16833333333333,65.31666666666666,,929219728,1061376534
+461,SXM,Princess_Juliana_International_Airport,Philipsburg,Antilles,18.041,-63.109,,932305326,1061958157
+462,TAK,Takamatsu_Airport,Takamatsu,Japan,34.214,134.016,,925103370,1061589648
+463,VII,Vinh_International_Airport,Vinh,Vietnam,18.736725,105.67088055555556,,930979270,1055180401
+464,HPH,Cat_Bi_International_Airport,Hai Phong,,20.819166666666668,106.72472222222224,,927922699,1055180064
+465,PWM,Portland_International_Jetport,Portland,Usa,43.646,-70.309,,932681466,1062506588
+466,KGD,Khrabrovo_Airport,Kaliningrad,Russia,54.89,20.592,,931654755,1059854554
+467,HBE,Borg_El_Arab_Airport,{{ubl|class=nowrap,,30.91777777777778,29.69638888888889,Borg_El_Arab_International_Airport,933166190,1058911131
+468,HKD,Hakodate_Airport,Hakodate,Japan,41.77,140.822,,932821856,1061559841
+469,HUI,Phu_Bai_International_Airport,Huế,Vietnam,16.401666666666664,107.70277777777778,,933321621,1055181133
+470,SGC,Surgut_International_Airport,Surgut,Russia,61.25,73.5,,928886280,1061376613
+471,MDZ,Governor_Francisco_Gabrielli_International_Airport,Mendoza,Argentina,-32.832,-68.793,,933381667,1060737710
+472,SZF,Samsun-Çarşamba_Airport,Samsun,Turkey,41.26555555555556,36.54861111111111,,912906328,1062370377
+473,BPS,Porto_Seguro_Airport,Porto Seguro,Brazil,-16.438055555555557,-39.07777777777778,,923611302,1061052396
+474,DRS,Dresden_Airport,Dresden,Germany,51.133,13.767,,931558069,1061876644
+475,KKC,Khon_Kaen_Airport,Khon Kaen,Thailand,16.466628,102.783661,,932756216,1061600335
+476,LJU,Ljubljana_Jože_Pučnik_Airport,Ljubliana,Slovenia,46.224,14.457,Ljubljana_Airport,931719392,1062115320
+477,YQB,Québec_City_Jean_Lesage_International_Airport,Quebec,Canada,46.788,-71.398,,931962397,1062170888
+478,ZTH,Zakynthos_International_Airport,Zakynthos,Greece,37.75,20.882,,932800632,1061770833
+479,PNS,Pensacola_International_Airport,Pensacola,Usa,30.473,-87.187,,932539276,1062506539
+480,PPS,Puerto_Princesa_International_Airport,Puerto Princesa,Philippines,9.742,118.759,,927152828,1058385529
+481,DJB,Sultan_Thaha_Airport,Jambi,Indonesia,-1.638,103.644,,932085517,1062063267
+482,AQP,Rodríguez_Ballón_International_Airport,Arequipa,Peru,-16.341,-71.583,,922693797,1060911305
+483,MHT,Manchester–Boston_Regional_Airport,New Hampshire|State of New Hampshire,,42.9325,-71.43555555555555,,930684958,1060170492
+484,PLZ,Port_Elizabeth_Airport,Port Elizabeth,South Africa,-33.985,25.617,Chief_Dawid_Stuurman_International_Airport,930530880,1060123927
+485,KWJ,Gwangju_Airport,Kwangju,Korea,35.126,126.81,,917013498,1061570946
+486,POZ,Poznań–Ławica_Airport,Poznan,Poland,52.421,16.826,,932894717,1061413746
+487,SLZ,Marechal_Cunha_Machado_International_Airport,Sao Luis,Brazil,-2.589,-44.236,,924744785,1060587135
+488,DLI,Lien_Khuong_Airport,Da Lat,Vietnam,11.750555555555556,108.3736111111111,Lien_Khuong_International_Airport,933125156,1058567705
+489,NVT,Navegantes_Airport,Navegantes,Brazil,-26.88,-48.651,,932062526,1060656248
+490,AGA,Agadir–Al_Massira_Airport,Agadir,Morocco,30.381,-9.546,,930138991,1060908222
+491,CGR,Campo_Grande_International_Airport,Campo Grande,Brazil,-20.469,-54.672,,933226210,1062790414
+492,MGA,Augusto_C._Sandino_International_Airport,Managua,Nicaragua,12.141,-86.168,,932867410,1060950879
+493,EBB,Entebbe_International_Airport,Entebbe,Uganda,0.042,32.443,,931836492,1062337193
+494,KOE,El_Tari_Airport,Kupang,Indonesia,-10.171,123.671,,927704802,1060479842
+495,CEK,Chelyabinsk_Airport,Chelyabinsk,Russia,55.303,61.507,,929916508,1061376391
+496,CRK,Clark_International_Airport,Metro Clark,Philippines,15.185833333333331,120.55972222222222,,933203799,1059590024
+497,DLA,Douala_International_Airport,Douala,Cameroon,4.006,9.719,,926953127,1059102163
+498,BCD,Bacolod–Silay_Airport,Bacolod,Philippines,10.643,122.929,,932783729,1058386179
+499,TSV,Townsville_Airport,Townsville,Australia,-19.253,146.765,,921501188,1057153159
+500,SBW,Sibu_Airport,Sibu,Malaysia,2.264,111.983,,931902512,1061486041
+501,HPN,Westchester_County_Airport,White Plains,Usa,41.067,-73.707,,933291715,1062584789
+502,YXE,Saskatoon_John_G._Diefenbaker_International_Airport,Saskatoon,Canada,52.171,-106.7,,928296884,1061617527
+503,TKG,Radin_Inten_II_Airport,Bandar Lampung,Indonesia,-5.2425,105.17888888888888,,932085633,1061599666
+504,OVD,Asturias_Airport,Aviles,Spain,43.563,-6.034,,933185462,1062771700
+505,VAN,Van_Airport,Van,Turkey,38.468,43.332,Van_Ferit_Melen_Airport,915015088,1059139840
+506,OKJ,Okayama_Airport,Okayama,Japan,34.757,133.856,,933002223,1061571566
+507,JPA,Presidente_Castro_Pinto_International_Airport,Joao Pessoa,Brazil,-7.27,-35.896,,931669092,1060607024
+508,TWU,Tawau_Airport,Tawau Division,,4.3133333333333335,118.12194444444444,,929954794,1061363230
+510,DJE,Djerba–Zarzis_International_Airport,Djerba,Tunisia,33.875,10.775,,932107908,1062077110
+511,KCZ,Kōchi_Airport,Kochi,Japan,33.544,133.671,,924707917,1061594608
+512,PEE,Perm_International_Airport,Perm,Russia,57.917,56.026,,933422709,1061439956
+513,MMY,Miyako_Airport,Miyake Jima,Japan,34.072,139.56,,928758893,1061591794
+514,LYI,Linyi_Qiyang_International_Airport,Linyi,People's Republic Of China,35.04611111111111,118.41166666666668,,930314466,1061584089
+515,ITO,Hilo_International_Airport,Hilo,Usa,19.72,-155.049,,933044446,1060147317
+516,AMQ,Pattimura_Airport,Ambon,Indonesia,-3.709,128.09,,932444834,1060697071
+517,KKJ,Kitakyushu_Airport,Kitakyushu,Japan,33.836,130.947,,932949935,1061571255
+518,MBA,Moi_International_Airport,Mombasa,Kenya,-4.035,39.594,,930373587,1059462350
+519,SPC,La_Palma_Airport,Santa Cruz De La Palma,Spain,28.626,-17.756,,933120068,1061283880
+520,MDL,Mandalay_International_Airport,Mandalay,Myanmar,21.702,95.978,,932127841,1055179988
+521,BND,Bandar_Abbas_International_Airport,Bandar Abbas,Iran,27.218,56.378,,930489666,1061376889
+522,BRC,San_Carlos_de_Bariloche_Airport,San Carlos De Bariloch,Argentina,-41.151,-71.157,,924154633,1060606197
+523,LST,Launceston_Airport,Launceston,Australia,-41.545,147.214,,931930891,1060410929
+524,FKB,Karlsruhe/Baden-Baden_Airport,Karlsruhe,,48.77944444444445,8.080555555555556,,932420893,1058915726
+525,AXT,Akita_Airport,Akita,Japan,39.616,140.219,,932250516,1061597955
+526,AJU,Santa_Maria_Airport_(Sergipe),Aracaju,Brazil,-10.984,-37.07,,932857266,1060577804
+527,PHC,Port_Harcourt_International_Airport,Port Hartcourt,Nigeria,5.015,6.949,,933389877,1059969816
+528,YQR,Regina_International_Airport,Regina,Canada,50.432,-104.666,,930784311,1060194975
+529,SRQ,Sarasota–Bradenton_International_Airport,{{ubl|class=nowrap,,27.39555555555556,-82.55444444444444,,933186781,1062985934
+530,ROC,Greater_Rochester_International_Airport,Rochester,Usa,43.119,-77.672,,933238570,1061092640
+531,IXA,Maharaja_Bir_Bikram_Airport,Agartala,India,23.889,91.241,,931781601,1062949716
+532,TAC,Daniel_Z._Romualdez_Airport,Tacloban,Philippines,11.227,125.028,,926756195,1055345369
+533,LIR,Guanacaste_Airport,Liberia,Costa Rica,10.593,-85.544,,933033837,1060965185
+534,ASU,Silvio_Pettirossi_International_Airport,Asuncion,Paraguay,-25.24,-57.519,,931120140,1061887974
+535,FMM,Memmingen_Airport,Memmingen,,47.9925,10.243611111111113,,932268425,1061269946
+536,HTY,Hatay_Airport,Antakya,Turkey,36.36277777777778,36.282222222222224,,932273288,1059139339
+537,IXJ,Jammu_Airport,Jammu,India,32.69,74.838,,924243898,1062783564
+538,BTV,Burlington_International_Airport,Burlington,Usa,44.472,-73.153,Patrick_Leahy_Burlington_International_Airport,930804678,1061142731
+539,AKJ,Asahikawa_Airport,Asahikawa,Japan,43.671,142.447,,932815549,1061569749
+540,NTL,"Newcastle_Airport,_New_South_Wales","Newcastle, New South Wales|Newcastle",,-32.794999999999995,151.83444444444444,Newcastle_Airport_(New_South_Wales),923076488,1060411137
+541,LCG,A_Coruña_Airport,La Coruna,Spain,43.302,-8.377,,933196568,1062956918
+542,EDO,Balıkesir_Koca_Seyit_Airport,,,39.55444444444444,27.01361111111111,,932240828,1062200029
+543,BFJ,Bijie_Feixiong_Airport,Bijie,People's Republic Of China,27.266666666666666,105.47916666666669,,917986303,1055173020
+544,THE,Teresina_Airport,Teresina,Brazil,-5.06,-42.823,,923421829,1060659074
+545,BDQ,Vadodara_Airport,Baroda,India,22.336,73.226,,933400288,1062628233
+546,UDI,Uberlândia_Airport,Uberlandia,Brazil,-18.883,-48.226,,923503467,1063014672
+547,SLA,Martín_Miguel_de_Güemes_International_Airport,Salta,Argentina,-24.856,-65.486,,924154493,1060741457
+548,SID,Amílcar_Cabral_International_Airport,Amilcar Cabral,Cape Verde Islands,16.741,-22.949,,931033281,1060982526
+549,UDR,Maharana_Pratap_Airport,Udaipur,India,24.617,73.913,,932948864,1059246740
+550,ERZ,Erzurum_Airport,Erzurum,Turkey,39.956,41.17,,924029868,1062352177
+551,ZAM,Zamboanga_International_Airport,Zamboanga,Philippines,6.922,122.059,,931273394,1063009922
+552,TNG,Tangier_Ibn_Battouta_Airport,Tanger,Morocco,35.727,-5.917,,928310261,1061531512
+553,KYA,Konya_Airport,Konya,Turkey,37.979,32.562,,922657410,1061755652
+554,MCX,Uytash_Airport,Makhachkala,Russia,42.817,47.652,,933428768,1061840264
+555,VGO,Vigo-Peinador_Airport,Vigo,Spain,42.232,-8.627,Vigo–Peinador_Airport,933284122,1062502917
+556,XRY,Jerez_Airport,Jerez,Spain,36.744,-6.06,,932962435,1061444754
+557,IXR,Birsa_Munda_Airport,Ranchi,India,23.315,85.321,,932309600,1062152656
+558,VOG,Gumrak_Airport,Volgograd,Russia,48.782,44.345,Volgograd_International_Airport,933422793,1057387882
+559,LEI,Almería_Airport,Almeria,Spain,36.844,-2.37,,933105984,1062142383
+560,TRK,Juwata_Airport,Taraken,Indonesia,3.326,117.566,,926414990,1061637231
+561,TKS,Tokushima_Airport,Tokushima,Japan,34.133,134.606,,928780472,1061597045
+562,IGR,Cataratas_del_Iguazú_International_Airport,Iguazu Falls,Argentina,-25.738,-54.473,,933224543,1060737395
+563,AOJ,Aomori_Airport,Aomori,Japan,40.734,140.691,,930840395,1061588938
+564,KIJ,Niigata_Airport,Nigata,Japan,37.955833,139.111667,,932249967,1061571487
+565,IXM,Madurai_Airport,Madurai,India,9.834,78.093,,932538843,1061376465
+566,DUD,Dunedin_Airport,Dunedin,New Zealand,-45.928,170.198,,932243306,1060466445
+567,GOJ,Strigino_International_Airport,Nizhny Novgorod,,56.23,43.78666666666666,,933422678,1061439652
+568,PIE,St._Pete–Clearwater_International_Airport,St. Petersburg,Usa,27.911,-82.687,,928705069,1062262480
+569,OMS,Omsk_Tsentralny_Airport,Omsk,Russia,54.967,73.31,Omsk_Central_Airport,933422695,1061282993
+570,FMO,Münster_Osnabrück_Airport,Muenster/osnabrueck,Germany,52.134,7.685,,927895280,1059139397
+571,SJJ,Sarajevo_International_Airport,Sarajevo,Bosnia-hercegovina,43.824,18.331,,931042505,1061418447
+572,EZS,Elazığ_Airport,Elazig,Turkey,38.607,39.291,,929597535,1062199591
+573,TGG,Sultan_Mahmud_Airport,Kuala Terengganu,Malaysia,5.382,103.103,,924286599,1061600412
+574,SDR,Santander_Airport,Santander,Spain,43.427,-3.82,,932975366,1061258588
+575,ZNZ,Abeid_Amani_Karume_International_Airport,Zanzibar,Tanzania,-6.222,39.225,,932934640,1061918013
+576,IQT,Crnl._FAP_Francisco_Secada_Vignetta_International_Airport,Iquitos,Peru,-3.785,-73.309,Coronel_FAP_Francisco_Secada_Vignetta_International_Airport,919877779,1060902350
+577,MKY,Mackay_Airport,Mackay,Australia,-21.172,149.18,,925264870,1061345468
+578,GZP,Gazipaşa-Alanya_Airport,Gazipaşa,,36.29888888888889,32.3,Gazipaşa–Alanya_Airport,930076806,1062370015
+579,ECP,Northwest_Florida_Beaches_International_Airport,{{ubl|class=nowrap,,30.35833333333333,-85.79555555555555,,931067032,1062503390
+580,NQN,Presidente_Perón_International_Airport,Neuquen,Argentina,-38.949,-68.156,,924154176,1060737748
+581,DWC,Al_Maktoum_International_Airport,Emirate Of Dubai,United Arab Emirates,24.888277777777777,55.160377777777775,,932897434,1060921782
+582,GRX,Federico_García_Lorca_Granada_Airport,Granada,Spain,37.133,-3.636,,933196593,1062299737
+583,POM,Jacksons_International_Airport,Port Moresby,Papua New Guinea,-9.443,147.22,Port_Moresby_International_Airport,929345375,1059548975
+584,SDK,Sandakan_Airport,Sandakan,Malaysia,5.901667,118.048611,,928689757,1061582370
+585,ARH,Talagi_Airport,Arkhangelsk,,64.6,40.71666666666667,,931086934,1061376416
+586,IMF,Imphal_Airport,Imphal,India,24.76,93.897,Bir_Tikendrajit_International_Airport,930382086,1059246580
+587,DED,Dehradun_Airport,Dehra Dun,India,30.187,78.18,,932111776,1061989675
+588,LDB,Londrina_Airport,Londrina,Brazil,-23.334,-51.13,,921648245,1060643540
+589,LYA,Luoyang_Beijiao_Airport,Luoyang,China,34.741111,112.388333,,931967576,1055178273
+590,BZE,Philip_S._W._Goldson_International_Airport,Belize City,Belize,17.539,-88.308,,933222690,1060993548
+591,SAP,Ramón_Villeda_Morales_International_Airport,San Pedro Sula,Honduras,15.452,-87.923,,925891787,1062962367
+592,RAO,Leite_Lopes_Airport,Ribeirao Preto,Brazil,-21.134,-47.774,,927543385,1060663515
+593,MLG,Abdul_Rachman_Saleh_Airport,Malang,Indonesia,-7.926,112.714,,915849074,1061640312
+594,PGU,Persian_Gulf_Airport,Asaluyeh,Iran,27.379444444444445,52.7375,,924209523,1061377300
+595,BTU,Bintulu_Airport,Bintulu,Malaysia,3.172,113.044,,932101313,1061448314
+596,PIU,Capitán_FAP_Guillermo_Concha_Iberico_International_Airport,Piura,Peru,-5.206,-80.616,PAF_Captain_Guillermo_Concha_Iberico_International_Airport,919888731,1060902448
+597,MCY,Sunshine_Coast_Airport,Maroochydore,Australia,-26.603,153.091,,931135831,1060411415
+598,MMK,Murmansk_Airport,Murmansk,Russia,68.782,32.751,,933408616,1061376441
+599,KER,Ayatollah_Hashemi_Rafsanjani_Airport,Kerman,Iran,30.261,56.957,,924121277,1061377698
+600,GES,General_Santos_International_Airport,Sarangani,Philippines,6.057777777777778,125.09583333333332,,932388348,1062740882
+601,IZO,Izumo_Airport,Izumo,Japan,35.414,132.89,,933304260,1061594410
+602,FAT,Fresno_Yosemite_International_Airport,Fresno,Usa,36.776,-119.718,,931878520,1058129899
+603,AOR,Sultan_Abdul_Halim_Airport,Alor Setar,Malaysia,6.194,100.403,,930852758,1061635031
+604,TST,Trang_Airport,Trang,Thailand,7.509,99.616,,932377361,1061601867
+605,USH,Ushuaia_–_Malvinas_Argentinas_International_Airport,Ushuaia,Argentina,-54.843,-68.296,,932810307,1060745187
+606,PVH,Governador_Jorge_Teixeira_de_Oliveira_International_Airport,Porto Velho,Brazil,-8.709,-63.902,,921921490,1060663426
+607,JRO,Kilimanjaro_International_Airport,Kilimanjaro,Tanzania,-3.429,37.074,,932776397,1059923364
+608,FIH,N'djili_Airport,Kinshasa,Zaire,-4.386,15.444,,927927194,1059100876
+609,AZD,Shahid_Sadooghi_Airport,Yazd,Iran,31.905,54.276,,924119654,1061730785
+610,MMB,Memanbetsu_Airport,Memanbetsu,Japan,43.881,144.164,,932507661,1061560026
+611,ROS,Rosario_–_Islas_Malvinas_International_Airport,Rosario,Argentina,-32.903,-60.784,,933047419,1063013642
+612,BTJ,Sultan_Iskandar_Muda_International_Airport,Banda Aceh,Indonesia,5.523,95.42,,931962079,1059906034
+613,PAD,Paderborn_Lippstadt_Airport,Paderborn,Germany,51.614,8.616,,925060013,1062299613
+614,TOY,Toyama_Airport,Toyama,Japan,36.648,137.187,,930849197,1061578640
+615,MPH,Godofredo_P._Ramos_Airport,Boracay,,11.924722222222222,121.955,,925188324,1062641451
+616,BKS,Fatmawati_Soekarno_Airport,Bengkulu,Indonesia,-3.864,102.341,,932644738,1061600061
+617,NKM,Nagoya_Airfield,Chūkyō Metropolitan Area,Japan,35.255,136.92444444444445,,922330622,1060466865
+618,SJP,São_José_do_Rio_Preto_Airport,Sao Jose Do Rio Preto,Brazil,-20.816,-49.406,,923503183,1060664746
+619,REN,Orenburg_Tsentralny_Airport,Orenburg,Russia,51.796,55.457,Orenburg_Airport,933428738,1061439828
+620,MFE,McAllen_Miller_International_Airport,Mcallen,Usa,26.176,-98.239,,932333584,1048193038
+621,UTP,U-Tapao_International_Airport,Rayong,Thailand,12.68,101.005,,933216344,1062250350
+622,TGU,Toncontín_International_Airport,Tegucigalpa,Honduras,14.061,-87.217,,932868351,1062506836
+623,GNY,Şanlıurfa_GAP_Airport,Şanlıurfa,Turkey,37.45,38.9,,892208237,1062199865
+624,TLH,Tallahassee_International_Airport,Tallahassee,Usa,30.396,-84.35,,928491971,1060780798
+625,KUH,Kushiro_Airport,Kushiro,Japan,43.040833,144.193056,,928725164,1061559996
+626,ACA,Acapulco_International_Airport,Acapulco,Mexico,16.757,-99.753,,932416605,1060573812
+627,HDG,Handan_Airport,Handan,People's Republic Of China,36.52388888888889,114.43,,916997384,1059180733
+628,BXU,Bancasi_Airport,Butuan,Philippines,8.9484,125.4812,,931467487,1058390051
+629,NJC,Nizhnevartovsk_Airport,Nizhnevartovsk,Russia,60.95,76.467,,933422659,1061376576
+630,AMA,Rick_Husband_Amarillo_International_Airport,Amarillo,Usa,35.219,-101.706,,924721809,1060637435
+631,ASJ,Amami_Airport,Amami,Japan,28.431,129.712,,928780945,1061592988
+632,BHO,Raja_Bhoj_Airport,Bhopal,India,23.285,77.337,,932499392,1061830881
+633,VCL,Chu_Lai_Airport,Tam Kỳ,Vietnam,15.40611111111111,108.70555555555556,,931800534,1055181103
+634,PLW,Mutiara_SIS_Al-Jufrie_Airport,Palu,Indonesia,-0.918,119.909,,918190107,1061636076
+635,TPP,Cadete_FAP_Guillermo_del_Castillo_Paredes_Airport,Tarapoto,Peru,-6.509,-76.373,,919878033,1060902641
+636,YGJ,Miho-Yonago_Airport,Miho,Japan,35.492,133.236,Yonago_Kitaro_Airport,931484726,1061586011
+637,KTA,Karratha_Airport,Karratha,Australia,-20.712,116.773,,919834309,1060479468
+638,SBA,Santa_Barbara_Municipal_Airport,"Santa Barbara, California",United States,34.42611111111111,-119.84027777777776,,931310604,1061435624
+639,PKC,Petropavlovsk-Kamchatsky_Airport,Petropavlovsk,Russia,53.166,158.453,Elizovo_Airport,933311449,1062264352
+640,MGF,Maringá_Regional_Airport,Maringa,Brazil,-23.44,-51.907,,930858707,1060646018
+641,NPE,Hawke's_Bay_Airport,Napier,New Zealand,-39.4665,176.8721,,928706268,1060412945
+642,ABD,Abadan_Ayatollah_Jami_International_Airport,Abadan,Iran,30.365,48.233,,924208416,1060093123
+643,PKY,Tjilik_Riwut_Airport,Palangkaraya,Indonesia,-2.225,113.943,,933207258,1061639000
+644,ROK,Rockhampton_Airport,Rockhampton,Australia,-23.382,150.475,,922567108,1060472090
+645,HSG,Saga_Airport,Fukuoka–kitakyushu,Japan,33.14972222222222,130.30222222222224,,924198982,1061589596
+646,PMR,Palmerston_North_Airport,Palmerston North,New Zealand,-40.321,175.617,,928572075,1060412788
+647,TOF,Tomsk_Kamov_Airport,Tomsk,,56.38666666666666,85.21055555555556,,933345038,1061840292
+648,BUZ,Bushehr_Airport,Bushehr,Iran,28.945,50.834,,924210591,1061376848
+649,FTE,Comandante_Armando_Tola_International_Airport,"El Calafate, Santa Cruz",,-50.28025,-72.05319444444444,,933225079,1060737022
+650,VGA,Vijayawada_Airport,Vijayawada,India,16.53,80.797,,932539280,1061954173
+651,ISP,Long_Island_MacArthur_Airport,Islip,Usa,40.795,-73.1,,933153601,1062361388
+652,CRD,General_Enrique_Mosconi_International_Airport,Comodoro Rivadavia,Argentina,-45.785,-67.466,,932383374,1060736082
+653,HRE,Robert_Gabriel_Mugabe_International_Airport,Harare,Zimbabwe,-17.932,31.093,,932656993,1062671853
+654,TNR,Ivato_International_Airport,Antananarivo,Madagascar,-18.797,47.479,,927487716,1057544050
+655,VOZ,Voronezh_International_Airport,Voronezh,Russia,51.814,39.23,,933422801,1061314828
+656,OBO,Tokachi–Obihiro_Airport,Obihiro,Japan,42.733,143.217,,928780746,1022290253
+657,IOS,Ilhéus_Jorge_Amado_Airport,Ilheus,Brazil,-14.816,-39.033,,917154299,1062790497
+658,PUY,Pula_Airport,Pula,Croatia,44.893,13.922,,933362806,1059581699
+659,LBU,Labuan_Airport,Labuan,Malaysia,5.301,115.25,,927605451,1061448732
+660,ZAD,Zadar_Airport,Zadar,Croatia,44.108,15.347,,933362465,1060774655
+661,NBC,Begishevo_Airport,Beaufort,Usa,32.477,-80.723,,928820544,1061880700
+662,ASP,Alice_Springs_Airport,Alice Springs,Australia,-23.807,133.902,,916120416,1060479280
+663,ASF,Narimanovo_Airport,Astrakhan,Russia,46.283,48.006,,933345004,1057387552
+664,MCP,Macapá_International_Airport,Macapa,Brazil,0.051,-51.072,,924914601,1060576386
+665,MQM,Mardin_Airport,Mardin,Turkey,37.23277777777778,40.64055555555556,,892205332,1062368545
+667,IXL,Kushok_Bakula_Rimpochee_Airport,Leh,India,34.136,77.546,,927015225,1059246219
+668,TRU,FAP_Captain_Carlos_Martínez_de_Pinillos_International_Airport,Trujillo,Peru,-8.085,-79.109,Capitán_FAP_Carlos_Martínez_de_Pinillos_International_Airport,931339873,1060902709
+669,PGD,Punta_Gorda_Airport_(Florida),"Punta Gorda, Florida",United States,26.91888888888889,-81.99083333333333,,931458634,1062262442
+670,TUC,Teniente_General_Benjamín_Matienzo_International_Airport,Tucuman,Argentina,-26.841,-65.105,,933338053,1060743743
+671,ZAH,Zahedan_Airport,Zahedan,Iran,29.476,60.906,,924127741,1061377261
+672,DGT,Sibulan_Airport,Dumaguete,Philippines,9.334,123.302,,925452230,1055040222
+673,USN,Ulsan_Airport,Ulsan,Korea,35.593,129.352,,930107175,1062261697
+674,JDO,Juazeiro_do_Norte_Airport,Juazeiro Do Norte,Brazil,-7.219166666666667,-39.269444444444446,,917041239,1060606864
+675,IBR,Ibaraki_Airport,"Mito, Ibaraki|Mito",,36.181666666666665,140.41472222222222,,924547876,1057172610
+676,TZL,Tuzla_International_Airport,Tuzla Canton,Bosnia And Herzegovina,44.45861111111111,18.72472222222222,,930870246,1061277526
+677,BAX,Barnaul_Airport,Barnaul,Russia,53.364,83.542,,929409876,1061578474
+678,FDH,Friedrichshafen_Airport,Friedrichshafen,Germany,47.671,9.511,,932683635,1061724446
+679,CIX,FAP_Captain_José_Abelardo_Quiñones_González_International_Airport,Chiclayo,Peru,-6.787,-79.828,,919889061,1061939585
+680,JOI,Joinville-Lauro_Carneiro_de_Loyola_Airport,Joinville,Brazil,-26.225,-48.797,,931460891,1060606964
+681,NSK,Alykel_Airport,Norilsk,,69.31,87.33333333333333,Alykel_International_Airport,920037613,1061314920
+682,DNZ,Denizli_Çardak_Airport,Denizli,Turkey,37.785,29.701,,916309866,1059138099
+683,COO,Cadjehoun_Airport,Cotonou,Benin,6.357,2.384,,930803828,1062746008
+684,RSU,Yeosu_Airport,Yeosu,Korea,34.84,127.615,,901544023,1062261981
+685,PCL,FAP_Captain_David_Abensur_Rengifo_International_Airport,Pucallpa,Peru,-8.378,-74.574,,933280248,1060902470
+686,BUS,Batumi_International_Airport,Batumi,Georgia,41.61027777777778,41.59944444444445,,932096073,1062293090
+687,HTI,Hamilton_Island_Airport,Hamilton Island,Australia,-20.3517,148.9488,,926948272,1060572139
+688,PHS,Phitsanulok_Airport,Phitsanulok,Thailand,16.783,100.279,,932376992,1061601061
+689,TIR,Tirupati_Airport,Tirupeti,India,13.632,79.543,,931841933,1062748622
+690,PNZ,Petrolina_Airport,Petrolina,Brazil,-9.364,-40.564,,930504634,1060606913
+691,VCA,Can_Tho_International_Airport,Can Tho,,10.085277777777778,105.71194444444444,,928918037,1055175866
+692,MKW,Rendani_Airport,Manokwari,Indonesia,-0.88,134.05,,933220651,1061640556
+693,RKT,Ras_Al_Khaimah_International_Airport,Ras Al Khaimah,United Arab Emirates,25.613,55.939,,932548319,1059264349
+694,PHE,Port_Hedland_International_Airport,Port Hedland,Australia,-20.378,118.626,,924023657,1060479524
+695,BRQ,Brno-Tuřany_Airport,Turany,Czech Republic,49.151,16.694,,928220928,1062201762
+696,EGO,Belgorod_International_Airport,Belgorod,,50.64333333333333,36.59,,933422529,1061439760
+697,AAE,Annaba_Airport,Annaba,Algeria,36.822,7.809,Rabah_Bitat_Airport,933310531,1059126130
+698,JUL,Inca_Manco_Cápac_International_Airport,Juliaca,Peru,-15.467,-70.158,,897155306,1060902421
+699,STM,Santarém_Airport,Santarem,Brazil,-29.711,-53.688,Santarém-Maestro_Wilson_Fonseca_Airport,918505135,1060664467
+700,OMH,Urmia_Shahid_Bakeri_International_Airport,Uromiyeh,Iran,37.6618,45.0588,,924220770,1061377609
+701,SCW,Syktyvkar_Airport,Syktyvkar,Russia,61.648,50.846,,931654911,1061376640
+702,HME,Oued_Irara–Krim_Belkacem_Airport,Hassi-messaoud,Algeria,31.673,6.14,,933386914,1059126201
+703,RAS,Rasht_Airport,Rasht,Iran,37.325,49.606,,924129399,1061377417
+704,MWZ,Mwanza_Airport,Mwanza,Tanzania,-2.444,32.932,,930532452,1059923543
+705,GLT,Gladstone_Airport,"Gladstone, Queensland",,-23.869722222222222,151.2227777777778,,921316794,1061334191
+706,BNK,Ballina_Byron_Gateway_Airport,,,-28.83333333333333,153.56166666666667,,926554843,1060411234
+707,PKN,Iskandar_Airport,Pangkalan Bun,Indonesia,-2.705,111.673,,929325964,1061638294
+708,GNV,Gainesville_Regional_Airport,Gainesville,Usa,29.69,-82.272,,932596380,1062583960
+709,NPL,New_Plymouth_Airport,New Plymouth,New Zealand,-39.009,174.179,,928572005,1060458593
+710,KSY,Kars_Harakani_Airport,Kars,,40.56222222222222,43.11500277777778,,917108670,1062200109
+711,TJQ,H.A.S._Hanandjoeddin_International_Airport,Tanjung Pandan,Indonesia,-2.746,107.755,,930260079,1061601500
+712,UIH,Phu_Cat_Airport,Quy Nhơn,,13.955,109.04222222222222,,930981794,1055180229
+713,BHI,Comandante_Espora_Airport,Bahia Blanca,Argentina,-38.725,-62.169,,908946993,1060735921
+714,KUT,David_the_Builder_Kutaisi_International_Airport,Kutaisi,Geo,42.17638888888889,42.4825,Kutaisi_International_Airport,932211988,1062292734
+715,BQS,Ignatyevo_Airport,Blagoveschensk,Russia,50.422,127.41,,933422536,1061559706
+716,SCN,Saarbrücken_Airport,Saarbruecken,Germany,49.214,7.109,,933329629,1060134882
+717,HNA,Hanamaki_Airport,Hanamaki,Japan,39.431,141.136,,925103770,1061570979
+718,KAN,Mallam_Aminu_Kano_International_Airport,Kano,Nigeria,12.047,8.524,,929905515,1059100131
+719,BME,Broome_International_Airport,Broome,Australia,-17.9526,122.2338,,924423825,1060479418
+720,GTO,Jalaluddin_Airport,Gorontalo,Indonesia,0.637,122.852,Djalaluddin_Airport,917252655,1061639684
+721,HTA,Chita-Kadala_International_Airport,Chita,Russia,52.026,113.305,,920964974,1061559549
+722,NNT,Nan_Nakhon_Airport,"Nan, Thailand|Nan",,18.80777777777778,100.78333333333332,,932375755,1061600909
+723,RTB,Juan_Manuel_Gálvez_International_Airport,Roatan,Honduras,16.317,-86.522,,933223415,1061347405
+724,OGZ,Beslan_Airport,Vladikavkaz,,43.205000000000005,44.60666666666667,,933422783,1061879089
+725,TNN,Tainan_Airport,Tainan,Taiwan,22.95,120.206,,927389770,1062086875
+726,TTJ,Tottori_Airport,Tottori,Japan,35.53,134.166,,928207820,1061597605
+727,SYO,Shonai_Airport,"Sakata, Yamagata",Japan,38.81222222222222,139.78722222222223,,926169057,1061594714
+728,BIK,Frans_Kaisiepo_Airport,Biak,Indonesia,-1.19,136.108,Frans_Kaisiepo_International_Airport,931724830,1062683691
+729,NAV,Nevşehir_Kapadokya_Airport,Nevşehir,,38.76888888888889,34.52638888888889,,892206032,1062199738
+730,STW,Stavropol_Shpakovskoye_Airport,Stavropol,Russia,45.109,42.113,,933422780,1061880925
+731,CFS,Coffs_Harbour_Airport,Coff's Harbour,Australia,-30.321,153.116,,932998956,1060490165
+732,ENU,Akanu_Ibiam_International_Airport,Enugu,Nigeria,6.474,7.562,,915262288,1061683846
+733,JDH,Jodhpur_Airport,Jodhpur,Ind,26.25722222222222,73.05166666666666,,932247538,1059246710
+734,TRG,Tauranga_Airport,Tauranga,New Zealand,-37.672,176.196,,927513617,1061942153
+735,ZNE,Newman_Airport,Newman,Australia,-23.417778,119.802778,,919834488,1060479561
+736,SOQ,Domine_Eduard_Osok_Airport,Sorong,Indonesia,-0.926,131.12,,931281918,1062783478
+737,MSR,Muş_Airport,Muş,,38.74472222222222,41.653888888888886,,892205919,1062199699
+738,VFA,Victoria_Falls_International_Airport,Victoria Falls,Zimbabwe,-18.096,25.839,Victoria_Falls_Airport_,932937123,1059248658
+739,ROI,Roi_Et_Airport,Roi Et Province,Thailand,16.116666666666667,103.77361111111112,,932377125,1061601134
+740,IXU,Aurangabad_Airport,Aurangabad,India,19.863,75.398,,932536021,1060072535
+741,MLN,Melilla_Airport,Melilla,Spanish North Africa,35.28,-2.956,,899930576,1062299825
+742,OSR,Leoš_Janáček_Airport_Ostrava,Ostrava,Czech Republic,49.696,18.111,,928221293,1059134964
+743,DAV,Enrique_Malek_International_Airport,David,Panama,8.391,-82.435,,931430086,1061263518
+744,MWX,Muan_International_Airport,Muan,South Korea,34.991406,126.382814,,933365254,1060035769
+745,USU,Francisco_B._Reyes_Airport,Busuanga,,12.12138888888889,120.1,,931633173,1058475198
+746,HLZ,Hamilton_Airport_(New_Zealand),Hamilton,New Zealand,-37.866,175.332,,927513706,1062670759
+747,RES,Resistencia_International_Airport,Resistencia,Argentina,-27.45,-59.056,,919584724,1060741602
+748,IJK,Izhevsk_Airport,Izevsk,,56.833333333333336,53.45666666666667,,917241208,1061880270
+749,AYQ,Ayers_Rock_Airport,,,-25.18611111111111,130.97555555555556,,915420718,1060479327
+750,DIB,Dibrugarh_Airport,Dibrugarh,India,27.48366388888889,95.01683333333334,,928190147,1059326252
+752,BHE,Woodbourne_Airport,Blenheim,New Zealand,-41.5141,173.8679,,927347643,1060459046
+753,WIL,Wilson_Airport,Nairobi,Kenya,-1.322,36.815,,930503754,1057858780
+754,SWF,Stewart_International_Airport,Newburgh,Usa,41.504,-74.105,,926671325,1062506008
+755,PXU,Pleiku_Airport,Pleiku,Vietnam,14.004444444444443,108.01722222222222,,929387941,1055180778
+756,TTT,Taitung_Airport,Fengnin,Taiwan,22.757,121.093,,918689777,1059210944
+757,MKQ,Merauke_Airport,Merauke,Indonesia,-8.52,140.418,Mopah_International_Airport,931277474,1039456525
+758,IMP,Imperatriz_Airport,Imperatriz,Brazil,-5.531,-47.46,,923900393,1060595067
+759,REL,Almirante_Marcos_A._Zar_Airport,Trelew,Argentina,-43.21,-65.27,,919584687,1060745152
+760,SLY,Salekhard_Airport,Salekhard,,66.58916666666666,66.59555555555555,,933424769,1061376136
+761,ERC,Erzincan_Airport,Erzincan,Turkey,39.71,39.526,,915515804,1062199624
+762,BJA,Abane_Ramdane_Airport,Bejaja,Algeria,36.712,5.07,,933387820,1059126322
+763,IVC,Invercargill_Airport,Invercargill,New Zealand,-46.412,168.313,,932481179,1055021140
+764,MJZ,Mirny_Airport,Mirnyj,Russia,62.5316,114.0228,,933422620,1061880509
+765,OZC,Labo_Airport,Misamis Occidental,Country,8.178524999999999,123.8413861111111,,925186304,1055346234
+766,RGL,Piloto_Civil_Norberto_Fernández_International_Airport,Rio Gallegos,Argentina,-51.609,-69.313,,919624883,1060737524
+767,MKK,Molokai_Airport,Molokai,Usa,21.153,-157.096,,918025277,1060147418
+768,LPT,Lampang_Airport,Lampang,Thailand,18.272,99.504,,932375567,1062213836
+769,MDQ,Ástor_Piazzolla_International_Airport,Mar Del Plata,Argentina,-37.934,-57.573,Astor_Piazzolla_International_Airport,929901275,1060737589
+770,BVB,Boa_Vista_International_Airport,Boa Vista,Brazil,2.846,-60.69,,929982876,1061561369
+771,ERF,Erfurt–Weimar_Airport,Erfurt,Germany,50.98,10.958,,925473625,1062201422
+772,EAS,San_Sebastián_Airport,San Sebastian,Spain,43.356,-1.791,,933296897,1052879348
+773,PPP,Whitsunday_Coast_Airport,Prosserpine,Australia,-20.495,148.552,,925186906,1060472048
+774,MAB,Marabá_Airport,Maraba,Brazil,-5.368,-49.138,,917839918,1060643634
+776,TNJ,Raja_Haji_Fisabilillah_Airport,Tanjung Pinang,Indonesia,0.922,104.532,,923423674,1061578605
+777,IPH,Sultan_Azlan_Shah_Airport,Ipoh,Malaysia,4.568,101.092,,928684700,1059096754
+778,NKT,Şırnak_Şerafettin_Elçi_Airport,Cherry Point,Usa,34.902,-76.881,,892208564,1062199902
+779,UUD,Baikal_International_Airport,Ulan-ude,Russia,51.807,107.438,,927861401,1061877522
+780,KEJ,Kemerovo_International_Airport,Kemorovo,Russia,55.27,86.107,Alexei_Leonov_Kemerovo_International_Airport,931191609,1061578432
+781,RXS,Roxas_Airport,Roxas City,Philippines,11.59777777777778,122.75166666666668,,915106669,1058282446
+782,KIS,Kisumu_International_Airport,Kisumu,Kenya,-0.086,34.729,,930503549,1060077521
+783,JUJ,Gobernador_Horacio_Guzmán_International_Airport,Jujuy,Argentina,-24.393,-65.098,,933231702,1062675309
+784,RJA,Rajahmundry_Airport,Rajahmundry,India,17.109,81.818,,932837609,1059250111
+785,LOE,Loei_Airport,Loei,Thailand,17.439,101.722,,932376378,1061600443
+786,LZN,Nangan_Airport,,,26.157416666666663,119.9563888888889,,909556905,1059211071
+787,PPB,Presidente_Prudente_Airport,President Prudente,Brazil,-22.175,-51.424,,914313126,1062799657
+788,FKS,Fukushima_Airport,"Sukagawa, Fukushima|Sukagawa",,37.2275,140.42805555555557,,933124877,1061570120
+789,TSJ,Tsushima_Airport,Tsushima,Japan,34.285,129.33,,931392505,1061560757
+790,CSV,Cheboksary_International_Airport,Cheboksary,Russia,56.0903,47.3472,,933422553,1062265913
+791,FEN,Fernando_de_Noronha_Airport,Fernando Do Noronha,Brazil,-3.855,-32.423,,919130434,1061562656
+792,ABX,Albury_Airport,Albury,Australia,-36.068,146.958,,918356865,1060571590
+793,DPL,Dipolog_Airport,Dipolog,Philippines,8.601388888888888,123.34194444444444,,921737716,1060715504
+794,NAW,Narathiwat_Airport,Narathiwat,Thailand,6.52,101.743,,932376882,1061600958
+795,KUA,Sultan_Haji_Ahmad_Shah_Airport,Kuantan,Malaysia,3.775,103.209,,924286907,1055453865
+796,ROT,Rotorua_Airport,Rotorua,New Zealand,-38.109,176.317,,653289327,1062161119
+797,ISE,Isparta_Süleyman_Demirel_Airport,Isparta,,37.865,30.381944444444446,,902872856,1059138145
+798,UEO,Kumejima_Airport,Kumejima,Japan,26.363,126.714,,928781300,1061596605
+799,NAL,Nalchik_Airport,Nalchik,,43.513333333333335,43.638333333333335,,933422634,1061880593
+800,AJL,Lengpui_Airport,Aizwal,India,23.746,92.803,,921402912,1059246628
+801,IAG,Niagara_Falls_International_Airport,Niagara Falls,Usa,43.107,-78.946,,929329266,1061452664
+802,EMD,Emerald_Airport,"Emerald, Queensland",,-23.5675,148.17916666666665,,929776199,1061336823
+804,KCM,Kahramanmaraş_Airport,Kahramanmaraş,Turkey,37.53888888888888,36.95333333333333,,919722817,1062200089
+805,KGI,Kalgoorlie-Boulder_Airport,Kalgoorlie,Australia,-30.789,121.462,Kalgoorlie–Boulder_Airport,918547780,1060572079
+806,PQQ,Port_Macquarie_Airport,"Port Macquarie, New South Wales",,-31.43583333333333,152.86333333333332,,922449643,1060411385
+807,GNS,Binaka_Airport,Gunung Sitoli,Indonesia,1.166,97.703,,921841990,1061601272
+808,CEE,Cherepovets_Airport,Cherepovets,,59.27833333333333,38.0225,,929475951,1061376303
+809,UAQ,Domingo_Faustino_Sarmiento_Airport,San Julian,Argentina,-31.571,-68.418,,904369794,1060741423
+810,IAA,Igarka_Airport,Igarka,,67.43666666666667,86.62166666666666,,926399578,1061880058
+811,MQL,Mildura_Airport,,,-34.22916666666667,142.08555555555557,,930042630,1060410804
+812,IXS,Silchar_Airport,Silchar,India,24.913,92.979,,927591664,1061837559
+813,AJI,Ağrı_Airport,,,39.65444444444445,43.02722222222222,,912321467,1062199997
+814,PSS,Libertador_General_José_de_San_Martín_Airport,Posadas,Argentina,-27.386,-55.971,,920267933,1060737814
+815,NSI,Yaoundé_Nsimalen_International_Airport,Yaoundé,Cameroon,3.7225,11.553333333333336,,893165668,1059099835
+816,ISA,Mount_Isa_Airport,Mount Isa,Australia,-20.664,139.489,,919306283,1060952526
+817,ENE,H._Hasan_Aroeboesman_Airport,Ende,Indonesia,-8.849,121.662,,912835371,1060479975
+818,IGT,Magas_Airport,Magas,Russia,43.3193,45.013,,887926348,1061880440
+819,NNM,Naryan-Mar_Airport,Naryan-Mar,,67.64,53.125,,903314547,1061880634
+820,LAO,Laoag_International_Airport,Laoag,Philippines,18.17805555555556,120.53194444444443,,930421163,1058386957
+821,WMX,Wamena_Airport,Wamena,Indonesia,-4.096,138.952,,933062550,1061636317
+822,NOJ,Noyabrsk_Airport,Noyabrsk,,63.18333333333333,75.27,,933424826,1061376164
+823,LBJ,Komodo_International_Airport,Labuhan Bajo,Indonesia,-8.486,119.889,,933202189,1060851563
+824,RMA,Roma_Airport,,,-26.545,148.77472222222224,,919306895,1060303218
+825,BFV,Buriram_Airport,{{ubl|class=nowrap,,15.229444444444445,103.25111111111111,,932376172,1061600187
+826,BAL,Batman_Airport,Batman,Turkey,37.929,41.116,,915522175,1062200055
+827,PLO,Port_Lincoln_Airport,Port Lincoln,,-34.60527777777778,135.8802777777778,,919307609,1060571962
+828,ADF,Adiyaman_Airport,Adıyaman,,37.73166666666667,38.46888888888889,Adıyaman_Airport,915063074,1062199972
+829,CBQ,Margaret_Ekpo_International_Airport,Calabar,Nigeria,4.976,8.347,,904123744,1059099355
+830,PAG,Pagadian_Airport,Pagadian,Philippines,7.827222222222222,123.45833333333334,,932953919,1058220130
+831,ABA,Abakan_International_Airport,Abakan,Russia,53.74,91.385,,915030192,1061315184
+832,DBO,Dubbo_City_Airport,Dhanbad,India,23.834,86.425,Dubbo_Regional_Airport,922161578,1060411252
+833,VCS,Con_Dao_Airport,Côn Đảo,Vietnam,8.7325,106.62888888888888,,930970594,1057449534
+834,NOZ,Spichenkovo_Airport,Novokuznetsk,Russia,53.81,86.878333,,933422687,1061840619
+835,YEI,Yenişehir_Airport,"Yenişehir, Bursa|Yenişehir",,40.255,29.5625,,881823433,1062199490
+836,TUG,Tuguegarao_Airport,Tuguegarao,Philippines,17.638333333333332,121.73055555555555,,928366719,1058220190
+837,HUN,Hualien_Airport,Hualien,Taiwan,24.023,121.618,,929926508,1062948245
+838,BRO,Brownsville/South_Padre_Island_International_Airport,Brownsville,Usa,25.907,-97.426,,915829684,1041014676
+839,PBO,Paraburdoo_Airport,Paraburdoo,Australia,-23.1738,117.7479,,928094199,1060574291
+840,PXO,Porto_Santo_Airport,Porto Santo,Madeira,33.073,-16.35,,926803279,1062304860
+841,MAQ,Mae_Sot_Airport,"Tak, Thailand|Tak",,16.699722222222224,98.545,,932376640,1062214118
+842,NYM,Nadym_Airport,Nadym,,65.48,72.70333333333333,,933424810,1061376110
+843,CKZ,Çanakkale_Airport,Çanakkale,,40.13772222222222,26.42677777777778,,901073249,1062199515
+844,RHD,Las_Termas_Airport,Termas De Río Hondo,Argentina,-27.497222222222224,-64.93611111111112,,929900457,1062305791
+845,KVX,Pobedilovo_Airport,Kirov,Russia,58.503333,49.348333,,908398176,1061880305
+846,LCE,Golosón_International_Airport,La Ceiba,Honduras,15.742,-86.853,,933328087,1060950398
+847,USK,Usinsk_Airport,Usinsk,,66.0,57.36666666666667,,928070273,1061880336
+848,NIM,Diori_Hamani_International_Airport,Niamey,Niger,13.481,2.184,,931936968,1059099277
+849,HVB,Hervey_Bay_Airport,Hervey Bay,,-25.32055555555556,152.88166666666666,,925629011,1060572166
+850,RJK,Rijeka_Airport,Rijeka,Croatia,45.21694444444445,14.570277777777775,,933184931,1058408226
+852,KTG,Rahadi_Osman_Airport,Ketapang,Indonesia,-1.816,109.963,Rahadi_Oesman_Airport,929326266,1061637869
+853,BDB,Bundaberg_Airport,Bundaberg,,-24.903888888888886,152.3186111111111,,931819970,1060572106
+854,MOV,Moranbah_Airport,"Moranbah, Queensland",,-22.05761111111111,148.07630555555556,,918966756,1061338593
+855,TMW,Tamworth_Regional_Airport,Tamworth,Australia,-31.084,150.847,,933176720,1060490367
+856,PEZ,Penza_Airport,Penza,Russia,28.954,-98.52,Penza_Vissarion_Belinsky_Airport,933422702,1061880816
+858,RGA,Hermes_Quijada_International_Airport,Rio Grande,Argentina,-53.777,-67.749,,917067416,1060741534
+859,HIN,Sacheon_Airport,{{ubl|,,35.08854166666667,128.07036944444445,,916922721,1062261894
+860,MZH,Amasya_Merzifon_Airport,Merzifon,Turkey,40.829,35.522,,892205505,1062201368
+861,DPO,Devonport_Airport,"Devonport, Tasmania",,-41.16972222222222,146.43027777777775,,924232859,1060410899
+862,ARK,Arusha_Airport,Arusha,Tanzania,-3.368,36.633,,930532788,1061180007
+863,TLM,Zenata_–_Messali_El_Hadj_Airport,Tlemcen,Algeria,35.017,-1.45,,933388124,1060036139
+864,WNP,Naga_Airport,"Naga, Camarines Sur|Naga",,13.584722222222222,123.27,,925710298,1059592848
+865,BMU,Sultan_Muhammad_Salahuddin_Airport,Bima,Indonesia,-8.539,118.687,Sultan_Muhammad_Salahudin_Airport,915820114,1062780295
+866,BLB,Panamá_Pacífico_International_Airport,Panama City,Panama,8.915000000000001,-79.59944444444444,,931105650,1061242823
+867,MQF,Magnitogorsk_International_Airport,Magnetiogorsk,Russia,53.393,58.76,,933422604,1061880493
+868,ARM,Armidale_Airport,Armidale,,-30.52833333333333,151.61666666666667,,915274888,1060490105
+870,BUW,Betoambari_Airport,Bau Bau,Indonesia,-5.516667,122.55,,882949960,1060481566
+871,BTK,Bratsk_Airport,Bratsk,Russia,56.371,101.699,,932414792,1061879884
+872,KGP,Kogalym_International_Airport,Kogalym,,62.19,74.535,,933424842,1062276731
+873,LRD,Laredo_International_Airport,Laredo,Usa,27.544,-99.461,,932332626,1060044265
+874,FRS,Mundo_Maya_International_Airport,Flores,Guatemala,16.9149,-89.8778,,933223161,1060978887
+875,EDL,Eldoret_International_Airport,Eldoret,Kenya,0.404,35.238,,916583793,1059922256
+876,FMA,Formosa_International_Airport,Formosa,Argentina,-26.212,-58.228,,931451208,1060737326
+877,PRA,General_Justo_José_de_Urquiza_Airport,Parana,Argentina,-31.795,-60.48,,933337840,1060737769
+878,CPC,Aviador_Carlos_Campos_Airport,San Martin Des Andes,Argentina,-40.075,-71.137,,933224670,1060743721
+879,PMY,El_Tehuelche_Airport,Puerto Madryn,Argentina,-42.759,-65.102,,916178394,1060741633
+880,SUG,Surigao_Airport,Surigao City,Philippines,9.7575,125.47944444444444,,930086021,1056542954
+881,CNQ,Doctor_Fernando_Piragine_Niveyro_International_Airport,Corrientes,Argentina,-27.445,-58.762,,927619206,1060736166
+882,UNN,Ranong_Airport,Ranong,Thailand,9.777500000000002,98.58527777777778,,932377093,1061601095
+884,SDE,Vicecomodoro_Ángel_de_la_Paz_Aragonés_Airport,Santiago Del Estero,Argentina,-27.766,-64.31,,904360651,1060745091
+885,KZR,Zafer_Airport,Kütahya,,39.11138888888889,30.13,,919586142,1062201506
+886,BSK,Biskra_Airport,Biskra,Algeria,34.793,5.738,,922185072,1059126405
+887,CJM,Chumphon_Airport,Chumphon,Thailand,10.7112,99.36170555555556,,932376245,1062247266
+889,AZR,Touat-Cheikh_Sidi_Mohamed_Belkebir_Airport,Adrar,Algeria,27.837,-0.186,,933388111,1059126020
+890,LUQ,Brigadier_Mayor_César_Raúl_Ojeda_Airport,San Luis,Argentina,-33.273,-66.356,,905431391,1060741375
+891,TDX,Trat_Airport,Trat province|Trat,,12.274572222222224,102.31895833333331,,910226584,1062213943
+892,YNY,Yangyang_International_Airport,{{ubl|class=nowrap,,38.061388888888885,128.66916666666663,,932449526,1061311791
+893,PED,Pardubice_Airport,Pardubice,Czech Republic,50.013,15.739,,931679911,1061906615
+894,HID,Horn_Island_Airport,,,-10.585555555555556,142.2927777777778,,919305542,1061068300
+895,ITH,Ithaca_Tompkins_International_Airport,"Ithaca, New York",United States,42.49138888888889,-76.45861111111111,,932141292,1061687185
+896,CYZ,Cauayan_Airport,"Cauayan, Isabela|Cauayan",,16.93,121.75305555555556,,924125409,1055346132
+897,KFS,Kastamonu_Airport,Kastamonu,,41.316944444444445,33.79611111111111,,892201301,1062201464
+898,BSO,Basco_Airport,Batanes,Country,20.45138888888889,121.98,,925090291,1058218971
+900,CYI,Chiayi_Airport,Chiayi,Taiwan,23.462,120.393,,931809472,1061571814
+901,WJU,Wonju_Airport,Wonju,South Korea,37.45916666666667,127.97694444444444,,902767636,1062262183
+902,BLJ,Batna_Airport,"Batna, Algeria|Batna",,35.75138888888889,6.308333333333334,Mostépha_Ben_Boulaid_Airport,933392773,1059126253
+903,KNX,Kununurra_Airport,Kununurra,Australia,-15.778,128.707,East_Kimberley_Regional_Airport,923512265,1060479707
+904,MGB,Mount_Gambier_Airport,Mount Gambier,,-37.74777777777778,140.7836111111111,,927703976,1060571924
+905,IRJ,Capitán_Vicente_Almandos_Almonacid_Airport,La Rioja,Argentina,-29.381,-66.796,,915820367,1060737460
+907,OLP,Olympic_Dam_Airport,Olympic Dam mine,,-30.485,136.8766666666667,,921450801,1059396915
+908,THS,Sukhothai_Airport,Sukhothai (city)|Sukhothai,,17.23777777777778,99.81805555555556,,916855086,1062213897
+909,TMR,Aguenar_–_Hadj_Bey_Akhamok_Airport,Tamanrasset,Algeria,22.811,5.451,,933387529,1059136198
+910,KPO,Pohang_Gyeongju_Airport,Pohang,Korea,35.988,129.42,,923512086,1062261946
+911,LNY,Lanai_Airport,Lanai,Usa,20.786,-156.951,,921526191,1060147543
+912,TBB,Tuy_Hoa_Airport,,,13.049444444444443,109.33361111111113,,931302753,1055180347
+913,CTC,Coronel_Felipe_Varela_International_Airport,Catamarca,Argentina,-28.596,-65.752,,908947569,1060737000
+914,EQS,Esquel_Airport,Esquel,Argentina,-42.908,-71.139,,910314061,1060737038
+915,MZV,Mulu_Airport,Gunung Mulu National Park,,4.050555555555556,114.80916666666668,,925488554,1061449253
+916,MKZ,Malacca_International_Airport,Malacca,Malaysia,2.263,102.251,Malacca_Airport,929947665,1058868435
+917,AFA,San_Rafael_Airport_(Argentina),San Rafael,Argentina,-34.588,-68.403,,904374346,1060743786
+918,RCU,Las_Higueras_Airport,Rio Cuarto,Argentina,-33.086,-64.261,,904372907,1060741577
+919,LMN,Limbang_Airport,Limbang,Malaysia,4.81,115.0079,,917512989,1061448797
+920,HGN,Mae_Hong_Son_Airport,Mae Hong Son,Tha,19.301111111111112,97.97472222222224,,932375675,1062213860
+921,VRC,Virac_Airport,Catanduanes,Country,13.57638888888889,124.20555555555556,,902067712,1055345501
+922,ORH,Worcester_Regional_Airport,"Worcester, Massachusetts",United States,42.26722222222222,-71.87583333333333,,932520530,1061416193
+924,IAO,Sayak_Airport,Siargao,,9.858888888888888,126.01388888888889,,933166723,1058471496
+925,AOE,Hasan_Polatkan_Airport,Eskişehir,Turkey,39.81,30.51944444444444,,932273856,1062369661
+926,RSA,Santa_Rosa_Airport_(Argentina),Santa Rosa,Argentina,-36.588,-64.275,,904371953,1060743838
+927,SJI,San_Jose_Airport_(Mindoro),San Jose,Philippines,10.766,121.932,,902067605,1055345465
+928,KYD,Lanyu_Airport,Lanyu,Taiwan,22.029,121.527,,916877231,1059211332
+929,GHA,Noumérat_–_Moufdi_Zakaria_Airport,Ghardaïa,Algeria,32.38333333333333,3.797222222222222,,933387474,1059137127
+931,CRM,Catarman_National_Airport,"Catarman, Northern Samar|Catarman",,12.5025,124.63583333333334,,915872044,1058218959
+932,SFN,Sauce_Viejo_Airport,Santa Fe,Argentina,-31.712,-60.812,Sauce_Viejo_International_Airport,926971267,1060743807
+933,VDM,Gobernador_Edgardo_Castello_Airport,Viedma,Argentina,-40.869,-63.0,,916949959,1060745219
+934,LDU,Lahad_Datu_Airport,Lahad Datu,Malaysia,5.032,118.324,,927593688,1061873986
+935,CGY,Laguindingan_Airport,Ladag,Philippines,8.414,124.611,,931065133,1059464100
+936,GSV,Saratov_Gagarin_Airport,Saratov,,51.71277777777778,46.17111111111111,,929220420,1059750509
+937,BER,Berlin_Brandenburg_Airport,Berlin/brandenburg Metropolitan Region,Germany,52.36666666666667,13.503333333333334,,933210942,1062871807
+938,UTH,Udon_Thani_Airport,Udon Thani,Thailand,17.386,102.788,Udon_Thani_International_Airport,933015660,1061569860
+939,VAS,Sivas_Airport,Sivas,Turkey,39.814,36.903,,892208605,1062199839
+940,TER,Lajes_Airport,Lajes (terceira Island),Acores,38.764,-27.093,,930025159,1062730585
+941,SYZ,Shiraz_International_Airport,Shiraz,Iran,29.539,52.589,Shiraz_Shahid_Dastgheib_International_Airport,926212452,1060827606
+942,SNO,Sakon_Nakhon_Airport,Sakon Nakhon,Thailand,17.195,104.119,,932377254,1061601172
+943,TTE,Sultan_Babullah_Airport,Ternate,Indonesia,0.832,127.381,,928703415,1061637007
+944,NST,Nakhon_Si_Thammarat_Airport,Nakhon Si Thammarat,Thailand,8.471,99.956,,932376807,1061600867
+945,SOC,Adisumarmo_International_Airport,Solo City,Indonesia,-7.516,110.757,Adisoemarmo_Airport,933018179,1062781506
+946,HSR,Rajkot_International_Airport,Rajkot, India,22.38805555555556,71.02833333333334,,908869947,1058745624
+947,TAG,Bohol–Panglao_International_Airport,Bohol,Philippines,9.566667,123.775,,932502066,1058471315
+948,AAP,Aji_Pangeran_Tumenggung_Pranoto_Airport,Samarinda,Ina,-0.373611111111111,117.25555555555556,Aji_Pangeran_Tumenggung_Pranoto_International_Airport,931919772,1062935777
+949,DIN,Dien_Bien_Phu_Airport,,,21.397222222222226,103.00777777777778,Dien_Bien_Airport,930965931,1058591577
+951,KUV,Gunsan_Airport,Gunsan,Rok,35.92596111111111,126.61566666666666,,885935988,1062262046
+952,HMA,Khanty-Mansiysk_Airport,Khanty-Mansiysk,,61.02833333333333,69.08666666666666,,929056687,1061376479
+953,WGA,Wagga_Wagga_Airport,Wagga Wagga,Australia,-35.165,147.466,,918356597,1062616563
+954,GRV,Grozny_Airport,Grozny,,43.3882,45.69968333333333,Kadyrov_Grozny_International_Airport,922694145,1053162535
+955,TAO,Qingdao_Jiaodong_International_Airport,Qingdao,China,36.263,120.375,,925861204,1059207189
+956,HRB,Harbin_Taiping_International_Airport,Harbin,China,45.623,126.25,,925051102,1062781442
+957,YNT,Yantai_Penglai_International_Airport,Yantai,China,37.402,121.372,,931967516,1055180027
+958,ZAZ,Zaragoza_Airport,Zaragoza,Spain,41.666,-1.041,,933245130,1061887719
+959,RMU,Región_de_Murcia_International_Airport,Region Of Murcia,Spain,37.80258333333333,-1.125388888888889,,931954581,1059135088
+960,MSJ,Misawa_Airport,Misawa,Japan,40.703,141.368,,931394975,1061560058
+961,ISG,New_Ishigaki_Airport,Ishigaki,Japan,24.344,124.187,,933028359,1061591737
+962,TIM,Mozes_Kilangin_Airport,Timika,Indonesia,-4.528,136.887,,931279202,1061636959
+963,UBP,Ubon_Ratchathani_Airport,Ubon Ratchathani,Thailand,15.2469,104.8707,,932377509,1061601904
+964,HFE,Hefei_Xinqiao_International_Airport,Hefei,China,31.78,117.298,,932250479,1055172327
+965,MLX,Malatya_Erhaç_Airport,Malatya,Turkey,38.436,38.092,,932238034,1062200166
+966,REU,Reus_Airport,Reus,Spain,41.147,1.167,,924854365,1059581730
+967,YKS,Yakutsk_Airport,Yakutsk,Russia,62.093,129.771,Platon_Oyunsky_Yakutsk_International_Airport,930863704,1061559593
+968,IST,Istanbul_Airport,Istanbul,Turkey,40.977,28.821,,933389579,1061456984
+969,BMV,Buon_Ma_Thuot_Airport,,,12.668055555555554,108.12,,931283231,1058370076
+970,ROV,Platov_International_Airport,Rostov,Russia,47.258,39.818,,933000399,1062601965
+971,TRZ,Tiruchirappalli_International_Airport,Tiruchchirappalli,India,10.765,78.709,,928690843,1062583137
+972,RBR,Rio_Branco_International_Airport,Rio Branco,Brazil,-9.869,-67.894,,922082931,1060897758
+973,KOP,Nakhon_Phanom_Airport,Nakhon Phanom,Thailand,17.412,104.777,,932376744,1062214448
+974,JOG,Adisutjipto_Airport,Yogyakarta,Indonesia,-7.788,110.432,,933063109,1061599753
+975,UUS,Yuzhno-Sakhalinsk_Airport,Yuzhno-sakhalinsk,Russia,46.889,142.717,,932837439,1061879196
+976,NSN,Nelson_Airport_(New_Zealand),Nelson,New Zealand,-41.298,173.221,,928572266,1062670907
+977,NUX,Novy_Urengoy_Airport,Novy Urengoy,,66.07249999999999,76.52194444444444,,933218601,1061315137
+978,INC,Yinchuan_Hedong_International_Airport,Yinchuan,China,38.3226,106.3886,,932250414,1059206743
+979,PMW,Palmas_Airport,"Palmas, Tocantins|Palmas",,-10.29,-48.35777777777778,,923502823,1060657481
