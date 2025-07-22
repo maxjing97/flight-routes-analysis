@@ -2,7 +2,7 @@ import './App.css';
 import { Route,Routes,Link } from 'react-router-dom';
 import Navbar from './navbar';
 import UserProvider from "./context/userContext"
-import {Entry, Main, Resources} from './pages/main';
+import {Entry, Trends, Resources} from './pages/main';
 
 import{QueryClient, QueryClientProvider} from "@tanstack/react-query"
 const queryClient = new QueryClient() //log the query client to be used
@@ -17,12 +17,10 @@ function App() {
           <h1 id="title">Wikipedia Flights Data Explorer</h1>
         </Link>
       </div>
-
-
         <Navbar/>
           <Routes> 
             <Route path="/"  element={<Entry/>} />{/*default page route */}
-            <Route path="/main"  element={<Main />}/>
+            <Route path="/trends"  element={<Trends />}/>
             <Route path="/res"  element={<Resources />}/>
           </Routes>
       </UserProvider>

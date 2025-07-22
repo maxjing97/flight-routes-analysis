@@ -7,9 +7,9 @@ const Navbar=()=>{
     return (    
         <div id='navBar'>
             <div className="dropdown">
-                <h1 className="main-option"><Link to="/">Flight Trends</Link></h1>
+                <h1 className="main-option"><Link to="/trends">Flight Trends</Link></h1>
                 <div className="dropdown-content">
-                    <Link to="/main">Flight Trends</Link>
+                    <Link to="/trends">Flight Trends</Link>
                     <Link to="/res">About the Data</Link>
                 </div>
             </div>
