@@ -139,9 +139,12 @@ export function RouteFinder() { //entry function allowing more information to be
   const [sourceData, setSourceData] = useState(network_airports[getIdx("LHR")]) //store the source airport data (default origin)
   const [destData, setDestData] = useState(network_airports[getIdx("NRT")]) //store the dest airport data (default destination)
   const [BFSresults, setBFSresults] = useState(BFS("LHR", "NRT"))//store bfs results
+  const [BFSpath, setBFSpath] = useState(getPath(sourceData["IATA"], destData["IATA"], BFSresults[1])) //get bfs path taken using the function
   //store results
   useEffect(()=>{
-    setBFSresults(BFS(sourceData["IATA"], destData["IATA"]))
+    const newBFS = BFS(sourceData["IATA"], destData["IATA"])
+    setBFSresults(newBFS)
+    setBFSpath(getPath(sourceData["IATA"], destData["IATA"], newBFS[1]))
   }, [sourceData, destData]) //change the BFS result if the 
 
   return (
@@ -169,11 +172,19 @@ export function RouteFinder() { //entry function allowing more information to be
           <h3>There's no direct flight. Here's a route with the fewest connections ({BFSresults[0]})</h3>
           {/*retrace the path using the previous dict*/}
           <h3>Flight path:</h3>
-          <div className="paths">
-            
+          <div className="display-paths">
             {
-              getPath(sourceData["IATA"], destData["IATA"], BFSresults[1]).map((airport, index) => (
-                <h3>{`${airport}=>`}</h3>
+             BFSpath.map((airport, index) => (
+              <div>
+                {(index < BFSpath.length - 1) && 
+                  <div  className="path-parts">
+                    <h3>{BFSpath[index]} to {BFSpath[index+1]} Operators:</h3>
+                    {getAirlines(BFSpath[index], BFSpath[index+1]).map((airline, index) => (
+                      <h5 className="path-airline">{airline}</h5>
+                    ))}
+                  </div>
+                }
+              </div>
               ))
             }
           </div>
