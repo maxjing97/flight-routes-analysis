@@ -29,7 +29,7 @@ const getAirlines = (source, dest) => {
   }
   return found_airlines
 }
-//from a previous array from the BFS or A* function, get the path in ascending order from a source to a destination
+//from a previous array from the BFS or A* function, get the path in ascending order from a source to a destination, and show approximate distance
 const getPath = (source, dest, prev) => {
   let path = [] //store the path. Add from the start by using unshift instead
   let current_iata = dest//get the current next iata from the prev, intiialze with the current one
@@ -159,10 +159,10 @@ export function RouteFinder() { //entry function allowing more information to be
       <h3>From {sourceData["wiki_name"].replaceAll("_"," ")} ({sourceData["IATA"]}) to {destData["wiki_name"].replaceAll("_"," ")} ({destData["IATA"]})</h3>
 
       {BFSresults[0]===1 && 
-        <div>
+        <div className="path-parts">
           <h3>There's a direct flight operated by the following airlines:</h3>
           {getAirlines(sourceData["IATA"], destData["IATA"]).map((airline, index) => (
-            <p>{airline}</p>
+            <h5 className="path-airline">{airline}</h5>
           ))}
         </div>
       }
@@ -177,7 +177,7 @@ export function RouteFinder() { //entry function allowing more information to be
              BFSpath.map((airport, index) => (
               <div>
                 {(index < BFSpath.length - 1) && 
-                  <div  className="path-parts">
+                  <div className="path-parts">
                     <h3>{BFSpath[index]} to {BFSpath[index+1]} Operators:</h3>
                     {getAirlines(BFSpath[index], BFSpath[index+1]).map((airline, index) => (
                       <h5 className="path-airline">{airline}</h5>
