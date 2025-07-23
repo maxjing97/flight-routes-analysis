@@ -175,15 +175,16 @@ function SearchTrends ({initialIata = "LHR"}) {
   return (
     <div className="search-trends">
       <div className="chart-container">
-        <div id="time-options-box">
-          <label id="airport-select-text" for="time-choice">Airport: </label>
-          <div id="search-airport">
-          <input type="text" list="airport-select" className="airport-choice" onChange={handleInput} value={inputText}/>
+        <div id="trend-options-box">
+          <div id="search-airport">✎
+          <input type="text" className="airport-trend-input" onChange={handleInput} value={inputText}/>
+            <div id="search-options-list">
             {
               searchData.map((airport, index)=>(
-                <button onClick={()=>handleOption(airport)}>{`${airport["iata_source"]}: ${airport["current_source_airports_details.wiki_name"].replaceAll("_"," ")}`}</button>
+                <button className="trend-airport-option" onClick={()=>handleOption(airport)}>{`${airport["iata_source"]}: ${airport["current_source_airports_details.wiki_name"].replaceAll("_"," ")}`}</button>
               ))
             }
+            </div>
           </div>
         </div>
         <Line

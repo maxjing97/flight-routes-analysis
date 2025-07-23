@@ -1,87 +1,93 @@
-import "./main.css"
-import React, { useEffect } from 'react';
+import "./routes.css"
+import React, { useEffect, useState } from 'react';
 import {Link, useNavigate} from "react-router-dom"
 import network_airports from "./data/airports_in_network.json"
 import network_graph from "./data/network_graph.json"
 
-
-export function Entry() { //entry function allowing more information to be found out
-
-  return (
-    <div className="about_main" style={styles.about_main}> 
-      <h1 className='stats-title'>Wikipedia Flights Data Explorer</h1>
-      <h3>Explore wikipedia flight routes data and COVID-19 trends from wikipedia data</h3>
-      <div className="essay">
-        <p>
-          Explore webscrapped route data (data current as of July 19th 2025) for the top 959 airports in the world. 
-        </p>
-        <p>
-        Also, compare trends in the number of routes per airport according to wikipedia data from the top 979 airports. View changes in routes for these airports by three year ranges: <br></br> 
-        </p>
-          <ul>
-            <li>end of 2021 (pre2022) to current</li>
-            <li>end of 2019 (pre2020) to current</li>
-            <li>end of 2019 to end of 2021</li>
-          </ul>
-        <p>Note that since wikipedia relies on user contribution, much of the data on routes, especially at the smaller airports on the list, 
-        is likely to be not be too accurate, especially immediately after the start of the COVID-19 pandemic in 2020.</p>
-        <p>More information about how data was collected is found in flight trends </p>
-        <p>A powerBI file with detailed analysis is linked for download here: <a href="./routes.analysis.pbix" download="analysis.pbix">Download File</a>
-        </p>
-      </div>
-    </div>
-  );
-}
-
-export function Trends() {
-  return (
-    <div className="about_main" style={styles.about_main}> 
-      <h1 className='stats-title'>Wikipedia Flights Data Explorer</h1>
-      <h3>Explore wikipedia flight routes data and COVID-19 trends from wikipedia data</h3>
-      <div className="essay">
-        <p>
-          Explore webscrapped route data (data current as of July 19th 2025) for the top 959 airports in the world. 
-        </p>
-        <p>
-        Also, compare trends in the number of routes per airport according to wikipedia data from the top 979 airports. View changes in routes for these airports by three year ranges: <br></br> 
-        </p>
-          <ul>
-            <li>end of 2021 (pre2022) to current</li>
-            <li>end of 2019 (pre2020) to current</li>
-            <li>end of 2019 to end of 2021</li>
-          </ul>
-        <p>Note that since wikipedia relies on user contribution, much of the data on routes, especially at the smaller airports on the list, 
-        is likely to be not be too accurate, especially immediately after the start of the COVID-19 pandemic in 2020.</p>
-        <p>More information about how data was collected is found in flight trends </p>
-        <p>A powerBI file with detailed analysis is linked for download here: <a href="./routes.analysis.pbix" download="analysis.pbix">Download File</a>
-        </p>
-      </div>
-    </div>
-  );
-}
-
-//main page about how the data was collected
-export function Resources() {
-  return (
-    <div className="about_main" style={styles.about_main}> 
-      <h1 className='stats-title'>About</h1>
-      <p>
-
-
-      </p>
-
-    </div>
-  );
-}
-
-const styles = {
-  wikidict: {
-    width: "100%",       /* full container width */
-    height: "700px",     /* or any fixed/relative value */
-    position: "relative",/* ensures child 100% height works */
-  },
-  wikidicttext: {
-    fontSize: "20px",
-    fontWeight: "bold",
+//find index by iata code in the airport networks data
+const getIdx = (iata) => {
+  let i = 0
+  for (const obj of network_airports) {
+    const curriata = obj["IATA"]
+    if (curriata===iata) {
+      return i
+    }
+    i+=1
   }
+  return -1
+}
+
+function SearchAirports({initialIata = "LHR", setResult=()=>{}}) {  
+  const initial_index = getIdx(initialIata)
+  const [inputText, setInputText] = useState(`${network_airports[initial_index]["IATA"]}`) ///initial text that appears in the input box 
+  const [searchData, setSearchData] = useState([]) //this is the state storing current search data options to the user
+  
+
+  const handleInput = (e)=> {
+    const text = e.target.value.toLowerCase().trim() 
+    setInputText(text)
+    //if no text, reset to empty list
+    if(!text || text.length < 2) {
+      setSearchData([])
+      return 
+    }
+    
+    const match_list = []
+    for (const obj of network_airports) {
+      const name = obj["wiki_name"].toLowerCase()
+      const iata = obj["IATA"].toLowerCase()
+      if (name.includes(text) || iata.includes(text)) {
+        match_list.push(obj)
+      }
+    }
+    //set the datalist
+    setSearchData(match_list)
+  
+    return 
+  }
+
+  //handle a click when clicking a option
+  const handleOption = (airport)=> {
+    //set the click result
+    setResult(airport)
+    setInputText(`${airport["IATA"]}`)//set the display data
+    setSearchData([]) //make search result empty again
+    return
+  }
+
+  return (
+    <div className="search-trends">
+      <div className="search-container">
+          <label id="select-airport-label">Airport: </label>
+          <input type="text" id="airport-select" onChange={handleInput} value={inputText}/>
+          <div id="#search-results-list">
+            {
+              searchData.map((airport, index)=>(
+                <button class="search-option" onClick={()=>handleOption(airport)}>{`${airport["IATA"]}: ${airport["wiki_name"].replaceAll("_"," ")}`}</button>
+              ))
+            }
+          </div>
+      </div>
+    </div>
+  );
+}
+
+
+export function RouteFinder() { //entry function allowing more information to be found out
+  const [sourceData, setSourceData] = useState(network_airports[getIdx("LHR")]) //store the source airport data
+  const [destData, setDestData] = useState(network_airports[getIdx("NRT")]) //store the dest airport data
+
+
+  return (
+    <div className="about_main"> 
+      <h2>Route Explorer: Find the Shortest Routes and Airlines</h2>
+      <h3>Select Your Source and destination airports</h3>
+      <div id="select-routes">
+        <SearchAirports initialIata="LHR" setResult={setSourceData}/>
+        <SearchAirports initialIata="NRT" setResult={setDestData}/>
+      </div>
+      <h3>Finding shortest routes </h3>
+      <h3>From {sourceData["wiki_name"].replaceAll("_"," ")} ({sourceData["IATA"]}) to {destData["wiki_name"].replaceAll("_"," ")} ({destData["IATA"]})</h3>
+    </div>
+  );
 }
