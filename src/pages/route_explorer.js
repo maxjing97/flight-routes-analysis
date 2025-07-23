@@ -80,8 +80,8 @@ export function RouteFinder() { //entry function allowing more information to be
 
   return (
     <div className="about_main"> 
-      <h2>Route Explorer: Find the Shortest Routes and Airlines</h2>
-      <h3>Select Your Source and destination airports</h3>
+      <h2>Route Explorer: Find the Shortest Routes and Airlines between 959 airports</h2>
+      <h3>Search and Select your Source and destination airports</h3>
       <div id="select-routes">
         <SearchAirports initialIata="LHR" setResult={setSourceData}/>
         <SearchAirports initialIata="NRT" setResult={setDestData}/>
