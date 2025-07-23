@@ -29,10 +29,12 @@
     color: rgb(0, 0, 0);
     width: 120px;
 }
-.search-option {
+.airport-search-option {
     width: 120px;
 }
+
 #search-results-list {
     display: flex;
     flex-direction: column;
 }
+

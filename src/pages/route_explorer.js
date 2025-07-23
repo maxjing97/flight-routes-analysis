@@ -60,10 +60,10 @@ function SearchAirports({initialIata = "LHR", setResult=()=>{}}) {
       <div className="search-container">
           <label id="select-airport-label">Airport: </label>
           <input type="text" id="airport-select" onChange={handleInput} value={inputText}/>
-          <div id="#search-results-list">
+          <div id="search-results-list">
             {
               searchData.map((airport, index)=>(
-                <button class="search-option" onClick={()=>handleOption(airport)}>{`${airport["IATA"]}: ${airport["wiki_name"].replaceAll("_"," ")}`}</button>
+                <button className="airport-search-option" onClick={()=>handleOption(airport)}>{`${airport["IATA"]}: ${airport["wiki_name"].replaceAll("_"," ")}`}</button>
               ))
             }
           </div>
@@ -86,7 +86,7 @@ export function RouteFinder() { //entry function allowing more information to be
         <SearchAirports initialIata="LHR" setResult={setSourceData}/>
         <SearchAirports initialIata="NRT" setResult={setDestData}/>
       </div>
-      <h3>Finding shortest routes </h3>
+      <h3>Finding the shortest routes </h3>
       <h3>From {sourceData["wiki_name"].replaceAll("_"," ")} ({sourceData["IATA"]}) to {destData["wiki_name"].replaceAll("_"," ")} ({destData["IATA"]})</h3>
     </div>
   );
