@@ -111,9 +111,9 @@ export function Entry() { //entry function allowing more information to be found
             <li>end of 2019 to end of 2021</li>
           </ul>
         <p>Note that since wikipedia relies on user contribution, much of the data on routes, especially at the smaller airports on the list, 
-        is likely to be not be too accurate, especially immediately after the start of the COVID-19 pandemic in 2020.</p>
+        is likely to not be too accurate, especially immediately after the start of the COVID-19 pandemic in 2020.</p>
         <p>More information about how data was collected is found in flight trends </p>
-        <p>A powerBI file with detailed analysis is linked for download here: <a href="./routes.analysis.pbix" download="analysis.pbix">Download File</a>
+        <p>A Power BI file with detailed analysis is linked for download here: <a href="./routes.analysis.pbix" download="analysis.pbix">Download File</a>
         </p>
       </div>
     </div>
@@ -346,21 +346,22 @@ export function Trends() {
 export function Resources() {
   return (
   <div className="essay">
+    <h3>About the datasets</h3>
     <p>
-      Explore webscrapped route data (data current as of July 19th 2025) for the top 959 airports in the world. 
+      Here, route data was webscrapped (data current as of July 19th 2025) for the top 959 airports in the world. The data for the most recent wikipedia pages before the start of
+      2020 and 2022 were webscrapped as well to obtain the routes for those respective year ranges.
     </p>
     <p>
-    Also, compare trends in the number of routes per airport according to wikipedia data from the top 979 airports. View changes in routes for these airports by three year ranges: <br></br> 
+      Route changes were then measured for each of the three possible periods by comparing route counts by airport using Power Query in Power BI. 
     </p>
-      <ul>
-        <li>end of 2021 (pre2022) to current</li>
-        <li>end of 2019 (pre2020) to current</li>
-        <li>end of 2019 to end of 2021</li>
-      </ul>
+
     <p>Note that since wikipedia relies on user contribution, much of the data on routes, especially at the smaller airports on the list, 
-    is likely to be not be too accurate, especially immediately after the start of the COVID-19 pandemic in 2020.</p>
-    <p>More information about how data was collected is found in flight trends </p>
-    <p>A powerBI file with detailed analysis is linked for download here: <a href="./routes.analysis.pbix" download="analysis.pbix">Download File</a>
+    is likely to not be too accurate, especially immediately after the start of the COVID-19 pandemic in 2020.</p>
+    <h3>Links</h3>
+    <p>A link to the <a href="https://github.com/maxjing97/flight-routes-analysis">Github page</a> with the source code to this web app, along with data preparation and a link to dropbox for our source data is: 
+    <a href="https://github.com/maxjing97/flight-routes-analysis">https://github.com/maxjing97/flight-routes-analysis</a>
+    </p>
+    <p>A Power BI file with detailed analysis is linked for download here: <a href="./routes.analysis.pbix" download="analysis.pbix">Download File</a>
     </p>
   </div>
   );
