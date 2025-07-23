@@ -17,17 +17,17 @@ const getIdx = (iata) => {
   return -1
 }
 
-//function to get the possible airlines between two destination iata (needed since BFS/A* algorithm) matches based on iata/first
-const getAirlines = (source, dest) => {
-  const found_airlines = [] //list of airlines found 
+//function to get the possible airlines (and approximate distnace) between two destination iata (needed since BFS/A* algorithm) matches based on iata/first
+const getAirlinesDistance = (source, dest) => {
+  const airline_distances = [] //list of airlines-distance pairs found in the [airline, distance] order 
   //get connections list 
   const connections = network_graph[source]
   for(const node of connections) {
     if (node[1] === dest) {
-      found_airlines.push(node[2])
+      airline_distances.push([node[2], node[0]]) //push the a
     }
   }
-  return found_airlines
+  return airline_distances
 }
 //from a previous array from the BFS or A* function, get the path in ascending order from a source to a destination, and show approximate distance
 const getPath = (source, dest, prev) => {
@@ -154,10 +154,17 @@ export function RouteFinder() { //entry function allowing more information to be
 
       {BFSresults[0]===1 && 
         <div className="path-parts">
-          <h3>There's a direct flight operated by the following airlines:</h3>
-          {getAirlines(sourceData["IATA"], destData["IATA"]).map((airline, index) => (
-            <h5 className="path-airline">{airline}</h5>
+          {getAirlinesDistance(sourceData["IATA"], destData["IATA"]).map((airline_distances, index) => (
+            <div>
+            { (index !== 0) &&
+              <h5 className="path-airline">{airline_distances[0]}</h5>
+            }
+            { (index === 0) &&
+              <h5 className="path-airline">{airline_distances[0]}<br/> Approximate Distance: {Math.round(airline_distances[1])}km</h5>
+            }
+            </div>
           ))}
+          <h3>There's a direct flight operated by the following airlines:</h3>
         </div>
       }
       
@@ -172,10 +179,18 @@ export function RouteFinder() { //entry function allowing more information to be
               <div key={index}>
                 {(index < BFSpath.length - 1) && 
                   <div className="path-parts">
-                    <h3>{BFSpath[index]} to {BFSpath[index+1]} Operators:</h3>
-                    {getAirlines(BFSpath[index], BFSpath[index+1]).map((airline, index) => (
-                      <h5 className="path-airline">{airline}</h5>
+                    {getAirlinesDistance(BFSpath[index], BFSpath[index+1]).map((airline_distances, index) => (
+                      <div>
+                      { (index !== 0) &&
+                        <h5 className="path-airline">{airline_distances[0]}</h5>
+                      }
+                      { (index === 0) &&
+                        <h5 className="path-airline">{airline_distances[0]}<br/> Approximate Distance: {Math.round(airline_distances[1])}km</h5>
+                      }
+                      
+                      </div>
                     ))}
+                    <h3>{BFSpath[index]} to {BFSpath[index+1]} Operators:</h3>
                   </div>
                 }
               </div>

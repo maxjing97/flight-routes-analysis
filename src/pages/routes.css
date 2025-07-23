@@ -45,7 +45,7 @@
 .path-parts {
     display: flex;
     margin: 0 10px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     border: 2px solid black;
     border-radius: 5px;
     -webkit-border-radius: 5px;
