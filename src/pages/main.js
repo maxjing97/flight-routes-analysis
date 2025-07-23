@@ -347,7 +347,7 @@ export function Trends() {
 export function Resources() {
   return (
   <div className="essay">
-    <h3>About the datasets</h3>
+    <h3>About the datasets and Algorithms</h3>
     <p>
       Here, route data was webscrapped (data current as of July 19th 2025) for the top 959 airports in the world. The data for the most recent wikipedia pages before the start of
       2020 and 2022 were webscrapped as well to obtain the routes for those respective year ranges.
@@ -356,8 +356,14 @@ export function Resources() {
       Route changes were then measured for each of the three possible periods by comparing route counts by airport using Power Query in Power BI. 
     </p>
 
+    <p>The routes explore page uses the A* and BFS algorithms to find the route with the shortest distance and least number of connecting flights needed, respectively.
+      The distances between airports were estimated using the haversine formula, given the coordinates of the airports. 
+    </p>
+    
+
     <p>Note that since wikipedia relies on user contribution, much of the data on routes, especially at the smaller airports on the list, 
     is likely to not be too accurate, especially immediately after the start of the COVID-19 pandemic in 2020.</p>
+    
     <h3>Links</h3>
     <p>A link to the <a href="https://github.com/maxjing97/flight-routes-analysis">Github page</a> with the source code to this web app, along with data preparation and a link to dropbox for our source data is: 
     <a href="https://github.com/maxjing97/flight-routes-analysis">https://github.com/maxjing97/flight-routes-analysis</a>
