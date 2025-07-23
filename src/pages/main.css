@@ -96,6 +96,7 @@
     margin-right: 10px;
     font-weight: bold;
 }
+
 #map-legend {
     display: flex;
     flex-direction: column;
@@ -111,6 +112,15 @@
     margin-left: 2px;
     margin-right: 10px;
 }
+#display-airport-trends {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.search-trends {
+    max-width: 250px;
+}
 #display-graphs {
     display: flex;
     flex-direction: column;
@@ -123,10 +133,23 @@
 }
 #chart-container {
     max-width: 300px;
+    margin: 20px;
 }
 #search-airport {
-    width: 200px;
+    width: 175px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+#airport-select-text{
+    font-size: 10pt;
+    font-family: Arial;
+    font-weight: bold;
+    margin-right: 5px;
+    color: rgb(96, 96, 96);
+}
+.airport-choice {
+    font-size: 10pt;
+    font-weight: bold;
+    color: rgb(96, 96, 96);
 }

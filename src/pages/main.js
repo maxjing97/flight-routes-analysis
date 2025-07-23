@@ -123,7 +123,7 @@ export function Entry() { //entry function allowing more information to be found
 function SearchTrends ({initialIata = "LHR"}) {  
   const initial_index = getIdx(initialIata)
   const [currairport, setCurrAirport] = useState(airport_changes[initial_index]) //this is the state storing the airport json datapoint shown in the graph
-  const [inputText, setInputText] = useState(`${airport_changes[initial_index]["iata_source"]}: ${airport_changes[initial_index]["current_source_airports_details.wiki_name"]}`) ///initial text that appears in the input box 
+  const [inputText, setInputText] = useState(`${airport_changes[initial_index]["iata_source"]}: ${airport_changes[initial_index]["current_source_airports_details.wiki_name"].replaceAll("_"," ")}`) ///initial text that appears in the input box 
   const [searchData, setSearchData] = useState([]) //this is the state storing current search data options to the user
   const chartdata = { //initial chart data basedon the current airport
     labels: ['2020', '2022', 'Now'],
@@ -167,21 +167,21 @@ function SearchTrends ({initialIata = "LHR"}) {
   //handle a click when clicking a option
   const handleOption = (airport)=> {
     setCurrAirport(airport)
-    setInputText(`${airport["iata_source"]}: ${airport["current_source_airports_details.wiki_name"]}`)//set the display data
+    setInputText(`${airport["iata_source"]}: ${airport["current_source_airports_details.wiki_name"].replaceAll("_"," ")}`)//set the display data
     setSearchData([]) //make search result empty again
     return
   }
 
   return (
-    <div className="about_main">
+    <div className="search-trends">
       <div className="chart-container">
         <div id="time-options-box">
-          <label id="time-select-text" for="time-choice">Airport: </label>
+          <label id="airport-select-text" for="time-choice">Airport: </label>
           <div id="search-airport">
-          <input type="text" list="airport-select" id="time-choice" onChange={handleInput} value={inputText}/>
+          <input type="text" list="airport-select" className="airport-choice" onChange={handleInput} value={inputText}/>
             {
               searchData.map((airport, index)=>(
-                <button onClick={()=>handleOption(airport)}>{`${airport["iata_source"]}: ${airport["current_source_airports_details.wiki_name"]}`}</button>
+                <button onClick={()=>handleOption(airport)}>{`${airport["iata_source"]}: ${airport["current_source_airports_details.wiki_name"].replaceAll("_"," ")}`}</button>
               ))
             }
           </div>
@@ -192,7 +192,7 @@ function SearchTrends ({initialIata = "LHR"}) {
             plugins: {
               title: {
                 display: true,
-                text: `Route Count for ${currairport["current_source_airports_details.wiki_name"].replaceAll("_"," ")} (${currairport["iata_source"]})`
+                text: `Route Count for ${currairport["iata_source"]} airport`
               },
               legend: {
                 display: false
@@ -297,8 +297,12 @@ export function Trends() {
       </div>
         <h4 className="map-caption">Route trends from the {getCaption()}</h4>
 
+        <div id="display-airport-trends">
+          <SearchTrends initialIata={"NNG"}/>
+          <SearchTrends initialIata={"MIA"}/>
+          <SearchTrends initialIata={"DEL"}/>
+        </div>
         <div id="display-graphs">
-          <SearchTrends initialIata={"JFK"}/>
           <img src="./media/route_changes_all_airports.png"/>         
           <img src="./media/route_changes_top_airports.png"/>      
         </div>
