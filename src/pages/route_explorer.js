@@ -72,14 +72,6 @@ const BFS = (iata, dest_iata) => {
   }
 }
 
-
-
-
-
-
-
-
-
 function SearchAirports({initialIata = "LHR", setResult=()=>{}}) {  
   const initial_index = getIdx(initialIata)
   const [inputText, setInputText] = useState(`${network_airports[initial_index]["IATA"]}`) ///initial text that appears in the input box 
@@ -111,9 +103,11 @@ function SearchAirports({initialIata = "LHR", setResult=()=>{}}) {
   //handle a click when clicking a option
   const handleOption = (airport)=> {
     //set the click result
-    setResult(airport)
-    setInputText(`${airport["IATA"]}`)//set the display data
-    setSearchData([]) //make search result empty again
+    if (airport) {
+      setInputText(`${airport["IATA"]}`)//set the display data
+      setSearchData([]) //make search result empty again
+      setResult(airport)
+    }
     return
   }
 
@@ -125,7 +119,7 @@ function SearchAirports({initialIata = "LHR", setResult=()=>{}}) {
           <div id="search-results-list">
             {
               searchData.map((airport, index)=>(
-                <button className="airport-search-option" onClick={()=>handleOption(airport)}>{`${airport["IATA"]}: ${airport["wiki_name"].replaceAll("_"," ")}`}</button>
+                <button key={index} className="airport-search-option" onClick={()=>handleOption(airport)}>{`${airport["IATA"]}: ${airport["wiki_name"].replaceAll("_"," ")}`}</button>
               ))
             }
           </div>
@@ -139,7 +133,7 @@ export function RouteFinder() { //entry function allowing more information to be
   const [sourceData, setSourceData] = useState(network_airports[getIdx("LHR")]) //store the source airport data (default origin)
   const [destData, setDestData] = useState(network_airports[getIdx("NRT")]) //store the dest airport data (default destination)
   const [BFSresults, setBFSresults] = useState(BFS("LHR", "NRT"))//store bfs results
-  const [BFSpath, setBFSpath] = useState(getPath(sourceData["IATA"], destData["IATA"], BFSresults[1])) //get bfs path taken using the function
+  const [BFSpath, setBFSpath] = useState(getPath("LHR", "NRT", {"NRT":"LHR","LHR":"LHR"})) //get bfs path taken using the function
   //store results
   useEffect(()=>{
     const newBFS = BFS(sourceData["IATA"], destData["IATA"])
@@ -175,7 +169,7 @@ export function RouteFinder() { //entry function allowing more information to be
           <div className="display-paths">
             {
              BFSpath.map((airport, index) => (
-              <div>
+              <div key={index}>
                 {(index < BFSpath.length - 1) && 
                   <div className="path-parts">
                     <h3>{BFSpath[index]} to {BFSpath[index+1]} Operators:</h3>

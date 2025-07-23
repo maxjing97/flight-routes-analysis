@@ -71,4 +71,4 @@ const BFS = (iata, dest_iata) => {
 
 
 
-console.log("testing BFS",BFS("ADD", "SYD"))
+console.log("testing BFS",BFS("PEK", "NRT"))
