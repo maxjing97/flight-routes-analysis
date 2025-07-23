@@ -121,3 +121,12 @@
     margin: 0 10px;
     max-width: 725px;
 }
+#chart-container {
+    max-width: 300px;
+}
+#search-airport {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}

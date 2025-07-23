@@ -1,17 +1,21 @@
 import "./main.css"
 import React from 'react';
-import {useEffect, useState} from "react";
+import {useEffect, useState, useRef} from "react";
 import {Link, useNavigate} from "react-router-dom"
 import airline_changes from "./data/airline_changes.json"
 import airport_changes from "./data/airport_changes.json"
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from "leaflet"
+import { Line } from "react-chartjs-2";
+import Chart from "chart.js/auto";
+import { CategoryScale } from "chart.js";
+Chart.register(CategoryScale);
 
 //custom icon for a default pin
 const defaultIcon = new L.DivIcon({
   className: '', // Remove default styles
   html: `<svg width="15" height="15" viewBox="0 0 24 24" fill="#114fd3ff" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#114fd3ff" />
+    <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#114fd3ff" />
   </svg>`,
   iconSize: [15, 15],
   iconAnchor: [1, 1],
@@ -46,13 +50,26 @@ const getIcon =(change) => {
   const defaultIcon = new L.DivIcon({
     className: '', // Remove default styles
     html: `<svg width="12" height="12" viewBox="0 0 24 24" fill="${color}" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="${color}" />
+      <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="${color}" />
     </svg>`,
     iconSize: [12, 12],
     iconAnchor: [1, 1],
   });
   return defaultIcon;
 }
+//find index by iata code
+const getIdx = (iata) => {
+  let i = 0
+  for (const obj of airport_changes) {
+    const curriata = obj["iata_source"]
+    if (curriata===iata) {
+      return i
+    }
+    i+=1
+  }
+  return -1
+}
+
 
 export function Entry() { //entry function allowing more information to be found out
   //display world map with leaflet
@@ -102,19 +119,88 @@ export function Entry() { //entry function allowing more information to be found
     </div>
   );
 }
-//component to show text for current_vs_pre2020_routes. there are three other components 
-function CurrToPre2020 () {
+//component to to search airports show trends using charts.js. Initialize with a certain iata code
+function SearchTrends ({initialIata = "LHR"}) {  
+  const initial_index = getIdx(initialIata)
+  const [currairport, setCurrAirport] = useState(airport_changes[initial_index]) //this is the state storing the airport json datapoint shown in the graph
+  const [inputText, setInputText] = useState(`${airport_changes[initial_index]["iata_source"]}: ${airport_changes[initial_index]["current_source_airports_details.wiki_name"]}`) ///initial text that appears in the input box 
+  const [searchData, setSearchData] = useState([]) //this is the state storing current search data options to the user
+  const chartdata = { //initial chart data basedon the current airport
+    labels: ['2020', '2022', 'Now'],
+    datasets: [
+      {
+        label: 'Routes',
+        data: [currairport["pre_2020_route_count"], currairport["pre_2022_route_count"], currairport["Route_count"]],
+        fill: false,
+        borderColor: 'rgb(75, 192, 192)',
+        tension: 0.3,
+        pointRadius: 5,
+      },
+    ],
+  }
+  
+
+  const handleInput = (e)=> {
+    const text = e.target.value.toLowerCase().trim() 
+    setInputText(text)
+    //if no text, reset to empty list
+    if(!text || text.length < 2) {
+      setSearchData([])
+      return 
+    }
+    
+    const match_list = []
+    for (const obj of airport_changes) {
+      const name = obj["current_source_airports_details.wiki_name"].toLowerCase()
+      const iata = obj["iata_source"].toLowerCase()
+      if (name.includes(text) || iata.includes(text)) {
+        match_list.push(obj)
+      }
+    }
+    //set the datalist
+    setSearchData(match_list)
+    
+
+    return 
+  }
+
+  //handle a click when clicking a option
+  const handleOption = (airport)=> {
+    setCurrAirport(airport)
+    setInputText(`${airport["iata_source"]}: ${airport["current_source_airports_details.wiki_name"]}`)//set the display data
+    setSearchData([]) //make search result empty again
+    return
+  }
+
   return (
-    <div className="essay">
-      <h3>Summary</h3>
-      <p>
-        COVID-19 had a massive impact on the aviation industry. Many routes stopped operating.
-        Looking at this data allows use to see the the recovery progress of certain airports over time,
-        from now to before the start of the pandemic. 
-      </p>
-      <p>
-      Also, compare trends in the number of routes per airport according to wikipedia data from the top 979 airports. View changes in routes for these airports by three year ranges: <br></br> 
-      </p>
+    <div className="about_main">
+      <div className="chart-container">
+        <div id="time-options-box">
+          <label id="time-select-text" for="time-choice">Airport: </label>
+          <div id="search-airport">
+          <input type="text" list="airport-select" id="time-choice" onChange={handleInput} value={inputText}/>
+            {
+              searchData.map((airport, index)=>(
+                <button onClick={()=>handleOption(airport)}>{`${airport["iata_source"]}: ${airport["current_source_airports_details.wiki_name"]}`}</button>
+              ))
+            }
+          </div>
+        </div>
+        <Line
+          data={chartdata}
+          options={{
+            plugins: {
+              title: {
+                display: true,
+                text: `Route Count for ${currairport["current_source_airports_details.wiki_name"].replaceAll("_"," ")} (${currairport["iata_source"]})`
+              },
+              legend: {
+                display: false
+              }
+            }
+          }}
+        />
+      </div>
     </div>
   );
 }
@@ -139,7 +225,7 @@ export function Trends() {
   }
 
   return (
-    <div className="about_main" style={styles.about_main}> 
+    <div className="about_main"> 
       <h1 className='stats-title'>Wikipedia Flights Trend Explorer and Analysis</h1>
       <h3>Explore COVID-19 trends from wikipedia airport data and see how routes changed</h3>
       <div id="time-options-box">
@@ -157,37 +243,37 @@ export function Trends() {
           <h2>Legend:</h2>
           <h3>Route change by airport</h3>
           <p><svg width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#3c0001ff" />
+            <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#3c0001ff" />
           </svg>{"< -25"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#850d0fff" />
+            <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#850d0fff" />
           </svg>{"-25 to -16"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#ac2f31ff" />
+            <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#ac2f31ff" />
           </svg>{"-15 to -11"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#e77678ff" />
+            <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#e77678ff" />
           </svg>{"-10 to -4"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#905b0bff" />
+            <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#905b0bff" />
           </svg>{"-5 to -1"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#ffffff" />
+            <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#ffffff" />
           </svg>{"no change"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#90a531ff" />
+            <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#90a531ff" />
           </svg>{"+1 to +4"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#97fcb8ff" />
+            <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#97fcb8ff" />
           </svg>{"+5 to +9"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#2dcf63ff" />
+            <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#2dcf63ff" />
           </svg>{"+10 to +14"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#116c2bff" />
+            <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#116c2bff" />
           </svg>{"+15 to +24"}</p>
           <p><svg width="12" height="12" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="#012c0dff" />
+            <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#012c0dff" />
           </svg>{"> 25"}</p>
           <p>ranges are inclusive</p>
         </div>
@@ -210,7 +296,9 @@ export function Trends() {
       </MapContainer>
       </div>
         <h4 className="map-caption">Route trends from the {getCaption()}</h4>
+
         <div id="display-graphs">
+          <SearchTrends initialIata={"JFK"}/>
           <img src="./media/route_changes_all_airports.png"/>         
           <img src="./media/route_changes_top_airports.png"/>      
         </div>
