@@ -14,7 +14,7 @@ const Navbar=()=>{
                 </div>
             </div>
             <div className="dropdown">
-                <h1 className="main-option"><Link to="/entry">Explore Current Routes</Link></h1>
+                <h1 className="main-option"><Link to="/routefinder">Explore Current Routes</Link></h1>
                 <div className="dropdown-content">
                     <Link to="/routefinder">Route Finder</Link>
                     <Link to="/res">More Resources</Link>
