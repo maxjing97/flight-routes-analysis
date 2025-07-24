@@ -193,7 +193,7 @@ export function RouteFinder() { //entry function allowing more information to be
   const [BFSpath, setBFSpath] = useState(getPath("LHR", "NRT", {"NRT":"LHR","LHR":"LHR"})) //get bfs path taken using the function
   const [shortestresults, setShortestresults] = useState(DijkstraPath("LHR", "NRT"))//store shortest path results using A*/ Dikjstra's
   const [shortestpath, setShortestpath] = useState(getPath("LHR", "NRT", {"NRT":"LHR","LHR":"LHR"})) //get bfs path taken using the function
-  //store if the map is closed or not.
+  const [mapOpen, setMapOpen] = useState(false)//store if the map is closed or not.
   //store results
   useEffect(()=>{
     const newBFS = BFSPath(sourceData["IATA"], destData["IATA"])
@@ -208,23 +208,40 @@ export function RouteFinder() { //entry function allowing more information to be
     <div className="about_main"> 
       <h2>Route Explorer: Find the Shortest Routes and Airlines between 959 airports</h2>
       <h3>Search and Select your Source and destination airports</h3>
-      <p>Search by IATA code or the official name</p>
+      <p>Search by IATA code, official name, or city.</p>
       {/*leaflet map */}
+      {mapOpen && 
       <div id="map-box">
-      <MapContainer id="map" center={[0, 0]} zoom={1} scrollWheelZoom={true}>
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        {network_airports.map((json, index) => (
-          <Marker icon={defaultIcon} position={[json["latitude"], json["longitude"]]}>
-            <Popup id="preview-pin">
-              <h3>{json["IATA"]} :</h3>  {json["wiki_name"].replaceAll("_"," ")}
-            </Popup>
-          </Marker>
-        ))}
-      </MapContainer>
+        <MapContainer id="map" center={[0, 0]} zoom={1} scrollWheelZoom={true}>
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          {network_airports.map((json, index) => (
+            <Marker icon={defaultIcon} position={[json["latitude"], json["longitude"]]}>
+              <Popup id="preview-pin">
+                <h3>{json["IATA"]} :</h3>  {json["wiki_name"].replaceAll("_"," ")}
+              </Popup>
+            </Marker>
+          ))}
+        </MapContainer>
       </div>
+      }
+      <button id="network-airports-button" onClick={()=>setMapOpen(prev=>!prev)}>
+      {
+        mapOpen ? (
+          <div id="network-airports-button-content">
+            <h3>Close Map</h3>
+            <img src="./media/close.png" alt="close map"/>
+          </div>
+        ) : (
+          <div id="network-airports-button-content">
+          <h3>Open Map</h3>
+          <img src="./media/expand.png" alt="close map"/>
+          </div>
+        )
+      }
+      </button>
       <div id="select-routes">
         <SearchAirports initialIata="EZE" setResult={setSourceData}/>
         <SearchAirports initialIata="ACC" setResult={setDestData}/>

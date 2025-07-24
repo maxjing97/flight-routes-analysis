@@ -56,3 +56,28 @@
 .path-airline {
     margin: 0;
 }
+#network-airports-button {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#network-airports-button-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+#network-airports-button img {
+    height: 30px;
+}
+#network-airports-button h3 {
+    padding: auto 0;
+    margin: auto 0;
+}
