@@ -2,7 +2,7 @@ import "./routes.css"
 import React, { useEffect, useState } from 'react';
 import {Link, useNavigate} from "react-router-dom"
 import { MinPriorityQueue } from "@datastructures-js/priority-queue";//priority queue for Dijkstra's/A*
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet';
 import L from "leaflet"
 import network_airports from "./data/airports_in_network.json"
 import network_graph from "./data/network_graph.json"
@@ -13,6 +13,16 @@ const defaultIcon = new L.DivIcon({
   className: '', // Remove default styles
   html: `<svg width="15" height="15" viewBox="0 0 24 24" fill="#114fd3ff" xmlns="http://www.w3.org/2000/svg">
     <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#114fd3ff" />
+  </svg>`,
+  iconSize: [15, 15],
+  iconAnchor: [1, 1],
+});
+
+//special icon for source and destination airport
+const specialIcon = new L.DivIcon({
+  className: '', // Remove default styles
+  html: `<svg width="15" height="15" viewBox="0 0 24 24" fill="#746400ff" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#746400ff" />
   </svg>`,
   iconSize: [15, 15],
   iconAnchor: [1, 1],
@@ -190,15 +200,17 @@ export function RouteFinder() { //entry function allowing more information to be
   const [sourceData, setSourceData] = useState(network_airports[getIdx("EZE")]) //store the source airport data (default origin)
   const [destData, setDestData] = useState(network_airports[getIdx("ACC")]) //store the dest airport data (default destination)
   const [BFSresults, setBFSresults] = useState(BFSPath("EZE", "ACC"))//store bfs results
-  const [BFSpath, setBFSpath] = useState(getPath("LHR", "NRT", {"NRT":"LHR","LHR":"LHR"})) //get bfs path taken using the function
-  const [shortestresults, setShortestresults] = useState(DijkstraPath("LHR", "NRT"))//store shortest path results using A*/ Dikjstra's
-  const [shortestpath, setShortestpath] = useState(getPath("LHR", "NRT", {"NRT":"LHR","LHR":"LHR"})) //get bfs path taken using the function
+  const [BFSpath, setBFSpath] = useState(getPath("EZE", "ACC", BFSPath("EZE", "ACC")[1])) //get bfs path taken using the function
+  const [shortestresults, setShortestresults] = useState(DijkstraPath("EZE", "ACC"))//store shortest path results using A*/ Dikjstra's
+  const [shortestpath, setShortestpath] = useState(getPath("EZE", "ACC", DijkstraPath("EZE", "ACC")[1])) //get bfs path taken using the function
   const [mapOpen, setMapOpen] = useState(false)//store if the map is closed or not.
   //store results
   useEffect(()=>{
     const newBFS = BFSPath(sourceData["IATA"], destData["IATA"])
     setBFSresults(newBFS)
-    setBFSpath(getPath(sourceData["IATA"], destData["IATA"], newBFS[1]))
+    const newBFSpath = getPath(sourceData["IATA"], destData["IATA"], newBFS[1])
+    console.log("BFS path found", newBFSpath)
+    setBFSpath(newBFSpath)
     const newShortest = DijkstraPath(sourceData["IATA"], destData["IATA"])
     setShortestresults(newShortest)
     setShortestpath(getPath(sourceData["IATA"], destData["IATA"], newShortest[1]))
