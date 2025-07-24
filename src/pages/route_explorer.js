@@ -131,8 +131,9 @@ function SearchAirports({initialIata = "LHR", setResult=()=>{}}) {
   const [searchData, setSearchData] = useState([]) //this is the state storing current search data options to the user
 
   const handleInput = (e)=> {
+    setInputText(e.target.value) //set value no matter
+    //search text
     const text = e.target.value.toLowerCase().trim() 
-    setInputText(text)
     //if no text, reset to empty list
     if(!text || text.length < 2) {
       setSearchData([])
@@ -143,10 +144,10 @@ function SearchAirports({initialIata = "LHR", setResult=()=>{}}) {
     for (const obj of network_airports) {
       const name = obj["wiki_name"].toLowerCase()
       const iata = obj["IATA"].toLowerCase()
-      const city = obj["city"]//get city is possible
+      const city = obj["city"]  //get city is possible
       if (name.includes(text) || iata.includes(text)) {
         match_list.push(obj)
-      }else if (city && city.includes(text)) {
+      }else if (city && city.toLowerCase().includes(text)) { //if city is defined, search for the result
         match_list.push(obj)
       }
     }
