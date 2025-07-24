@@ -2,8 +2,21 @@ import "./routes.css"
 import React, { useEffect, useState } from 'react';
 import {Link, useNavigate} from "react-router-dom"
 import { MinPriorityQueue } from "@datastructures-js/priority-queue";//priority queue for Dijkstra's/A*
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from "leaflet"
 import network_airports from "./data/airports_in_network.json"
 import network_graph from "./data/network_graph.json"
+
+//default icon to show the map on 
+//custom icon for a default pin
+const defaultIcon = new L.DivIcon({
+  className: '', // Remove default styles
+  html: `<svg width="15" height="15" viewBox="0 0 24 24" fill="#114fd3ff" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="#114fd3ff" />
+  </svg>`,
+  iconSize: [15, 15],
+  iconAnchor: [1, 1],
+});
 
 //find index by iata code in the airport networks data
 const getIdx = (iata) => {
@@ -88,7 +101,7 @@ const DijkstraPath = (iata, dest_iata) => {
   dist[iata] = 0 //set the current
   prev[iata] = iata
   pq.enqueue({dist: 0, code: iata})
-  while (pq.size()!=0) {
+  while (pq.size()!==0) {
     const currnode = pq.dequeue() //find the current node in the pq
     const curriata = currnode.code//get node iata name
     const neighbors_list = network_graph[curriata]// neighbors
@@ -130,7 +143,10 @@ function SearchAirports({initialIata = "LHR", setResult=()=>{}}) {
     for (const obj of network_airports) {
       const name = obj["wiki_name"].toLowerCase()
       const iata = obj["IATA"].toLowerCase()
+      const city = obj["city"]//get city is possible
       if (name.includes(text) || iata.includes(text)) {
+        match_list.push(obj)
+      }else if (city && city.includes(text)) {
         match_list.push(obj)
       }
     }
@@ -176,6 +192,7 @@ export function RouteFinder() { //entry function allowing more information to be
   const [BFSpath, setBFSpath] = useState(getPath("LHR", "NRT", {"NRT":"LHR","LHR":"LHR"})) //get bfs path taken using the function
   const [shortestresults, setShortestresults] = useState(DijkstraPath("LHR", "NRT"))//store shortest path results using A*/ Dikjstra's
   const [shortestpath, setShortestpath] = useState(getPath("LHR", "NRT", {"NRT":"LHR","LHR":"LHR"})) //get bfs path taken using the function
+  //store if the map is closed or not.
   //store results
   useEffect(()=>{
     const newBFS = BFSPath(sourceData["IATA"], destData["IATA"])
@@ -190,6 +207,23 @@ export function RouteFinder() { //entry function allowing more information to be
     <div className="about_main"> 
       <h2>Route Explorer: Find the Shortest Routes and Airlines between 959 airports</h2>
       <h3>Search and Select your Source and destination airports</h3>
+      <p>Search by IATA code or the official name</p>
+      {/*leaflet map */}
+      <div id="map-box">
+      <MapContainer id="map" center={[0, 0]} zoom={1} scrollWheelZoom={true}>
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        {network_airports.map((json, index) => (
+          <Marker icon={defaultIcon} position={[json["latitude"], json["longitude"]]}>
+            <Popup id="preview-pin">
+              <h3>{json["IATA"]} :</h3>  {json["wiki_name"].replaceAll("_"," ")}
+            </Popup>
+          </Marker>
+        ))}
+      </MapContainer>
+      </div>
       <div id="select-routes">
         <SearchAirports initialIata="EZE" setResult={setSourceData}/>
         <SearchAirports initialIata="ACC" setResult={setDestData}/>
