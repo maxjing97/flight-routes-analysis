@@ -125,4 +125,6 @@ const Astar = (iata, dest_iata) => {
 //console.log("testing priority queue dequeue:",pq.dequeue())
 //console.log("pq size:", pq.size())
 
-console.log("testing Dijkstra's algorithm", DijkstraPath("PEK", "NRT"))
+const [dist, prev] =  DijkstraPath("LHR", "NRT")
+console.log("testing Dijkstra's algorithm distance",dist)
+console.log("testing Dijkstra's algorithm path",getPath("LHR", "NRT", prev))
