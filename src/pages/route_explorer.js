@@ -298,7 +298,6 @@ export function RouteFinder() { //entry function allowing more information to be
                       { (index === 0) &&
                         <h5 className="path-airline">{airline_distances[0]}<br/> Approximate Distance: {Math.round(airline_distances[1])}km</h5>
                       }
-                      
                       </div>
                     ))}
                     <h3>{shortestpath[index]} to {shortestpath[index+1]} Operators:</h3>
