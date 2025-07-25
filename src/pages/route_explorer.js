@@ -221,6 +221,7 @@ export function RouteFinder() { //entry function allowing more information to be
       <h2>Route Explorer: Find the Shortest Routes and Airlines between 959 airports</h2>
       <h3>Search and Select your Source and destination airports</h3>
       <p>Search by IATA code, official name, or city.</p>
+      
       {/*leaflet map */}
       {mapOpen && 
       <div id="map-box">
@@ -341,7 +342,7 @@ export function RouteFinder() { //entry function allowing more information to be
           </div>
         </div>
       }
-    
+      <h3>Verify with an official airline website or booking website, data may not be accurate. Updated on July 19th, 2025</h3>
     </div>
   );
 }

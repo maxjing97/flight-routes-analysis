@@ -126,7 +126,7 @@ export function Entry() { //entry function allowing more information to be found
       <h4 className="map-caption">Map of all 978 airports in the trend data and their IATA codes</h4>
       <div className="essay">
         <p>
-          Explore webscrapped route data (data current as of July 19th 2025) for the top 959 airports in the world. 
+          Explore webscrapped route data (data current as of July 19th, 2025) for the top 959 airports in the world. 
         </p>
         <p>
         Also, compare trends in the number of routes per airport according to wikipedia data from the top 978 airports. View changes in routes for these airports by three year ranges: <br></br> 
