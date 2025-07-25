@@ -10,14 +10,18 @@ const Navbar=()=>{
                 <h1 className="main-option"><Link to="/trends">Flight Trends</Link></h1>
                 <div className="dropdown-content">
                     <Link to="/trends">Flight Trends</Link>
-                    <Link to="/res">About the Data</Link>
                 </div>
             </div>
             <div className="dropdown">
                 <h1 className="main-option"><Link to="/routefinder">Explore Current Routes</Link></h1>
                 <div className="dropdown-content">
                     <Link to="/routefinder">Route Finder</Link>
-                    <Link to="/res">More Resources</Link>
+                </div>
+            </div>
+            <div className="dropdown">
+                <h1 className="main-option"><Link to="/res">About</Link></h1>
+                <div className="dropdown-content">
+                    <Link to="/res">About</Link>
                 </div>
             </div>
         </div>

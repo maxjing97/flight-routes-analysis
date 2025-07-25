@@ -4,6 +4,7 @@ import {useEffect, useState, useRef} from "react";
 import {Link, useNavigate} from "react-router-dom"
 import airline_changes from "./data/airline_changes.json"
 import airport_changes from "./data/airport_changes.json"
+import airport_clusters from "./data/airport_changes_clusters.json"
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from "leaflet"
 import { Line } from "react-chartjs-2";
@@ -57,6 +58,32 @@ const getIcon =(change) => {
   });
   return defaultIcon;
 }
+//get a colored ion by cluster number (up to 12 possible starting at 1)
+const clustercolors = ["rgba(255, 0, 0, 1)","rgba(255, 191, 0, 1)","rgba(149, 255, 0, 1)","rgba(1, 93, 13, 1)",
+  "rgba(0, 154, 98, 1)","rgba(0, 255, 213, 1)","rgba(3, 56, 155, 1)","rgba(24, 0, 46, 1)",
+  "rgba(204, 66, 156, 1)","rgba(0, 0, 0, 1)","rgba(255, 255, 255, 1)","rgba(83, 83, 83, 1)","rgba(0, 0, 0, 1)"
+]
+const getIconColor =(index) => {
+  const color = clustercolors[index-1]
+  const defaultIcon = new L.DivIcon({
+    className: '', // Remove default styles
+    html: `<svg width="12" height="12" viewBox="0 0 24 24" fill="${color}" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="${color}" />
+    </svg>`,
+    iconSize: [12, 12],
+    iconAnchor: [1, 1],
+  });
+  return defaultIcon;
+}
+//find the set of unique indices in each time range column of the cluster jr
+const getUniqueIndices = (col) => {
+  const indexSet = new Set()
+  for (const json of airport_clusters) {
+    const cluster_number = json[col]
+    indexSet.add(cluster_number)
+  }
+  return Array.from(indexSet);
+}
 //find index by iata code
 const getIdx = (iata) => {
   let i = 0
@@ -69,7 +96,6 @@ const getIdx = (iata) => {
   }
   return -1
 }
-
 
 export function Entry() { //entry function allowing more information to be found out
   //display world map with leaflet
@@ -206,8 +232,6 @@ function SearchTrends ({initialIata = "LHR"}) {
   );
 }
 
-
-
 //main component to show flight trends 
 export function Trends() {
   const [currTime, setCurrTime] = useState("current_vs_pre2020_routes")//find the current selected value of time range (default)
@@ -238,7 +262,7 @@ export function Trends() {
         </select>
       </div>
 
-      {/*leaflet map */}
+      {/*leaflet map that displays trends*/}
       <div id="map-box">
         <div id="map-legend">
           <h2>Legend:</h2>
@@ -301,7 +325,7 @@ export function Trends() {
         <div id="display-airport-trends">
           <SearchTrends initialIata={"NNG"}/>
           <SearchTrends initialIata={"MIA"}/>
-          <SearchTrends initialIata={"DEL"}/>
+          <SearchTrends initialIata={"TYN"}/>
         </div>
         <div id="display-graphs">
           <img src="./media/route_changes_all_airports.png"/>         
@@ -339,6 +363,40 @@ export function Trends() {
             (BER), which was barely operational in 2020 and is now the only major international airport of the Berlin area. 
           </p>
         </div>
+      {/*display hierarchial clustering result for each time range  */}
+      <h3>Location clusters of world airports by hierarchial clustering</h3>
+      <div id="map-box">
+        <div id="map-legend">
+          <h2>Legend:</h2>
+          <h3>Cluster Label</h3>
+          {getUniqueIndices(`clusters`).map((value, index)=>(
+            <p><svg width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill={clustercolors[index]} />
+            </svg>{index+1}</p>
+            ))
+          }
+          <p>ranges are inclusive</p>
+        </div>
+      <MapContainer id="map" center={[0, 0]} zoom={1} scrollWheelZoom={true}>
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        {airport_clusters.map((json, index) => (
+          <Marker icon={getIconColor(json[`clusters`])} position={[json["current_source_airports_details.latitude"], json["current_source_airports_details.longitude"]]}>
+            <Popup id="preview-pin">
+              <h3>{json["iata_source"]} :</h3>  {json["current_source_airports_details.wiki_name"].replaceAll("_"," ")}
+              <h3>Cluster id : {json[`clusters`]}</h3>
+              <h3>Route change : {json[currTime]}</h3>
+              <p className="pin_p">Routes now : {json["Route_count"]}</p>
+              <p className="pin_p">Routes at the start of 2022 : {json["pre_2022_route_count"]}</p>
+              <p className="pin_p">Routes at the start of 2020 : {json["pre_2020_route_count"]}</p>
+            </Popup>
+          </Marker>
+        ))}
+      </MapContainer>
+      </div>
+
     </div>
   );
 }
@@ -353,7 +411,7 @@ export function Resources() {
       2020 and 2022 were webscrapped as well to obtain the routes for those respective year ranges.
     </p>
     <p>
-      Route changes were then measured for each of the three possible periods by comparing route counts by airport using Power Query in Power BI. 
+      Route changes were then measured for each of the three possible periods by comparing route counts by airport using Power Query in Power BI. Airports were then clustered by location using hierarchial clustering. 
     </p>
 
     <p>The routes explore page uses the A* and BFS algorithms to find the route with the shortest distance and least number of connecting flights needed, respectively.
