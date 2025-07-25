@@ -405,7 +405,7 @@ export function Trends() {
 export function Resources() {
   return (
   <div className="essay">
-    <h3>About the datasets and Algorithms</h3>
+    <h3>About the Datasets and Algorithms</h3>
     <p>
       Here, route data was webscrapped (data current as of July 19th 2025) for the top 959 airports in the world. The data for the most recent wikipedia pages before the start of
       2020 and 2022 were webscrapped as well to obtain the routes for those respective year ranges.
